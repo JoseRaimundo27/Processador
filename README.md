@@ -17,7 +17,6 @@ O projeto consiste na implementação de uma **CPU com pipeline de 5 estágios**
 
 ### Arquitetura RISC com as seguintes especificações:
 - **32 registradores de propósito geral** (R0 a R31), com R0 fixo em 0 e R1 fixo em 1.
-- **Instruções de 32 bits**, com formatos **R-Type**, **I-Type** e **J-Type**.
 - **Modos de endereçamento**:
   - Imediato.
   - Base-deslocamento.
