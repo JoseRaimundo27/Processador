@@ -1,0 +1,46 @@
+module UC (
+    input clk,                      // Clock principal
+    input reset,                    // Reset
+    input [31:0] instr_in,          // Instrução recebida da ROM
+    input zero_flag,                // Flag zero da ULA
+    output [3:0] alu_op,            // Operação da ULA
+    output [31:0] imm_value,        // Valor imediato decodificado
+    output [7:0] next_pc,           // Próximo endereço do PC (8 bits)
+    output [7:0] addr_rom,          // Endereço da ROM (8 bits)
+    output [7:0] addr_ram,          // Endereço da RAM (8 bits)
+    output wren,                    // Sinal de escrita na RAM
+    output clk_ram,                 // Clock controlado para a RAM
+    output clk_rom                  // Clock controlado para a ROM
+);
+
+    // Exemplo de controle básico dos clocks
+    reg clk_ram_reg, clk_rom_reg;
+
+    always @(posedge clk or posedge reset) begin
+        if (reset) begin
+            clk_ram_reg <= 0;
+            clk_rom_reg <= 0;
+        end else begin
+            // Lógica de controle dos clocks
+            // Ativa o clock da RAM apenas em operações de leitura ou escrita
+            if (instr_in[31:26] == 6'b100011 || // LW
+                instr_in[31:26] == 6'b101011)   // SW
+                clk_ram_reg <= 1;
+            else
+                clk_ram_reg <= 0;
+
+            // Ativa o clock da ROM apenas durante o fetch de instruções
+            if (instr_in[31:26] == 6'b000000)  // Exemplo: operação de instrução
+                clk_rom_reg <= 1;
+            else
+                clk_rom_reg <= 0;
+        end
+    end
+
+    assign clk_ram = clk_ram_reg;
+    assign clk_rom = clk_rom_reg;
+
+    // Aqui entra o restante da lógica da UC para controle das operações
+    // Exemplo: Decodificação do próximo PC, valores imediatos, etc.
+
+endmodule

@@ -1,0 +1,34 @@
+module CPU (
+    input clk,                   // Clock
+    input reset,                 // Reset
+    output [31:0] addr_out,      // Endereço para as memórias (32 bits)
+    inout [31:0] data_bus,       // Barramento de dados compartilhado (32 bits)
+    output mem_read,             // Sinal de leitura da memória
+    output mem_write,            // Sinal de escrita da memória
+    output [31:0] instr_out      // Instrução lida da ROM (32 bits)
+);
+
+    // Interconexões internas
+    wire [31:0] alu_result;      // Resultado da ULA (32 bits)
+    wire [31:0] reg_a, reg_b;    // Dados dos registradores (32 bits)
+    wire [3:0] alu_op;           // Operação da ULA
+    wire zero_flag;              // Flag zero da ULA
+    wire [31:0] pc;              // Contador de programa (32 bits)
+    wire [31:0] ir;              // Registrador de instrução (32 bits)
+
+    // Unidade de Controle
+  
+
+    // Unidade Lógica e Aritmética (ULA)
+   
+
+    // Registradores
+   
+
+    // Endereço de saída para a memória
+    assign addr_out = pc;         // PC controla a ROM para FETCH
+
+    // Barramento de dados (exemplo simplificado)
+    assign data_bus = mem_read ? reg_a : 32'bz;  // Leitura da RAM
+
+endmodule
