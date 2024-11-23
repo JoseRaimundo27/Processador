@@ -1,0 +1,33 @@
+D:/PCID/ModelSim/ROM_DATA.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/PCID/ModelSim/ROM_DATA.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package altera_mf_components
+-- Compiling entity ROM_DATA
+-- Compiling architecture SYN of rom_data
+
+} {} {}} D:/PCID/ModelSim/CPU.v {1 {vlog -work work -stats=none D:/PCID/ModelSim/CPU.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module CPU
+
+Top level modules:
+	CPU
+
+} {} {}} D:/PCID/ModelSim/RAM_INSTRUCTION.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/PCID/ModelSim/RAM_INSTRUCTION.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package altera_mf_components
+-- Compiling entity RAM_INSTRUCTION
+-- Compiling architecture SYN of ram_instruction
+
+} {} {}} D:/PCID/ModelSim/Processador.v {1 {vlog -work work -stats=none D:/PCID/ModelSim/Processador.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Processador
+
+Top level modules:
+	Processador
+
+} {} {}}

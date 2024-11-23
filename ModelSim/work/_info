@@ -1,0 +1,136 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/17.1
+vCPU
+Z0 !s110 1732397775
+!i10b 1
+!s100 >m6AiT34z3D?BY[dl7QR^3
+InIz[gRY0:hi83:_RUghdj2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/PCID/ModelSim
+w1732378906
+8D:/PCID/ModelSim/CPU.v
+FD:/PCID/ModelSim/CPU.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1732397775.000000
+!s107 D:/PCID/ModelSim/CPU.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/PCID/ModelSim/CPU.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@c@p@u
+vProcessador
+R0
+!i10b 1
+!s100 dzX0hD81e[5EW0H63fYUE1
+I=>@Rl]>e5S8N6>R>Z258a1
+R1
+R2
+w1732397261
+8D:/PCID/ModelSim/Processador.v
+FD:/PCID/ModelSim/Processador.v
+L0 19
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/PCID/ModelSim/Processador.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/PCID/ModelSim/Processador.v|
+!i113 1
+R5
+R6
+n@processador
+Eram_instruction
+Z7 w1732371189
+Z8 DPx9 altera_mf 20 altera_mf_components 0 22 gV:l9C^?PSb6]b5V?_jR@3
+Z9 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z10 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R2
+Z11 8D:/PCID/ModelSim/RAM_INSTRUCTION.vhd
+Z12 FD:/PCID/ModelSim/RAM_INSTRUCTION.vhd
+l0
+L42
+V1niR9m0jBlNBj5_k?J0Rg3
+!s100 z=FZi]mOE4R]KR^SHlD5a0
+Z13 OV;C;10.5b;63
+32
+Z14 !s110 1732397776
+!i10b 1
+Z15 !s108 1732397776.000000
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/PCID/ModelSim/RAM_INSTRUCTION.vhd|
+Z17 !s107 D:/PCID/ModelSim/RAM_INSTRUCTION.vhd|
+!i113 1
+Z18 o-work work -2002 -explicit
+Z19 tExplicit 1 CvgOpt 0
+Asyn
+R8
+R9
+R10
+DEx4 work 15 ram_instruction 0 22 1niR9m0jBlNBj5_k?J0Rg3
+l58
+L54
+V[m6e4Pe7NCNMU;<G`>9X92
+!s100 ;Ve5Efbz4PVFVzP[:B@Pn0
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 1
+R18
+R19
+Erom_data
+Z20 w1732371485
+R8
+R9
+R10
+R2
+Z21 8D:/PCID/ModelSim/ROM_DATA.vhd
+Z22 FD:/PCID/ModelSim/ROM_DATA.vhd
+l0
+L42
+VhKk8fcaGBU<A<AVU9_Rzl1
+!s100 `WXQA_9JT5efb:n3Sj6IK0
+R13
+32
+R0
+!i10b 1
+Z23 !s108 1732397774.000000
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/PCID/ModelSim/ROM_DATA.vhd|
+Z25 !s107 D:/PCID/ModelSim/ROM_DATA.vhd|
+!i113 1
+R18
+R19
+Asyn
+R8
+R9
+R10
+DEx4 work 8 rom_data 0 22 hKk8fcaGBU<A<AVU9_Rzl1
+l56
+L52
+Vi`a;^3DEM]@BLA:ETQ@T83
+!s100 @4Ue7VE@05H4]YoBX3@W81
+R13
+32
+R0
+!i10b 1
+R23
+R24
+R25
+!i113 1
+R18
+R19
