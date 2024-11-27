@@ -1,0 +1,95 @@
+
+Com base na imagem do pipeline e na descrição dos estágios, segue uma listagem dos módulos funcionais, registradores internos e sinais de controle necessários para cada estágio do pipeline:
+
+1. Instruction Fetch (IF)
+Módulos funcionais:
+Instruction Memory (ROM):
+Tarefa: Armazenar e fornecer as instruções.
+Entrada: Endereço do PC.
+Saída: Instrução (IR).
+Somador:
+Tarefa: Incrementar o valor do PC em 4 (ou outro deslocamento constante).
+Entrada: Valor atual do PC.
+Saída: Próximo valor do PC.
+Multiplexador (Mux):
+Tarefa: Selecionar entre o próximo endereço sequencial (PC + 4) ou o endereço calculado pelo branch.
+Entradas: PC + 4, Endereço de branch.
+Controle: Branch_Taken (sinal de controle).
+Saída: Novo valor do PC.
+Program Counter (PC):
+Tarefa: Armazenar o endereço da próxima instrução.
+Entrada: Saída do Mux.
+Saída: Endereço para a ROM.
+Registradores internos:
+Registrador IF/ID:
+Tarefa: Armazenar a instrução e o valor do PC para uso no próximo estágio.
+Dados armazenados: Instrução (IR), PC+4.
+Sinais de controle:
+Branch_Taken: Define se o endereço do PC será atualizado com o valor calculado no branch.
+2. Instruction Decode (ID)
+Módulos funcionais:
+Banco de Registradores (Registers):
+Tarefa: Armazenar os valores dos registradores.
+Entrada: Números dos registradores a serem lidos (IR[6:10], IR[11:15]).
+Saídas: Dados dos registradores lidos (RegA e RegB).
+Extensão de Sinal (Sign Extend):
+Tarefa: Converter o valor imediato (IR[16:31]) de 16 bits para 32 bits.
+Entrada: Imediato de 16 bits.
+Saída: Imediato de 32 bits.
+Registradores internos:
+Registrador ID/EX:
+Tarefa: Passar os valores lidos para o próximo estágio.
+Dados armazenados: RegA, RegB, imediato (sign-extended), campos relevantes da instrução (opcodes e registradores de destino).
+Sinais de controle:
+RegWrite: Permite escrita no banco de registradores.
+RegDst: Escolhe qual registrador será escrito (dependendo do tipo da instrução).
+ALUSrc: Controla a entrada para a ALU (imediato ou segundo registrador).
+3. Execute (EX)
+Módulos funcionais:
+Unidade Lógica e Aritmética (ALU):
+Tarefa: Realizar operações aritméticas e lógicas.
+Entradas: Operandos (RegA ou imediato, RegB).
+Saídas: Resultado da operação, sinal Zero (para branch).
+Multiplexador (Mux):
+Tarefa: Escolher entre o valor do registrador ou o imediato como entrada para a ALU.
+Entradas: RegB, imediato.
+Controle: ALUSrc.
+Comparador de Branch (Branch Taken):
+Tarefa: Avaliar se o branch deve ser tomado.
+Entrada: Sinal Zero da ALU.
+Saída: Sinal Branch_Taken.
+Registradores internos:
+Registrador EX/MEM:
+Tarefa: Armazenar o resultado da ALU, valor do registrador e sinais de controle.
+Dados armazenados: Resultado da ALU, RegB (para escrita na memória), sinais de controle (MemRead, MemWrite, RegWrite).
+Sinais de controle:
+ALUOp: Especifica a operação realizada pela ALU.
+Branch: Define se a instrução atual é um branch.
+Zero: Indica se o resultado da ALU é zero.
+4. Memory Access (MEM)
+Módulos funcionais:
+Memória de Dados (RAM):
+Tarefa: Acessar ou modificar valores na memória.
+Entradas: Endereço (resultado da ALU) e dado para escrita (RegB).
+Controle: Sinais MemWrite e MemRead.
+Saída: Dados lidos da memória.
+Registradores internos:
+Registrador MEM/WB:
+Tarefa: Armazenar os dados lidos da memória, ou os resultados da ALU, para uso no próximo estágio.
+Dados armazenados: Dados da memória ou ALU, registrador de destino, sinal de controle RegWrite.
+Sinais de controle:
+MemRead: Habilita a leitura da memória.
+MemWrite: Habilita a escrita na memória.
+5. Write Back (WB)
+Módulos funcionais:
+Multiplexador (Mux):
+Tarefa: Escolher entre o resultado da ALU ou o dado lido da memória para escrever no banco de registradores.
+Entradas: Resultado da ALU, dado da memória.
+Controle: MemToReg.
+Saída: Dado a ser escrito.
+Registradores internos:
+Banco de Registradores:
+Atualizado diretamente neste estágio com o valor calculado/escrito.
+Sinais de controle:
+RegWrite: Controla se o dado será escrito no banco de registradores.
+MemToReg: Controla se o valor a ser escrito será da memória ou da ALU.
