@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Processador
-Mon Dec 23 19:56:13 2024
+Tue Dec 24 16:07:34 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -52,7 +52,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Dec 23 19:56:13 2024       ;
+; Analysis & Synthesis Status        ; Successful - Tue Dec 24 16:07:34 2024       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Processador                                 ;
 ; Top-level Entity Name              ; Processador                                 ;
@@ -171,42 +171,42 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                        ;
-+--------------------------------------------------------------------+-----------------+----------------------------------------------+-------------------------------------------------------------------------------------------+-------------+
-; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                    ; File Name with Absolute Path                                                              ; Library     ;
-+--------------------------------------------------------------------+-----------------+----------------------------------------------+-------------------------------------------------------------------------------------------+-------------+
-; CPU.v                                                              ; yes             ; User Verilog HDL File                        ; D:/Processador/Quartus/CPU.v                                                              ;             ;
-; Processador.bdf                                                    ; yes             ; User Block Diagram/Schematic File            ; D:/Processador/Quartus/Processador.bdf                                                    ;             ;
-; RAM_Data.vhd                                                       ; yes             ; User Wizard-Generated File                   ; D:/Processador/Quartus/RAM_Data.vhd                                                       ;             ;
-; ConteudoROM.mif                                                    ; yes             ; User Memory Initialization File              ; D:/Processador/Quartus/ConteudoROM.mif                                                    ;             ;
-; ROM_Instruction.vhd                                                ; yes             ; User Wizard-Generated File                   ; D:/Processador/Quartus/ROM_Instruction.vhd                                                ;             ;
-; altsyncram.tdf                                                     ; yes             ; Megafunction                                 ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf                     ;             ;
-; stratix_ram_block.inc                                              ; yes             ; Megafunction                                 ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc              ;             ;
-; lpm_mux.inc                                                        ; yes             ; Megafunction                                 ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc                        ;             ;
-; lpm_decode.inc                                                     ; yes             ; Megafunction                                 ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc                     ;             ;
-; aglobal181.inc                                                     ; yes             ; Megafunction                                 ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                     ;             ;
-; a_rdenreg.inc                                                      ; yes             ; Megafunction                                 ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc                      ;             ;
-; altrom.inc                                                         ; yes             ; Megafunction                                 ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc                         ;             ;
-; altram.inc                                                         ; yes             ; Megafunction                                 ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc                         ;             ;
-; altdpram.inc                                                       ; yes             ; Megafunction                                 ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc                       ;             ;
-; db/altsyncram_ntr3.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; D:/Processador/Quartus/db/altsyncram_ntr3.tdf                                             ;             ;
-; db/altsyncram_ldp2.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; D:/Processador/Quartus/db/altsyncram_ldp2.tdf                                             ;             ;
-; sld_mod_ram_rom.vhd                                                ; yes             ; Encrypted Megafunction                       ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd                ;             ;
-; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                       ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd      ;             ;
-; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction                       ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv  ;             ;
-; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                       ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                     ;             ;
-; db/altsyncram_sdu3.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; D:/Processador/Quartus/db/altsyncram_sdu3.tdf                                             ;             ;
-; db/altsyncram_00v2.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; D:/Processador/Quartus/db/altsyncram_00v2.tdf                                             ;             ;
-; sld_hub.vhd                                                        ; yes             ; Encrypted Megafunction                       ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_hub.vhd                        ; altera_sld  ;
-; db/ip/sld1d0e32de/alt_sld_fab.v                                    ; yes             ; Encrypted Auto-Found Verilog HDL File        ; D:/Processador/Quartus/db/ip/sld1d0e32de/alt_sld_fab.v                                    ; alt_sld_fab ;
-; db/ip/sld1d0e32de/submodules/alt_sld_fab_alt_sld_fab.v             ; yes             ; Encrypted Auto-Found Verilog HDL File        ; D:/Processador/Quartus/db/ip/sld1d0e32de/submodules/alt_sld_fab_alt_sld_fab.v             ; alt_sld_fab ;
-; db/ip/sld1d0e32de/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File            ; D:/Processador/Quartus/db/ip/sld1d0e32de/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; alt_sld_fab ;
-; db/ip/sld1d0e32de/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; D:/Processador/Quartus/db/ip/sld1d0e32de/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; alt_sld_fab ;
-; db/ip/sld1d0e32de/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File               ; D:/Processador/Quartus/db/ip/sld1d0e32de/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
-; db/ip/sld1d0e32de/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; D:/Processador/Quartus/db/ip/sld1d0e32de/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
-; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                       ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                   ;             ;
-+--------------------------------------------------------------------+-----------------+----------------------------------------------+-------------------------------------------------------------------------------------------+-------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                           ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+-------------+
+; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                    ; File Name with Absolute Path                                                                                                 ; Library     ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+-------------+
+; CPU.v                                                              ; yes             ; User Verilog HDL File                        ; C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/CPU.v                                                              ;             ;
+; Processador.bdf                                                    ; yes             ; User Block Diagram/Schematic File            ; C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/Processador.bdf                                                    ;             ;
+; RAM_Data.vhd                                                       ; yes             ; User Wizard-Generated File                   ; C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/RAM_Data.vhd                                                       ;             ;
+; ConteudoROM.mif                                                    ; yes             ; User Memory Initialization File              ; C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/ConteudoROM.mif                                                    ;             ;
+; ROM_Instruction.vhd                                                ; yes             ; User Wizard-Generated File                   ; C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/ROM_Instruction.vhd                                                ;             ;
+; altsyncram.tdf                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf                                                        ;             ;
+; stratix_ram_block.inc                                              ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                 ;             ;
+; lpm_mux.inc                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc                                                           ;             ;
+; lpm_decode.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc                                                        ;             ;
+; aglobal181.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                                                        ;             ;
+; a_rdenreg.inc                                                      ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                         ;             ;
+; altrom.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc                                                            ;             ;
+; altram.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc                                                            ;             ;
+; altdpram.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc                                                          ;             ;
+; db/altsyncram_ntr3.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ntr3.tdf                                             ;             ;
+; db/altsyncram_ldp2.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ldp2.tdf                                             ;             ;
+; sld_mod_ram_rom.vhd                                                ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd                                                   ;             ;
+; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd                                         ;             ;
+; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv                                     ;             ;
+; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                                                        ;             ;
+; db/altsyncram_sdu3.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_sdu3.tdf                                             ;             ;
+; db/altsyncram_00v2.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_00v2.tdf                                             ;             ;
+; sld_hub.vhd                                                        ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_hub.vhd                                                           ; altera_sld  ;
+; db/ip/sld1d0e32de/alt_sld_fab.v                                    ; yes             ; Encrypted Auto-Found Verilog HDL File        ; C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/ip/sld1d0e32de/alt_sld_fab.v                                    ; alt_sld_fab ;
+; db/ip/sld1d0e32de/submodules/alt_sld_fab_alt_sld_fab.v             ; yes             ; Encrypted Auto-Found Verilog HDL File        ; C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/ip/sld1d0e32de/submodules/alt_sld_fab_alt_sld_fab.v             ; alt_sld_fab ;
+; db/ip/sld1d0e32de/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File            ; C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/ip/sld1d0e32de/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; alt_sld_fab ;
+; db/ip/sld1d0e32de/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/ip/sld1d0e32de/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; alt_sld_fab ;
+; db/ip/sld1d0e32de/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File               ; C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/ip/sld1d0e32de/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
+; db/ip/sld1d0e32de/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/ip/sld1d0e32de/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
+; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                                                      ;             ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+-------------+
 
 
 +------------------------------------------------------------------------+
@@ -555,7 +555,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -565,37 +565,47 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Dec 23 19:55:54 2024
+    Info: Processing started: Tue Dec 24 16:06:51 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Processador -c Processador
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file programcounter.v
+    Info (12023): Found entity 1: ProgramCounter File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/ProgramCounter.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file pc_adder.v
+    Info (12023): Found entity 1: PC_Adder File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/PC_Adder.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file if_stage.v
+    Info (12023): Found entity 1: IF_Stage File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/IF_STAGE.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux2to1.v
+    Info (12023): Found entity 1: Mux2to1 File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/Mux2to1.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file if_id_register.v
+    Info (12023): Found entity 1: IF_ID_Register File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/IF_ID_Register.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file cpu.v
-    Info (12023): Found entity 1: CPU File: D:/Processador/Quartus/CPU.v Line: 1
+    Info (12023): Found entity 1: CPU File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/CPU.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file processador.bdf
     Info (12023): Found entity 1: Processador
 Info (12021): Found 2 design units, including 1 entities, in source file ram_data.vhd
-    Info (12022): Found design unit 1: ram_data-SYN File: D:/Processador/Quartus/RAM_Data.vhd Line: 54
-    Info (12023): Found entity 1: RAM_Data File: D:/Processador/Quartus/RAM_Data.vhd Line: 42
+    Info (12022): Found design unit 1: ram_data-SYN File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/RAM_Data.vhd Line: 54
+    Info (12023): Found entity 1: RAM_Data File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/RAM_Data.vhd Line: 42
 Info (12021): Found 2 design units, including 1 entities, in source file rom_instruction.vhd
-    Info (12022): Found design unit 1: rom_instruction-SYN File: D:/Processador/Quartus/ROM_Instruction.vhd Line: 52
-    Info (12023): Found entity 1: ROM_Instruction File: D:/Processador/Quartus/ROM_Instruction.vhd Line: 42
+    Info (12022): Found design unit 1: rom_instruction-SYN File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/ROM_Instruction.vhd Line: 52
+    Info (12023): Found entity 1: ROM_Instruction File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/ROM_Instruction.vhd Line: 42
 Info (12021): Found 1 design units, including 1 entities, in source file mem_wb_register.v
-    Info (12023): Found entity 1: MEM_WB_Register File: D:/Processador/Quartus/MEM_WB_Register.v Line: 1
+    Info (12023): Found entity 1: MEM_WB_Register File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/MEM_WB_Register.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mem_stage.v
-    Info (12023): Found entity 1: MEM_Stage File: D:/Processador/Quartus/MEM_Stage.v Line: 1
+    Info (12023): Found entity 1: MEM_Stage File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/MEM_Stage.v Line: 1
 Info (12127): Elaborating entity "Processador" for the top level hierarchy
 Info (12128): Elaborating entity "CPU" for hierarchy "CPU:inst"
-Warning (10034): Output port "addr_rom" at CPU.v(6) has no driver File: D:/Processador/Quartus/CPU.v Line: 6
-Warning (10034): Output port "addr_ram" at CPU.v(7) has no driver File: D:/Processador/Quartus/CPU.v Line: 7
-Warning (10034): Output port "data_out" at CPU.v(8) has no driver File: D:/Processador/Quartus/CPU.v Line: 8
-Warning (10034): Output port "wren" at CPU.v(9) has no driver File: D:/Processador/Quartus/CPU.v Line: 9
-Warning (10034): Output port "clk_ram" at CPU.v(10) has no driver File: D:/Processador/Quartus/CPU.v Line: 10
-Warning (10034): Output port "clk_rom" at CPU.v(12) has no driver File: D:/Processador/Quartus/CPU.v Line: 12
+Warning (10034): Output port "addr_rom" at CPU.v(6) has no driver File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/CPU.v Line: 6
+Warning (10034): Output port "addr_ram" at CPU.v(7) has no driver File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/CPU.v Line: 7
+Warning (10034): Output port "data_out" at CPU.v(8) has no driver File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/CPU.v Line: 8
+Warning (10034): Output port "wren" at CPU.v(9) has no driver File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/CPU.v Line: 9
+Warning (10034): Output port "clk_ram" at CPU.v(10) has no driver File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/CPU.v Line: 10
+Warning (10034): Output port "clk_rom" at CPU.v(12) has no driver File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/CPU.v Line: 12
 Warning (12158): Entity "CPU" contains only dangling pins
 Info (12128): Elaborating entity "RAM_Data" for hierarchy "RAM_Data:inst1"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "RAM_Data:inst1|altsyncram:altsyncram_component" File: D:/Processador/Quartus/RAM_Data.vhd Line: 61
-Info (12130): Elaborated megafunction instantiation "RAM_Data:inst1|altsyncram:altsyncram_component" File: D:/Processador/Quartus/RAM_Data.vhd Line: 61
-Info (12133): Instantiated megafunction "RAM_Data:inst1|altsyncram:altsyncram_component" with the following parameter: File: D:/Processador/Quartus/RAM_Data.vhd Line: 61
+Info (12128): Elaborating entity "altsyncram" for hierarchy "RAM_Data:inst1|altsyncram:altsyncram_component" File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/RAM_Data.vhd Line: 61
+Info (12130): Elaborated megafunction instantiation "RAM_Data:inst1|altsyncram:altsyncram_component" File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/RAM_Data.vhd Line: 61
+Info (12133): Instantiated megafunction "RAM_Data:inst1|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/RAM_Data.vhd Line: 61
     Info (12134): Parameter "address_aclr_a" = "UNUSED"
     Info (12134): Parameter "address_aclr_b" = "NONE"
     Info (12134): Parameter "address_reg_b" = "CLOCK1"
@@ -647,14 +657,14 @@ Info (12133): Instantiated megafunction "RAM_Data:inst1|altsyncram:altsyncram_co
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=YES,INSTANCE_NAME=RAM"
     Info (12134): Parameter "lpm_type" = "altsyncram"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ntr3.tdf
-    Info (12023): Found entity 1: altsyncram_ntr3 File: D:/Processador/Quartus/db/altsyncram_ntr3.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_ntr3" for hierarchy "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated" File: d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+    Info (12023): Found entity 1: altsyncram_ntr3 File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ntr3.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_ntr3" for hierarchy "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ldp2.tdf
-    Info (12023): Found entity 1: altsyncram_ldp2 File: D:/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_ldp2" for hierarchy "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1" File: D:/Processador/Quartus/db/altsyncram_ntr3.tdf Line: 36
-Info (12128): Elaborating entity "sld_mod_ram_rom" for hierarchy "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|sld_mod_ram_rom:mgl_prim2" File: D:/Processador/Quartus/db/altsyncram_ntr3.tdf Line: 37
-Info (12130): Elaborated megafunction instantiation "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|sld_mod_ram_rom:mgl_prim2" File: D:/Processador/Quartus/db/altsyncram_ntr3.tdf Line: 37
-Info (12133): Instantiated megafunction "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|sld_mod_ram_rom:mgl_prim2" with the following parameter: File: D:/Processador/Quartus/db/altsyncram_ntr3.tdf Line: 37
+    Info (12023): Found entity 1: altsyncram_ldp2 File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_ldp2" for hierarchy "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1" File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ntr3.tdf Line: 36
+Info (12128): Elaborating entity "sld_mod_ram_rom" for hierarchy "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|sld_mod_ram_rom:mgl_prim2" File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ntr3.tdf Line: 37
+Info (12130): Elaborated megafunction instantiation "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|sld_mod_ram_rom:mgl_prim2" File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ntr3.tdf Line: 37
+Info (12133): Instantiated megafunction "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|sld_mod_ram_rom:mgl_prim2" with the following parameter: File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ntr3.tdf Line: 37
     Info (12134): Parameter "CVALUE" = "00000000000000000000000000000000"
     Info (12134): Parameter "IS_DATA_IN_RAM" = "1"
     Info (12134): Parameter "IS_READABLE" = "1"
@@ -663,13 +673,13 @@ Info (12133): Instantiated megafunction "RAM_Data:inst1|altsyncram:altsyncram_co
     Info (12134): Parameter "SHIFT_COUNT_BITS" = "6"
     Info (12134): Parameter "WIDTH_WORD" = "32"
     Info (12134): Parameter "WIDTHAD" = "8"
-Info (12128): Elaborating entity "sld_jtag_endpoint_adapter" for hierarchy "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_jtag_endpoint_adapter:jtag_signal_adapter" File: d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd Line: 302
-Info (12128): Elaborating entity "sld_jtag_endpoint_adapter_impl" for hierarchy "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_jtag_endpoint_adapter:jtag_signal_adapter|sld_jtag_endpoint_adapter_impl:sld_jtag_endpoint_adapter_impl_inst" File: d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd Line: 232
-Info (12128): Elaborating entity "sld_rom_sr" for hierarchy "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr" File: d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd Line: 828
+Info (12128): Elaborating entity "sld_jtag_endpoint_adapter" for hierarchy "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_jtag_endpoint_adapter:jtag_signal_adapter" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd Line: 302
+Info (12128): Elaborating entity "sld_jtag_endpoint_adapter_impl" for hierarchy "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_jtag_endpoint_adapter:jtag_signal_adapter|sld_jtag_endpoint_adapter_impl:sld_jtag_endpoint_adapter_impl_inst" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd Line: 232
+Info (12128): Elaborating entity "sld_rom_sr" for hierarchy "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd Line: 828
 Info (12128): Elaborating entity "ROM_Instruction" for hierarchy "ROM_Instruction:inst2"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "ROM_Instruction:inst2|altsyncram:altsyncram_component" File: D:/Processador/Quartus/ROM_Instruction.vhd Line: 59
-Info (12130): Elaborated megafunction instantiation "ROM_Instruction:inst2|altsyncram:altsyncram_component" File: D:/Processador/Quartus/ROM_Instruction.vhd Line: 59
-Info (12133): Instantiated megafunction "ROM_Instruction:inst2|altsyncram:altsyncram_component" with the following parameter: File: D:/Processador/Quartus/ROM_Instruction.vhd Line: 59
+Info (12128): Elaborating entity "altsyncram" for hierarchy "ROM_Instruction:inst2|altsyncram:altsyncram_component" File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/ROM_Instruction.vhd Line: 59
+Info (12130): Elaborated megafunction instantiation "ROM_Instruction:inst2|altsyncram:altsyncram_component" File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/ROM_Instruction.vhd Line: 59
+Info (12133): Instantiated megafunction "ROM_Instruction:inst2|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/ROM_Instruction.vhd Line: 59
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "address_aclr_b" = "NONE"
     Info (12134): Parameter "address_reg_b" = "CLOCK1"
@@ -721,14 +731,14 @@ Info (12133): Instantiated megafunction "ROM_Instruction:inst2|altsyncram:altsyn
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=YES,INSTANCE_NAME=ROM"
     Info (12134): Parameter "lpm_type" = "altsyncram"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_sdu3.tdf
-    Info (12023): Found entity 1: altsyncram_sdu3 File: D:/Processador/Quartus/db/altsyncram_sdu3.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_sdu3" for hierarchy "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated" File: d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+    Info (12023): Found entity 1: altsyncram_sdu3 File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_sdu3.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_sdu3" for hierarchy "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_00v2.tdf
-    Info (12023): Found entity 1: altsyncram_00v2 File: D:/Processador/Quartus/db/altsyncram_00v2.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_00v2" for hierarchy "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1" File: D:/Processador/Quartus/db/altsyncram_sdu3.tdf Line: 34
-Info (12128): Elaborating entity "sld_mod_ram_rom" for hierarchy "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|sld_mod_ram_rom:mgl_prim2" File: D:/Processador/Quartus/db/altsyncram_sdu3.tdf Line: 35
-Info (12130): Elaborated megafunction instantiation "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|sld_mod_ram_rom:mgl_prim2" File: D:/Processador/Quartus/db/altsyncram_sdu3.tdf Line: 35
-Info (12133): Instantiated megafunction "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|sld_mod_ram_rom:mgl_prim2" with the following parameter: File: D:/Processador/Quartus/db/altsyncram_sdu3.tdf Line: 35
+    Info (12023): Found entity 1: altsyncram_00v2 File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_00v2.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_00v2" for hierarchy "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1" File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_sdu3.tdf Line: 34
+Info (12128): Elaborating entity "sld_mod_ram_rom" for hierarchy "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|sld_mod_ram_rom:mgl_prim2" File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_sdu3.tdf Line: 35
+Info (12130): Elaborated megafunction instantiation "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|sld_mod_ram_rom:mgl_prim2" File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_sdu3.tdf Line: 35
+Info (12133): Instantiated megafunction "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|sld_mod_ram_rom:mgl_prim2" with the following parameter: File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_sdu3.tdf Line: 35
     Info (12134): Parameter "CVALUE" = "00000000000000000000000000000000"
     Info (12134): Parameter "IS_DATA_IN_RAM" = "1"
     Info (12134): Parameter "IS_READABLE" = "1"
@@ -738,7 +748,7 @@ Info (12133): Instantiated megafunction "ROM_Instruction:inst2|altsyncram:altsyn
     Info (12134): Parameter "WIDTH_WORD" = "32"
     Info (12134): Parameter "WIDTHAD" = "8"
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2024.12.23.19:56:06 Progress: Loading sld1d0e32de/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2024.12.24.17:07:15 Progress: Loading sld1d0e32de/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -749,18 +759,18 @@ Info (11172): Ident: "alt_sld_fab" instantiated altera_connection_identification
 Info (11172): Alt_sld_fab: Done "alt_sld_fab" with 6 modules, 6 files
 Info (11171): Finished IP generation for the debug fabric: alt_sld_fab.
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld1d0e32de/alt_sld_fab.v
-    Info (12023): Found entity 1: alt_sld_fab File: D:/Processador/Quartus/db/ip/sld1d0e32de/alt_sld_fab.v Line: 9
+    Info (12023): Found entity 1: alt_sld_fab File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/ip/sld1d0e32de/alt_sld_fab.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld1d0e32de/submodules/alt_sld_fab_alt_sld_fab.v
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab File: D:/Processador/Quartus/db/ip/sld1d0e32de/submodules/alt_sld_fab_alt_sld_fab.v Line: 9
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/ip/sld1d0e32de/submodules/alt_sld_fab_alt_sld_fab.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld1d0e32de/submodules/alt_sld_fab_alt_sld_fab_ident.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_ident File: D:/Processador/Quartus/db/ip/sld1d0e32de/submodules/alt_sld_fab_alt_sld_fab_ident.sv Line: 33
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_ident File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/ip/sld1d0e32de/submodules/alt_sld_fab_alt_sld_fab_ident.sv Line: 33
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld1d0e32de/submodules/alt_sld_fab_alt_sld_fab_presplit.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: D:/Processador/Quartus/db/ip/sld1d0e32de/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/ip/sld1d0e32de/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
 Info (12021): Found 2 design units, including 1 entities, in source file db/ip/sld1d0e32de/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd
-    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: D:/Processador/Quartus/db/ip/sld1d0e32de/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 142
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: D:/Processador/Quartus/db/ip/sld1d0e32de/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
+    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/ip/sld1d0e32de/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 142
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/ip/sld1d0e32de/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld1d0e32de/submodules/alt_sld_fab_alt_sld_fab_splitter.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: D:/Processador/Quartus/db/ip/sld1d0e32de/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/ip/sld1d0e32de/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "wren" is stuck at GND
     Warning (13410): Pin "clk_ram" is stuck at GND
@@ -816,70 +826,70 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a0" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
-Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a0" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
-Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a1" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
-Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a1" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
-Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a2" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
-Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a2" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
-Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a3" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
-Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a3" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
-Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a4" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
-Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a4" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
-Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a5" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
-Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a5" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
-Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a6" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
-Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a6" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
-Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a7" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
-Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a7" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
-Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a8" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
-Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a8" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
-Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a9" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
-Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a9" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
-Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a10" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
-Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a10" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
-Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a11" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
-Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a11" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
-Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a12" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
-Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a12" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
-Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a13" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
-Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a13" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
-Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a14" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
-Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a14" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
-Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a15" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
-Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a15" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
-Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a16" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
-Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a16" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
-Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a17" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
-Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a17" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
-Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a18" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
-Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a18" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
-Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a19" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
-Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a19" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
-Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a20" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
-Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a20" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
-Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a21" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
-Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a21" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
-Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a22" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
-Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a22" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
-Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a23" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
-Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a23" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
-Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a24" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
-Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a24" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
-Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a25" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
-Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a25" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
-Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a26" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
-Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a26" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
-Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a27" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
-Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a27" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
-Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a28" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
-Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a28" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
-Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a29" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
-Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a29" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
-Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a30" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
-Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a30" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
-Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a31" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
-Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a31" has a port clk0 that is stuck at GND File: D:/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
+Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a0" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
+Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a0" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
+Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a1" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
+Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a1" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
+Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a2" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
+Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a2" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
+Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a3" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
+Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a3" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
+Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a4" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
+Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a4" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
+Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a5" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
+Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a5" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
+Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a6" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
+Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a6" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
+Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a7" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
+Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a7" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
+Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a8" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
+Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a8" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
+Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a9" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
+Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a9" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
+Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a10" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
+Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a10" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
+Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a11" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
+Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a11" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
+Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a12" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
+Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a12" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
+Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a13" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
+Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a13" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
+Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a14" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
+Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a14" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
+Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a15" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
+Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a15" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
+Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a16" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
+Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a16" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
+Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a17" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
+Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a17" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
+Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a18" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
+Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a18" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
+Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a19" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
+Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a19" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
+Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a20" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
+Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a20" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
+Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a21" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
+Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a21" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
+Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a22" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
+Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a22" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
+Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a23" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
+Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a23" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
+Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a24" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
+Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a24" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
+Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a25" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
+Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a25" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
+Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a26" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
+Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a26" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
+Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a27" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
+Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a27" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
+Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a28" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
+Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a28" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
+Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a29" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
+Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a29" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
+Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a30" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
+Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a30" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
+Warning (15400): WYSIWYG primitive "RAM_Data:inst1|altsyncram:altsyncram_component|altsyncram_ntr3:auto_generated|altsyncram_ldp2:altsyncram1|ram_block3a31" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_ldp2.tdf Line: 35
+Warning (15400): WYSIWYG primitive "ROM_Instruction:inst2|altsyncram:altsyncram_component|altsyncram_sdu3:auto_generated|altsyncram_00v2:altsyncram1|ram_block3a31" has a port clk0 that is stuck at GND File: C:/Users/Heverton Reis/Downloads/PCID/Processador/Quartus/db/altsyncram_00v2.tdf Line: 34
 Warning (21074): Design contains 66 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "clk"
     Warning (15610): No output dependent on input pin "reset"
@@ -953,9 +963,9 @@ Info (21057): Implemented 585 device resources after synthesis - the final resou
     Info (21061): Implemented 399 logic cells
     Info (21064): Implemented 64 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 191 warnings
-    Info: Peak virtual memory: 4829 megabytes
-    Info: Processing ended: Mon Dec 23 19:56:13 2024
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:38
+    Info: Peak virtual memory: 4841 megabytes
+    Info: Processing ended: Tue Dec 24 16:07:34 2024
+    Info: Elapsed time: 00:00:43
+    Info: Total CPU time (on all processors): 00:01:11
 
 

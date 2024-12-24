@@ -43,15 +43,19 @@ set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:18:24  DECEMBER 23, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
-set_global_assignment -name VERILOG_FILE CPU.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE ProgramCounter.v
+set_global_assignment -name VERILOG_FILE PC_Adder.v
+set_global_assignment -name VERILOG_FILE IF_STAGE.v
+set_global_assignment -name VERILOG_FILE Mux2to1.v
+set_global_assignment -name VERILOG_FILE IF_ID_Register.v
+set_global_assignment -name VERILOG_FILE CPU.v
 set_global_assignment -name BDF_FILE Processador.bdf
 set_global_assignment -name QIP_FILE RAM_Data.qip
 set_global_assignment -name MIF_FILE ConteudoROM.mif
 set_global_assignment -name QIP_FILE ROM_Instruction.qip
 set_global_assignment -name VERILOG_FILE MEM_WB_Register.v
 set_global_assignment -name VERILOG_FILE MEM_Stage.v
-set_global_assignment -name BSF_FILE MEM_Stagee.bsf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
