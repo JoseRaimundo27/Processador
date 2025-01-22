@@ -1,4 +1,4 @@
-D:/Processador/ModelSim/MEM_Stage.v {1 {vlog -work work -stats=none D:/Processador/ModelSim/MEM_Stage.v
+D:/Processador/ModelSim/MEM_Stage.v {1 {vlog -work work -stats=none {D:\Processador\ModelSim\MEM_Stage.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module MEM_Stage
 
@@ -7,6 +7,10 @@ Top level modules:
 
 } {} {}} D:/Processador/ModelSim/MEM_Stage_TB.v {1 {vlog -work work -stats=none D:/Processador/ModelSim/MEM_Stage_TB.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module MEM_Stage_TB
+
+Top level modules:
+	MEM_Stage_TB
 
 } {} {}} D:/Processador/ModelSim/MEM_WB_Register.v {1 {vlog -work work -stats=none D:/Processador/ModelSim/MEM_WB_Register.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -24,24 +28,12 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity ROM_Instruction
 -- Compiling architecture SYN of rom_instruction
 
-} {} {}} D:/Processador/ModelSim/MEM_WB_Register_TB.v {0 {vlog -work work -stats=none D:/Processador/ModelSim/MEM_WB_Register_TB.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module MEM_WB_Register_TB
-** Error: (vlog-13069) D:/Processador/ModelSim/MEM_WB_Register_TB.v(72): near "EOF": syntax error, unexpected end of source code.
-
-} {4.0 5.0} {}} D:/Processador/ModelSim/CPU.v {1 {vlog -work work -stats=none D:/Processador/ModelSim/CPU.v
+} {} {}} D:/Processador/ModelSim/CPU.v {1 {vlog -work work -stats=none D:/Processador/ModelSim/CPU.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module CPU
 
 Top level modules:
 	CPU
-
-} {} {}} D:/Processador/ModelSim/Processador.v {1 {vlog -work work -stats=none D:/Processador/ModelSim/Processador.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module Processador
-
-Top level modules:
-	Processador
 
 } {} {}} D:/Processador/ModelSim/RAM_Data.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/Processador/ModelSim/RAM_Data.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -51,5 +43,12 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package altera_mf_components
 -- Compiling entity RAM_Data
 -- Compiling architecture SYN of ram_data
+
+} {} {}} D:/Processador/ModelSim/Processador.v {1 {vlog -work work -stats=none D:/Processador/ModelSim/Processador.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Processador
+
+Top level modules:
+	Processador
 
 } {} {}}

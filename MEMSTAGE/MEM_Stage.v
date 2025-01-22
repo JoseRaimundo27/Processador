@@ -18,7 +18,7 @@ module MEM_Stage (
 
     // Data Memory - Acessa a memória de dados
     RAM_Data data_memory (
-        .clk(clk),
+        .clock(clk),
         .rst(rst),
         .MemRead(EX_MEM_MemRead),           // Ativa a leitura da memória
         .MemWrite(EX_MEM_MemWrite),         // Ativa a escrita da memória

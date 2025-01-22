@@ -9,172 +9,238 @@ z2
 cModel Technology
 dD:/ListaPCID/Robo/Modelsim
 vCPU
-Z0 !s110 1734993752
+Z0 !s110 1737510519
 !i10b 1
 !s100 >m6AiT34z3D?BY[dl7QR^3
 IN=mF`L>MDi3IF64l]gAaU1
 Z1 VDg1SIo80bB@j0V0VzS_@n1
 Z2 dD:/Processador/ModelSim
-w1734988805
+Z3 w1737509507
 8D:/Processador/ModelSim/CPU.v
 FD:/Processador/ModelSim/CPU.v
 L0 1
-Z3 OV;L;10.5b;63
+Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1734993752.000000
+Z5 !s108 1737510519.000000
 !s107 D:/Processador/ModelSim/CPU.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Processador/ModelSim/CPU.v|
 !i113 1
-Z5 o-work work
-Z6 tCvgOpt 0
+Z6 o-work work
+Z7 tCvgOpt 0
 n@c@p@u
 vMEM_Stage
-Z7 !s110 1734993753
+Z8 !s110 1737510520
 !i10b 1
-!s100 F]D[;JXXQzS2j3AkWJmfS2
-IUK`OlF;J^DVkhj3n;:<0?0
+!s100 6j_@fn_N^>47l^e^?OE080
+IBgBM]I7XRNmhmZdLRP1CD3
 R1
 R2
-w1734992743
-8D:/Processador/ModelSim/MEM_Stage.v
-FD:/Processador/ModelSim/MEM_Stage.v
+w1737510367
+8D:\Processador\ModelSim\MEM_Stage.v
+FD:\Processador\ModelSim\MEM_Stage.v
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-Z8 !s108 1734993753.000000
-!s107 D:/Processador/ModelSim/MEM_Stage.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/Processador/ModelSim/MEM_Stage.v|
+Z9 !s108 1737510520.000000
+!s107 D:\Processador\ModelSim\MEM_Stage.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:\Processador\ModelSim\MEM_Stage.v|
 !i113 1
-R5
 R6
-n@m@e@m_@stage
-vMEM_WB_Register
 R7
+n@m@e@m_@stage
+vMEM_Stage_TB
+!s110 1737510579
+!i10b 1
+!s100 `gP3b_[c>S882D1YP73ae0
+IP3ONZXLo@6LXYD4IF2L4P1
+R1
+R2
+w1737510570
+Z10 8D:/Processador/ModelSim/MEM_Stage_TB.v
+Z11 FD:/Processador/ModelSim/MEM_Stage_TB.v
+L0 2
+R4
+r1
+!s85 0
+31
+!s108 1737510579.000000
+Z12 !s107 D:/Processador/ModelSim/MEM_Stage_TB.v|
+Z13 !s90 -reportprogress|300|-work|work|-stats=none|D:/Processador/ModelSim/MEM_Stage_TB.v|
+!i113 1
+R6
+R7
+n@m@e@m_@stage_@t@b
+vMEM_WB_Register
+R8
 !i10b 1
 !s100 JDa;U[:?aUgge53iEJG8L3
 I<zO=X]575dWEjEa>RS61>1
 R1
 R2
-w1734992386
+R3
 8D:/Processador/ModelSim/MEM_WB_Register.v
 FD:/Processador/ModelSim/MEM_WB_Register.v
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-R8
+R9
 !s107 D:/Processador/ModelSim/MEM_WB_Register.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Processador/ModelSim/MEM_WB_Register.v|
 !i113 1
-R5
 R6
-n@m@e@m_@w@b_@register
-vProcessador
 R7
+n@m@e@m_@w@b_@register
+vMEM_WB_Register_tb
+!s110 1737511432
+!i10b 1
+!s100 ERj0i8OVUP2H09A^O0NSi2
+IfMoo1]iWJY02[Z3oF?iP82
+R1
+R2
+w1737511428
+8D:\Processador\ModelSim\MEM_WB_Register_TB.v
+FD:\Processador\ModelSim\MEM_WB_Register_TB.v
+L0 3
+R4
+r1
+!s85 0
+31
+!s108 1737511432.000000
+!s107 D:\Processador\ModelSim\MEM_WB_Register_TB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:\Processador\ModelSim\MEM_WB_Register_TB.v|
+!i113 1
+R6
+R7
+n@m@e@m_@w@b_@register_tb
+vProcessador
+R8
 !i10b 1
 !s100 d:nZ1Pgan0PIz?Ub0QM^23
 ILGKa4XzSgb7L41a2X7<K>0
 R1
 R2
-w1734989841
+R3
 8D:/Processador/ModelSim/Processador.v
 FD:/Processador/ModelSim/Processador.v
 L0 19
-R3
+R4
 r1
 !s85 0
 31
-R8
+R9
 !s107 D:/Processador/ModelSim/Processador.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Processador/ModelSim/Processador.v|
 !i113 1
-R5
 R6
+R7
 n@processador
 Eram_data
-Z9 w1734989225
-Z10 DPx9 altera_mf 20 altera_mf_components 0 22 gV:l9C^?PSb6]b5V?_jR@3
-Z11 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z12 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R3
+Z14 DPx9 altera_mf 20 altera_mf_components 0 22 gV:l9C^?PSb6]b5V?_jR@3
+Z15 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z16 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R2
-Z13 8D:/Processador/ModelSim/RAM_Data.vhd
-Z14 FD:/Processador/ModelSim/RAM_Data.vhd
+Z17 8D:/Processador/ModelSim/RAM_Data.vhd
+Z18 FD:/Processador/ModelSim/RAM_Data.vhd
 l0
 L42
 VF9KGzD>BZe@EP[4NCGeFE1
 !s100 I=;^Oj<]Kn@j[RPM@Lo`H3
-Z15 OV;C;10.5b;63
+Z19 OV;C;10.5b;63
 32
-R7
-!i10b 1
 R8
-Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Processador/ModelSim/RAM_Data.vhd|
-Z17 !s107 D:/Processador/ModelSim/RAM_Data.vhd|
+!i10b 1
+R9
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Processador/ModelSim/RAM_Data.vhd|
+Z21 !s107 D:/Processador/ModelSim/RAM_Data.vhd|
 !i113 1
-Z18 o-work work -2002 -explicit
-Z19 tExplicit 1 CvgOpt 0
+Z22 o-work work -2002 -explicit
+Z23 tExplicit 1 CvgOpt 0
 Asyn
-R10
-R11
-R12
+R14
+R15
+R16
 DEx4 work 8 ram_data 0 22 F9KGzD>BZe@EP[4NCGeFE1
 l58
 L54
 Vhd[[dI5P1L7oVm0<k1I>f2
 !s100 JVHK9jH3;1i1eA1=?MXM30
-R15
-32
-R7
-!i10b 1
-R8
-R16
-R17
-!i113 1
-R18
 R19
+32
+R8
+!i10b 1
+R9
+R20
+R21
+!i113 1
+R22
+R23
 Erom_instruction
-Z20 w1734989414
-R10
-R11
-R12
+R3
+R14
+R15
+R16
 R2
-Z21 8D:/Processador/ModelSim/ROM_Instruction.vhd
-Z22 FD:/Processador/ModelSim/ROM_Instruction.vhd
+Z24 8D:/Processador/ModelSim/ROM_Instruction.vhd
+Z25 FD:/Processador/ModelSim/ROM_Instruction.vhd
 l0
 L42
 VP0^YOSB6k4<z_GhDc[=H[3
 !s100 210JDLHR6Vjn1Cj6lf]]82
-R15
+R19
 32
 R0
 !i10b 1
-R4
-Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Processador/ModelSim/ROM_Instruction.vhd|
-Z24 !s107 D:/Processador/ModelSim/ROM_Instruction.vhd|
+R5
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Processador/ModelSim/ROM_Instruction.vhd|
+Z27 !s107 D:/Processador/ModelSim/ROM_Instruction.vhd|
 !i113 1
-R18
-R19
+R22
+R23
 Asyn
-R10
-R11
-R12
+R14
+R15
+R16
 DEx4 work 15 rom_instruction 0 22 P0^YOSB6k4<z_GhDc[=H[3
 l56
 L52
 V@Wiahj><>VH15giPOKbL[1
 !s100 _8@LfR?T=<TSzCcZ[04@e0
-R15
+R19
 32
 R0
 !i10b 1
-R4
-R23
-R24
+R5
+R26
+R27
 !i113 1
-R18
-R19
+R22
+R23
+vTB_MEM_Stage
+R8
+!i10b 1
+!s100 5L[FnB:591A^:8Sh2Q2ln0
+IPai1^m3407W_f`BW[X00B1
+R1
+R2
+w1737510454
+R10
+R11
+L0 2
+R4
+r1
+!s85 0
+31
+R9
+R12
+R13
+!i113 1
+R6
+R7
+n@t@b_@m@e@m_@stage

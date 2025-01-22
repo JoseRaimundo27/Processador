@@ -18,13 +18,11 @@ module MEM_Stage (
 
     // Data Memory - Acessa a memória de dados
     RAM_Data data_memory (
-        .clk(clk),
-        .rst(rst),
-        .MemRead(EX_MEM_MemRead),           // Ativa a leitura da memória
-        .MemWrite(EX_MEM_MemWrite),         // Ativa a escrita da memória
-        .Address(EX_MEM_ALUResult),         // O endereço para leitura/escrita da memória
-        .WriteData(EX_MEM_ReadData2),       // Dados a serem escritos na memória
-        .ReadData(ReadData)                 // Dados lidos da memória
+        .address(EX_MEM_ALUResult[7:0]),    // O endereço para leitura/escrita da memória (8 bits)
+        .clock(clk),                        // Clock para a memória
+        .data(EX_MEM_ReadData2),            // Dados a serem escritos na memória
+        .wren(EX_MEM_MemWrite),             // Ativa a escrita da memória
+        .q(ReadData)                        // Dados lidos da memória
     );
 
     // MEM/WB Pipeline Register - Armazena os dados a serem passados para o estágio WB
@@ -44,4 +42,3 @@ module MEM_Stage (
     );
 
 endmodule
-
