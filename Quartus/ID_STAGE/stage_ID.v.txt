@@ -1,0 +1,110 @@
+`include "ID_EX_REGISTER.sv"
+`include "registers.sv"
+`include "SignExtend.sv"
+`include "Control.sv"
+
+module ID_Stage (
+    input wire clk,
+    input wire rst,
+  	input wire [7:0] IF_ID_PC,            // Valor do PC do estágio anterior (IF)
+    input wire [31:0] IF_ID_Instruction,   // Instrução do estágio anterior (IF)
+    
+    input wire WB_RegWrite,                   // Controle para escrita no banco de registradores
+  	input wire [4:0] WB_writeReg,             // Registrador de destino para escrita
+    input wire [31:0] WB_writeData,           // Dados a serem escritos no banco de registradores
+    
+    output wire [31:0] ID_EX_ReadData1,    // Dados do registrador Rb
+    output wire [31:0] ID_EX_ReadData2,    // Dados do registrador Rt
+    output wire [31:0] ID_EX_SignExtImm,   // Valor imediato estendido
+    output wire [4:0] ID_EX_Rb,            // Registrador Rb (identificado na instrução)
+    output wire [4:0] ID_EX_Rd,            // Registrador Rd (identificado na instrução)
+  
+    output wire ID_EX_RegDst,              // Controle para próximo estágio
+    output wire ID_EX_ALUSrc,              // Controle para próximo estágio: entrada da ALU
+    output wire ID_EX_MemToReg,            // Controle para próximo estágio: Memória para registrador
+    output wire ID_EX_RegWrite,            // Controle para próximo estágio: permite escrita no registrador
+    output wire ID_EX_MemRead,             // Controle para próximo estágio: permite leitura da memória
+    output wire ID_EX_MemWrite,            // Controle para próximo estágio: permite escrita na memória
+    output wire ID_EX_Branch,              // Controle para próximo estágio: operação de branch
+    output wire [4:0] ID_EX_ALUOp                // Controle para próximo estágio: operação da ALU
+);
+
+    wire [4:0] opcode = IF_ID_Instruction[31:27];   // OPCODE ocupa 5 bits
+    wire [4:0] rb = IF_ID_Instruction[26:22];       // Registrador base (RB)
+    wire [4:0] rd = IF_ID_Instruction[21:17];       // Registrador destino (RD)
+    wire [15:0] immediate = IF_ID_Instruction[15:0]; // Valor imediato (IM)
+
+    wire [31:0] readData1, readData2, signExtImm; 
+  
+    wire MemToReg, RegWriteCtrl, MemRead, MemWrite, Branch;
+    wire [4:0] ALUOp;
+  
+    Control control (
+      	.clk(clk),
+        .opcode(opcode),
+        .RegDst(inRegDst),
+        .ALUSrc(inALUSrc),
+        .MemToReg(inMemToReg),
+        .RegWrite(inRegWrite),
+        .MemRead(inMemRead),
+        .MemWrite(inMemWrite),
+        .Branch(inBranch),
+        .ALUOp(inALUOp)
+    );
+
+    RegisterFile registers (
+        .clk(clk),
+        .rst(rst),
+        .readReg1(rb),          
+        .readReg2(rd),          
+        .writeReg(WB_writeReg),     
+        .writeData(WB_writeData),   
+        .RegWrite(WB_RegWrite),    
+        .readData1(readData1),
+        .readData2(readData2)    
+    );
+   
+    SignExtend signExtend (
+        .immediate(immediate),         
+        .signExtImm(signExtImm)         
+    );
+  
+
+    ID_EX_REGISTER id_ex (
+        .clk(clk),
+        .rst(rst),
+        .inPc(IF_ID_PC),           
+        .inReadData1(readData1),    
+        .inReadData2(readData2),    
+        .inSignExtImm(signExtImm),   
+        .inRb(rb),                  
+        .inRd(rd),                 
+      
+        // Controles
+        .inRegDst(inRegDst),     // Controle RegDst
+        .inALUSrc(inALUSrc),     // Controle ALUSrc
+        .inMemToReg(inMemToReg), // Controle MemToReg
+        .inRegWrite(inRegWrite), // Controle RegWrite
+        .inMemRead(inMemRead),   // Controle MemRead
+        .inMemWrite(inMemWrite), // Controle MemWrite
+        .inBranch(inBranch),     // Controle Branch
+        .inALUOp(inALUOp),       // Controle ALUOp
+    
+
+        .outReadData1(ID_EX_ReadData1),
+        .outReadData2(ID_EX_ReadData2),
+        .outSignExtImm(ID_EX_SignExtImm),
+        .outRb(ID_EX_Rb),
+        .outRd(ID_EX_Rd),
+        .outPc(IF_ID_PC),
+        .outRegDst(ID_EX_RegDst), 
+        .outALUSrc(ID_EX_ALUSrc),
+        .outMemToReg(ID_EX_MemToReg),
+        .outRegWrite(ID_EX_RegWrite),
+        .outMemRead(ID_EX_MemRead),
+        .outMemWrite(ID_EX_MemWrite),
+        .outBranch(ID_EX_Branch),
+        .outALUOp(ID_EX_ALUOp)
+    );
+
+endmodule

@@ -1,0 +1,176 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 408 352)
+	(text "ID_STAGE" (rect 5 0 66 19)(font "Intel Clear" (font_size 8)))
+	(text "inst" (rect 8 267 24 284)(font "Intel Clear" ))
+	(port
+		(pt 0 232)
+		(input)
+		(text "clk" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "clk" (rect 21 227 37 246)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 232)(pt 16 232))
+	)
+	(port
+		(pt 0 248)
+		(input)
+		(text "rst" (rect 0 0 15 19)(font "Intel Clear" (font_size 8)))
+		(text "rst" (rect 21 243 36 262)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 248)(pt 16 248))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "IF_ID_Instruction[31..0]" (rect 0 0 138 19)(font "Intel Clear" (font_size 8)))
+		(text "IF_ID_Instruction[31..0]" (rect 21 59 159 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "writeReg[4..0]" (rect 0 0 82 19)(font "Intel Clear" (font_size 8)))
+		(text "writeReg[4..0]" (rect 21 75 103 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "writeData[31..0]" (rect 0 0 96 19)(font "Intel Clear" (font_size 8)))
+		(text "writeData[31..0]" (rect 21 91 117 110)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "RegWrite" (rect 0 0 54 19)(font "Intel Clear" (font_size 8)))
+		(text "RegWrite" (rect 21 107 75 126)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "IF_ID_PC[7..0]" (rect 0 0 84 19)(font "Intel Clear" (font_size 8)))
+		(text "IF_ID_PC[7..0]" (rect 21 43 105 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 344 32)
+		(output)
+		(text "ID_EX_ReadData1[31..0]" (rect 0 0 148 19)(font "Intel Clear" (font_size 8)))
+		(text "ID_EX_ReadData1[31..0]" (rect 175 27 323 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 344 32)(pt 328 32)(line_width 3))
+	)
+	(port
+		(pt 344 48)
+		(output)
+		(text "ID_EX_ReadData2[31..0]" (rect 0 0 148 19)(font "Intel Clear" (font_size 8)))
+		(text "ID_EX_ReadData2[31..0]" (rect 175 43 323 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 344 48)(pt 328 48)(line_width 3))
+	)
+	(port
+		(pt 344 64)
+		(output)
+		(text "ID_EX_SignExtImm[31..0]" (rect 0 0 152 19)(font "Intel Clear" (font_size 8)))
+		(text "ID_EX_SignExtImm[31..0]" (rect 171 59 323 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 344 64)(pt 328 64)(line_width 3))
+	)
+	(port
+		(pt 344 80)
+		(output)
+		(text "ID_EX_Rb[4..0]" (rect 0 0 89 19)(font "Intel Clear" (font_size 8)))
+		(text "ID_EX_Rb[4..0]" (rect 234 75 323 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 344 80)(pt 328 80)(line_width 3))
+	)
+	(port
+		(pt 344 96)
+		(output)
+		(text "ID_EX_Rd[4..0]" (rect 0 0 89 19)(font "Intel Clear" (font_size 8)))
+		(text "ID_EX_Rd[4..0]" (rect 234 91 323 110)(font "Intel Clear" (font_size 8)))
+		(line (pt 344 96)(pt 328 96)(line_width 3))
+	)
+	(port
+		(pt 344 112)
+		(output)
+		(text "ID_EX_PC[7..0]" (rect 0 0 89 19)(font "Intel Clear" (font_size 8)))
+		(text "ID_EX_PC[7..0]" (rect 234 107 323 126)(font "Intel Clear" (font_size 8)))
+		(line (pt 344 112)(pt 328 112)(line_width 3))
+	)
+	(port
+		(pt 344 128)
+		(output)
+		(text "ID_EX_RegDst" (rect 0 0 84 19)(font "Intel Clear" (font_size 8)))
+		(text "ID_EX_RegDst" (rect 239 123 323 142)(font "Intel Clear" (font_size 8)))
+		(line (pt 344 128)(pt 328 128))
+	)
+	(port
+		(pt 344 144)
+		(output)
+		(text "ID_EX_ALUSrc" (rect 0 0 86 19)(font "Intel Clear" (font_size 8)))
+		(text "ID_EX_ALUSrc" (rect 237 139 323 158)(font "Intel Clear" (font_size 8)))
+		(line (pt 344 144)(pt 328 144))
+	)
+	(port
+		(pt 344 160)
+		(output)
+		(text "ID_EX_MemToReg" (rect 0 0 109 19)(font "Intel Clear" (font_size 8)))
+		(text "ID_EX_MemToReg" (rect 214 155 323 174)(font "Intel Clear" (font_size 8)))
+		(line (pt 344 160)(pt 328 160))
+	)
+	(port
+		(pt 344 176)
+		(output)
+		(text "ID_EX_RegWrite" (rect 0 0 96 19)(font "Intel Clear" (font_size 8)))
+		(text "ID_EX_RegWrite" (rect 227 171 323 190)(font "Intel Clear" (font_size 8)))
+		(line (pt 344 176)(pt 328 176))
+	)
+	(port
+		(pt 344 192)
+		(output)
+		(text "ID_EX_MemRead" (rect 0 0 102 19)(font "Intel Clear" (font_size 8)))
+		(text "ID_EX_MemRead" (rect 221 187 323 206)(font "Intel Clear" (font_size 8)))
+		(line (pt 344 192)(pt 328 192))
+	)
+	(port
+		(pt 344 208)
+		(output)
+		(text "ID_EX_MemWrite" (rect 0 0 103 19)(font "Intel Clear" (font_size 8)))
+		(text "ID_EX_MemWrite" (rect 220 203 323 222)(font "Intel Clear" (font_size 8)))
+		(line (pt 344 208)(pt 328 208))
+	)
+	(port
+		(pt 344 224)
+		(output)
+		(text "ID_EX_Branch" (rect 0 0 82 19)(font "Intel Clear" (font_size 8)))
+		(text "ID_EX_Branch" (rect 241 219 323 238)(font "Intel Clear" (font_size 8)))
+		(line (pt 344 224)(pt 328 224))
+	)
+	(port
+		(pt 344 240)
+		(output)
+		(text "ID_EX_ALUOp[4..0]" (rect 0 0 115 19)(font "Intel Clear" (font_size 8)))
+		(text "ID_EX_ALUOp[4..0]" (rect 208 235 323 254)(font "Intel Clear" (font_size 8)))
+		(line (pt 344 240)(pt 328 240)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 328 272))
+	)
+)
