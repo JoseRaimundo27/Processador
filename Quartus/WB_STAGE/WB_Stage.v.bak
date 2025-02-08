@@ -1,0 +1,26 @@
+module WB_Stage (
+    input wire clk,
+    input wire rst,
+    input wire [31:0] MEM_WB_DataIn,     // Único fio de entrada para dados (ALU ou Memória)
+    input wire [4:0] MEM_WB_WriteReg,    // Registrador de destino
+    input wire MEM_WB_RegWrite,          // Permite a escrita no banco de registradores
+    output reg [31:0] WriteData,         // Dado a ser escrito no banco de registradores
+    output reg [4:0] WriteReg,           // Registrador de destino
+    output reg RegWrite                  // Habilita a escrita no banco de registradores
+);
+
+    always @(posedge clk) begin
+        if (rst) begin
+            // Resetando os sinais de controle e os dados
+            WriteData <= 0;
+            WriteReg <= 0;
+            RegWrite <= 0;
+        end else begin
+            // Apenas passa os dados recebidos diretamente
+            WriteData <= MEM_WB_DataIn;  
+            WriteReg <= MEM_WB_WriteReg; 
+            RegWrite <= MEM_WB_RegWrite;  
+        end
+    end
+
+endmodule

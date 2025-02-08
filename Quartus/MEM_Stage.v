@@ -1,44 +1,88 @@
-module MEM_Stage (
-    input wire clk,                        
-    input wire rst,                    
-    input wire [31:0] EX_MEM_ALUResult,     // Resultado da ALU (endereço de memória ou resultado de operação)
-    input wire [31:0] EX_MEM_ReadData2,     // Dados a serem escritos na memória ou operados
-    input wire [4:0] EX_MEM_WriteReg,       // Registrador a ser escrito
-    input wire EX_MEM_MemRead,              // Controle de leitura de memória
-    input wire EX_MEM_MemWrite,             // Controle de escrita na memória
-    input wire EX_MEM_MemToReg,             // Controle para decidir se o dado vem da memória ou ALU
-    input wire EX_MEM_RegWrite,             // Controle de escrita no banco de registradores
-    output wire [31:0] MEM_WB_ALUResult,    // Resultado da ALU para o estágio WB
-    output wire [31:0] MEM_WB_ReadData,     // Dados lidos da memória para o estágio WB
-    output wire [4:0] MEM_WB_WriteReg,      // Registrador de destino para o estágio WB
-    output wire MEM_WB_MemToReg,            // Controle MemToReg para o estágio WB
-    output wire MEM_WB_RegWrite             // Controle RegWrite para o estágio WB
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// PROGRAM		"Quartus Prime"
+// VERSION		"Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
+// CREATED		"Sat Feb 08 19:26:30 2025"
+
+module MEM_STAGE(
+	clk,
+	EX_MEM_MemWrite,
+	rst,
+	EX_MEM_MemToReg,
+	EX_MEM_RegWrite,
+	EX_MEM_MemRead,
+	EX_MEM_ALUResult,
+	EX_MEM_Data,
+	EX_MEM_WriteReg,
+	MEM_WB_MemToReg,
+	MEM_WB_RegWrite,
+	MEM_WB_ALUResult,
+	MEM_WB_ReadData,
+	MEM_WB_WriteReg
 );
-    wire [31:0] ReadData;                  // Dados lidos da memória
 
-    // Data Memory - Acessa a memória de dados
-    RAM_Data data_memory (
-        .address(EX_MEM_ALUResult[7:0]),    // O endereço para leitura/escrita da memória (8 bits)
-        .clock(clk),                        // Clock para a memória
-        .data(EX_MEM_ReadData2),            // Dados a serem escritos na memória
-        .wren(EX_MEM_MemWrite),             // Ativa a escrita da memória
-        .q(ReadData)                        // Dados lidos da memória
-    );
 
-    // MEM/WB Pipeline Register - Armazena os dados a serem passados para o estágio WB
-    MEM_WB_Register mem_wb (
-        .clk(clk),                          // Clock para sincronizar o pipeline
-        .rst(rst),                          // Sinal de reset
-        .inALUResult(EX_MEM_ALUResult),     // Resultado da ALU (passa para o estágio WB)
-        .inReadData(ReadData),              // Dados lidos da memória (passam para o estágio WB)
-        .inWriteReg(EX_MEM_WriteReg),       // Registrador de destino (passa para o estágio WB)
-        .inMemToReg(EX_MEM_MemToReg),       // Controle MemToReg (decide se vem da memória ou da ALU)
-        .inRegWrite(EX_MEM_RegWrite),       // Controle RegWrite (decide se será escrita no banco de registradores)
-        .outALUResult(MEM_WB_ALUResult),    // Saída para o estágio WB
-        .outReadData(MEM_WB_ReadData),      // Saída para o estágio WB
-        .outWriteReg(MEM_WB_WriteReg),      // Saída para o estágio WB
-        .outMemToReg(MEM_WB_MemToReg),      // Saída para o estágio WB
-        .outRegWrite(MEM_WB_RegWrite)       // Saída para o estágio WB
-    );
+input wire	clk;
+input wire	EX_MEM_MemWrite;
+input wire	rst;
+input wire	EX_MEM_MemToReg;
+input wire	EX_MEM_RegWrite;
+input wire	EX_MEM_MemRead;
+input wire	[31:0] EX_MEM_ALUResult;
+input wire	[31:0] EX_MEM_Data;
+input wire	[4:0] EX_MEM_WriteReg;
+output wire	MEM_WB_MemToReg;
+output wire	MEM_WB_RegWrite;
+output wire	[31:0] MEM_WB_ALUResult;
+output wire	[31:0] MEM_WB_ReadData;
+output wire	[4:0] MEM_WB_WriteReg;
+
+wire	[31:0] SYNTHESIZED_WIRE_0;
+wire	[7:0] SYNTHESIZED_WIRE_1;
+
+
+
+
+
+MEM_WB_Register	b2v_inst(
+	.clk(clk),
+	.rst(rst),
+	.inMemToReg(EX_MEM_MemToReg),
+	.inRegWrite(EX_MEM_RegWrite),
+	.inALUResult(EX_MEM_ALUResult),
+	.inReadData(SYNTHESIZED_WIRE_0),
+	.inWriteReg(EX_MEM_WriteReg),
+	.outMemToReg(MEM_WB_MemToReg),
+	.outRegWrite(MEM_WB_RegWrite),
+	.outALUResult(MEM_WB_ALUResult),
+	.outReadData(MEM_WB_ReadData),
+	.outWriteReg(MEM_WB_WriteReg));
+
+
+ExtractMSB	b2v_inst2(
+	.data_in(EX_MEM_ALUResult),
+	.data_out(SYNTHESIZED_WIRE_1));
+
+
+RAM	b2v_inst3(
+	.wren(EX_MEM_MemWrite),
+	.rden(EX_MEM_MemRead),
+	.clock(clk),
+	.address(SYNTHESIZED_WIRE_1),
+	.data(EX_MEM_Data),
+	.q(SYNTHESIZED_WIRE_0));
+
 
 endmodule
