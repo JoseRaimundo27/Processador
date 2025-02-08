@@ -1,0 +1,31 @@
+module EX_MEM_REGISTER (
+    input wire clk, reset,
+    input wire RegWrite, MemtoReg,
+    input wire MemWrite, MemRead,
+    input wire [31:0] ALUresult, writedata,
+    input wire [4:0] writeReg,
+    output reg RegWriteOut, MemtoRegOut, MemWriteOut, MemReadOut,
+    output reg [31:0] ALUresultOut,writedataOut,
+    output reg [4:0]writeRegOut
+    );
+  
+always@(posedge clk)
+if (reset) begin
+    RegWriteOut <= 1'b0;
+    MemtoRegOut <= 1'b0;
+    MemWriteOut <= 1'b0;
+    MemReadOut <= 1'b0;
+    ALUresultOut <= 32'b0;
+    writedataOut <= 32'b0;
+    writeRegOut <= 4'b0;  
+end
+else begin
+    RegWriteOut <= RegWrite;
+    MemtoRegOut <= MemtoReg;
+    MemWriteOut <= MemWrite;
+    MemReadOut <= MemRead;
+    ALUresultOut <= ALUresult;
+    writedataOut <= writedata;
+    writeRegOut <= writeReg;    
+end
+endmodule
