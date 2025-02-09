@@ -1,25 +1,22 @@
 module IF_ID_Register (
     input wire clk,                   // Clock
     input wire rst,                   // Sinal de reset
-    input wire writeEnable,           // Sinal de controle: habilita escrita no registrador
-	 input wire [7:0] inPC,           // Entrada: PC incrementado
+    input wire [7:0] inPC,            // Entrada: PC incrementado
     input wire [31:0] inInstruction,  // Entrada: Instrução buscada da memória
-  	 output reg [7:0] outPC,          // Saída: PC armazenado
+    output reg [7:0] outPC,           // Saída: PC armazenado
     output reg [31:0] outInstruction  // Saída: Instrução armazenada
 );
 
-    // Sempre que o clock tiver uma borda de subida ou reset
     always @(posedge clk) begin
         if (rst) begin
-            // Reset assíncrono: limpa os valores
+            // Reset: limpa os valores
             outPC <= 8'b0;
             outInstruction <= 32'b0;
-        end else if (writeEnable) begin
-            // Se writeEnable for 1, armazena os valores das entradas
+        end else begin
+            // Sempre atualiza os valores a cada ciclo de clock
             outPC <= inPC - 1;
             outInstruction <= inInstruction;
         end
-        // Caso writeEnable seja 0, mantém os valores atuais
     end
 
 endmodule

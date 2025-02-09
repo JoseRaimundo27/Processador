@@ -1,5 +1,4 @@
 module ALU32Bits(
-    input wire reset,
     input wire signed [31:0] data1, data2,
     input wire [4:0] ALUControl,
     output reg zero,
@@ -32,13 +31,6 @@ parameter LW_1  = 5'b00000,  // Load Word - Estado 1
           CALL  = 5'b10011,  // Call
           RET   = 5'b10100,  // Return
           NOP   = 5'b10101;  // No Operation
-
-// Reset sincrono
-always @(posedge reset) begin
-    zero = 1'b0;
-    RFlags = 5'b00000;
-    ALUResult = 32'b0;
-end
 
 // Operações da ALU
 always @(ALUControl, data1, data2) begin
