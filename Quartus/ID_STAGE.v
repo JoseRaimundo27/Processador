@@ -14,14 +14,14 @@
 
 // PROGRAM		"Quartus Prime"
 // VERSION		"Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
-// CREATED		"Sun Feb 09 13:15:53 2025"
+// CREATED		"Mon Feb 10 08:29:42 2025"
 
 module ID_STAGE(
 	RegWrite,
 	clk,
 	rst,
-	IF_ID_Instruction1,
-	IF_ID_PC4,
+	IF_ID_Instruction,
+	IF_ID_PC,
 	writeData,
 	writeReg,
 	ID_EX_RegDst,
@@ -44,8 +44,8 @@ module ID_STAGE(
 input wire	RegWrite;
 input wire	clk;
 input wire	rst;
-input wire	[31:0] IF_ID_Instruction1;
-input wire	[7:0] IF_ID_PC4;
+input wire	[31:0] IF_ID_Instruction;
+input wire	[7:0] IF_ID_PC;
 input wire	[31:0] writeData;
 input wire	[4:0] writeReg;
 output wire	ID_EX_RegDst;
@@ -94,7 +94,7 @@ ID_EX_Register	b2v_inst5(
 	.inMemWrite(SYNTHESIZED_WIRE_5),
 	.inBranch(SYNTHESIZED_WIRE_6),
 	.inALUOp(SYNTHESIZED_WIRE_7),
-	.inPc(IF_ID_PC4),
+	.inPc(IF_ID_PC),
 	.inRb(SYNTHESIZED_WIRE_17),
 	.inRd(SYNTHESIZED_WIRE_18),
 	.inReadData1(SYNTHESIZED_WIRE_10),
@@ -169,7 +169,7 @@ Control	b2v_inst8(
 
 
 InstructionDecoder	b2v_inst9(
-	.IF_ID_Instruction(IF_ID_Instruction1),
+	.IF_ID_Instruction(IF_ID_Instruction),
 	.immediate(SYNTHESIZED_WIRE_13),
 	.opcode(SYNTHESIZED_WIRE_16),
 	.rb(SYNTHESIZED_WIRE_17),

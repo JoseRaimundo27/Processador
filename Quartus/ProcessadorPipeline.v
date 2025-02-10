@@ -14,7 +14,7 @@
 
 // PROGRAM		"Quartus Prime"
 // VERSION		"Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
-// CREATED		"Sun Feb 09 15:26:54 2025"
+// CREATED		"Mon Feb 10 08:28:01 2025"
 
 module ProcessadorPipeline(
 	clk_ROM,
@@ -79,8 +79,8 @@ ID_STAGE	b2v_inst1(
 	.RegWrite(SYNTHESIZED_WIRE_2),
 	.clk(clk),
 	.rst(rst),
-	.IF_ID_Instruction1(SYNTHESIZED_WIRE_3),
-	.IF_ID_PC4(SYNTHESIZED_WIRE_4),
+	.IF_ID_Instruction(SYNTHESIZED_WIRE_3),
+	.IF_ID_PC(SYNTHESIZED_WIRE_4),
 	.writeData(SYNTHESIZED_WIRE_5),
 	.writeReg(SYNTHESIZED_WIRE_6),
 	.ID_EX_RegDst(SYNTHESIZED_WIRE_7),
