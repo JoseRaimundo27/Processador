@@ -26,11 +26,13 @@ module MEM_STAGE(
 	EX_MEM_ALUResult,
 	EX_MEM_Data,
 	EX_MEM_WriteReg,
-	MEM_WB_MemToReg,
-	MEM_WB_RegWrite,
+
+	
 	MEM_WB_ALUResult,
 	MEM_WB_ReadData,
 	MEM_WB_WriteReg
+	MEM_WB_MemToReg,
+	MEM_WB_RegWrite,
 );
 
 

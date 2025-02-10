@@ -22,6 +22,16 @@ module TB_LW;
     wire EX_MEM_MemWriteOut, EX_MEM_MemtoRegOut, EX_MEM_RegWrite, EX_MEM_MemReadOut, EX_MEM_Branch;
     wire [7:0] EX_MEM_BranchTarget;
 
+    wire [31:0] MEM_WB_ALUResult, MEM_WB_ReadData;
+    wire [4:0] MEM_WB_WriteReg;
+    wire MEM_WB_MemToReg,MEM_WB_RegWrite;
+
+    wire [31:0] WriteData;
+    wire [4:0] WriteRegOut;
+    wire RegWriteOut;
+
+
+
       ProcessadorPipeline dut (
         .clk(clk1),
         .clk_ROM(clk2),
@@ -85,14 +95,47 @@ module TB_LW;
 
         .EX_MEM_ALUResult(EX_MEM_ALUResult),
         .EX_MEM_WriteData(EX_MEM_WriteData),
-        .EX_MEM_WriteReg(EX_MEM_WriteReg),
         .EX_MEM_MemWriteOut(EX_MEM_MemWriteOut),
+        .EX_MEM_WriteReg(EX_MEM_WriteReg),
         .EX_MEM_MemtoRegOut(EX_MEM_MemtoRegOut),
         .EX_MEM_RegWrite(EX_MEM_RegWrite),
         .EX_MEM_MemReadOut(EX_MEM_MemReadOut),
         .EX_MEM_Branch(EX_MEM_Branch),
         .EX_MEM_BranchTarget(EX_MEM_BranchTarget)
 
+    );
+
+    MEM_STAGE dut_MEM_STAGE(
+        .clk(clk),
+        .rst(rst),
+        
+        .EX_MEM_ALUResult(EX_MEM_ALUResult),
+        .EX_MEM_Data(EX_MEM_WriteData),
+        .EX_MEM_MemWrite(EX_MEM_MemWriteOut),
+        .EX_MEM_WriteReg(EX_MEM_WriteReg),
+        .EX_MEM_MemToReg(EX_MEM_MemtoRegOut),
+        .EX_MEM_RegWrite(EX_MEM_RegWrite),
+        .EX_MEM_MemRead(EX_MEM_MemReadOut),
+        
+        .MEM_WB_ALUResult(MEM_WB_ALUResult),
+        .MEM_WB_ReadData(MEM_WB_ReadData),
+        .MEM_WB_WriteReg(MEM_WB_WriteReg),
+        .MEM_WB_MemToReg(MEM_WB_MemToReg),
+	    .MEM_WB_RegWrite(MEM_WB_RegWrite)
+	    
+	    
+    );
+
+    WB_Stage dut_WB_Stage(
+        .ALUResult(MEM_WB_ALUResult),
+        .MemData(MEM_WB_ReadData),
+        .WriteReg(MEM_WB_WriteReg),
+        .MemToReg(MEM_WB_WriteReg),
+        .RegWrite(MEM_WB_RegWrite),
+
+        .WriteData(WriteData),
+        .WriteRegOut(WriteRegOut),
+        .RegWriteOut(RegWriteOut)
     );
 
   
@@ -130,12 +173,12 @@ module TB_LW;
 	initial begin
     	#5; // Aguarda o primeiro ciclo de 5 unidades de tempo para alinhar
     	forever begin
-        	$display("Time=%0t | rst=%b\nIF_STAGE: IF_ID_PC=%d | IF_ID_Instruction=%b \nID_STAGE: IF_ID_PC=%d | IF_ID_Instruction=%b \nID_EX_ReadData1=%b | ID_EX_SignExtImm=%b | ID_EX_Rd=%b | ID_EX_Rb=%b | ID_EX_PC=%b \nEX_STAGE: EX_MEM_ALUResult=%b | EX_MEM_WriteData=%b | EX_MEM_Branch=%b | EX_MEM_BranchTarget=%b",
+        	$display("Time=%0t | rst=%b\nIF_STAGE: IF_ID_PC=%d | IF_ID_Instruction=%b \nID_STAGE: IF_ID_PC=%d | IF_ID_Instruction=%b \nID_EX_ReadData1=%b | ID_EX_SignExtImm=%b | ID_EX_Rd=%b | ID_EX_Rb=%b | ID_EX_PC=%b \nEX_STAGE: EX_MEM_ALUResult=%d | EX_MEM_WriteData=%b | EX_MEM_Branch=%b | EX_MEM_BranchTarget=%b \nMEM_STAGE: MEM_WB_ALUResult=%b | MEM_WB_ReadData=%b | MEM_WB_WriteReg=%b \nWB_STAGE: WriteData=%b | WriteRegOut=%b",
             $time, rst, 
             IF_ID_PC, IF_ID_Instruction, 
             IF_ID_PC, IF_ID_Instruction, 
             ID_EX_ReadData1, ID_EX_SignExtImm, ID_EX_Rd, ID_EX_Rb, ID_EX_PC,
-            EX_MEM_ALUResult, EX_MEM_WriteData, EX_MEM_Branch, EX_MEM_BranchTarget
+            EX_MEM_ALUResult, EX_MEM_WriteData, EX_MEM_Branch, EX_MEM_BranchTarget, MEM_WB_ALUResult, MEM_WB_ReadData, MEM_WB_WriteReg,WriteData, WriteRegOut
         );
 
        	 #5; // Espera 5 unidades de tempo antes de imprimir novamente
