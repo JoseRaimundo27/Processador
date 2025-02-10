@@ -9,23 +9,23 @@ z2
 cModel Technology
 dC:/Users/Heverton Reis/Downloads/PCID/IF_STAGE/ModelSim
 vALU32Bits
-Z0 !s110 1739187044
+Z0 !s110 1739214890
 !i10b 1
 !s100 <Cd9:80_mjkKWULRi^[0`1
-If__`jG4]b;c8jnG8C8mUQ1
+ICl3=Me[WYKY`6l];a=7IV3
 Z1 VDg1SIo80bB@j0V0VzS_@n1
-Z2 dD:/Processador/Quartus/ModelSim
-Z3 w1739136235
-8D:/Processador/Quartus/ModelSim/ALU32Bits.v
-FD:/Processador/Quartus/ModelSim/ALU32Bits.v
+Z2 dC:/Users/ADM/Desktop/Processador/Quartus/ModelSim
+Z3 w1739213871
+8C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ALU32Bits.v
+FC:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ALU32Bits.v
 L0 1
 Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1739187044.000000
-!s107 D:/Processador/Quartus/ModelSim/ALU32Bits.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/Processador/Quartus/ModelSim/ALU32Bits.v|
+Z5 !s108 1739214890.000000
+!s107 C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ALU32Bits.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ALU32Bits.v|
 !i113 1
 Z6 o-work work
 Z7 tCvgOpt 0
@@ -34,20 +34,20 @@ vALUControl
 R0
 !i10b 1
 !s100 :64M5N5OSi?AJFNYa8[m51
-IU<oOBg6]WY1WJ::3A^VNL0
+Ie7c:Oj@zY<@QRfcf3o<6c1
 R1
 R2
 R3
-8D:/Processador/Quartus/ModelSim/ALUControl.v
-FD:/Processador/Quartus/ModelSim/ALUControl.v
+8C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ALUControl.v
+FC:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ALUControl.v
 L0 1
 R4
 r1
 !s85 0
 31
 R5
-!s107 D:/Processador/Quartus/ModelSim/ALUControl.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/Processador/Quartus/ModelSim/ALUControl.v|
+!s107 C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ALUControl.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ALUControl.v|
 !i113 1
 R6
 R7
@@ -56,42 +56,42 @@ vControl
 R0
 !i10b 1
 !s100 hjiKTBO8NR8Y>1J[_]=8J0
-InSQVAjSR3P3V=ZF;0@f4U3
+IEb2W:Rn7=C=;h>8b3mOcH1
 R1
 R2
 R3
-8D:/Processador/Quartus/ModelSim/Control.v
-FD:/Processador/Quartus/ModelSim/Control.v
+8C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/Control.v
+FC:/Users/ADM/Desktop/Processador/Quartus/ModelSim/Control.v
 L0 3
 R4
 r1
 !s85 0
 31
 R5
-!s107 D:/Processador/Quartus/ModelSim/Control.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/Processador/Quartus/ModelSim/Control.v|
+!s107 C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/Control.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/Control.v|
 !i113 1
 R6
 R7
 n@control
 vEX_MEM_REGISTER
-Z8 !s110 1739187045
+Z8 !s110 1739214891
 !i10b 1
 !s100 FQXIjgFD=BdVIlV=e79DT1
-IbSRbgcY=lzZk?3GO=WfhO0
+I0AlEIR7jbJKn:FUnoVWIb1
 R1
 R2
 R3
-8D:/Processador/Quartus/ModelSim/EX_MEM_REGISTER.v
-FD:/Processador/Quartus/ModelSim/EX_MEM_REGISTER.v
+8C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/EX_MEM_REGISTER.v
+FC:/Users/ADM/Desktop/Processador/Quartus/ModelSim/EX_MEM_REGISTER.v
 L0 1
 R4
 r1
 !s85 0
 31
-Z9 !s108 1739187045.000000
-!s107 D:/Processador/Quartus/ModelSim/EX_MEM_REGISTER.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/Processador/Quartus/ModelSim/EX_MEM_REGISTER.v|
+Z9 !s108 1739214891.000000
+!s107 C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/EX_MEM_REGISTER.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/EX_MEM_REGISTER.v|
 !i113 1
 R6
 R7
@@ -100,20 +100,20 @@ vEX_STAGE
 R8
 !i10b 1
 !s100 >WzRjciofJElZlXRR0TB20
-IYo7MZkHaWhEezhc`nG9^T3
+IP;IDCEXzzn7ZJhKDYQ]Dk0
 R1
 R2
 R3
-8D:/Processador/Quartus/ModelSim/EX_STAGE.v
-FD:/Processador/Quartus/ModelSim/EX_STAGE.v
+8C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/EX_STAGE.v
+FC:/Users/ADM/Desktop/Processador/Quartus/ModelSim/EX_STAGE.v
 Z10 L0 19
 R4
 r1
 !s85 0
 31
 R9
-!s107 D:/Processador/Quartus/ModelSim/EX_STAGE.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/Processador/Quartus/ModelSim/EX_STAGE.v|
+!s107 C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/EX_STAGE.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/EX_STAGE.v|
 !i113 1
 R6
 R7
@@ -122,20 +122,20 @@ vExtractMSB
 R8
 !i10b 1
 !s100 L?gJ1aifzQ2UZPZEh:Cn72
-IT;Kz?@9mJn1SS_FUC`elz2
+IA^KAJPg_`l^D6C:XGjo_^2
 R1
 R2
 R3
-8D:/Processador/Quartus/ModelSim/ExtractMSB.v
-FD:/Processador/Quartus/ModelSim/ExtractMSB.v
+8C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ExtractMSB.v
+FC:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ExtractMSB.v
 L0 1
 R4
 r1
 !s85 0
 31
 R9
-!s107 D:/Processador/Quartus/ModelSim/ExtractMSB.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/Processador/Quartus/ModelSim/ExtractMSB.v|
+!s107 C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ExtractMSB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ExtractMSB.v|
 !i113 1
 R6
 R7
@@ -144,20 +144,20 @@ vID_EX_Register
 R8
 !i10b 1
 !s100 iMG>4PWadmJ^OAbF:?JXH3
-I7L8Z0^8`6AD9MkmzC?3Z^3
+IG2bbKk0zl]U>P1AGWa5Lb0
 R1
 R2
 R3
-8D:/Processador/Quartus/ModelSim/ID_EX_Register.v
-FD:/Processador/Quartus/ModelSim/ID_EX_Register.v
+8C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ID_EX_Register.v
+FC:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ID_EX_Register.v
 L0 1
 R4
 r1
 !s85 0
 31
 R9
-!s107 D:/Processador/Quartus/ModelSim/ID_EX_Register.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/Processador/Quartus/ModelSim/ID_EX_Register.v|
+!s107 C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ID_EX_Register.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ID_EX_Register.v|
 !i113 1
 R6
 R7
@@ -166,90 +166,68 @@ vID_STAGE
 R8
 !i10b 1
 !s100 ACVhEZgO2o6=Sh@H@]G3k2
-IbMgfhXMFQfSUHc<W^;c[M2
+I926BhEEejY8CT]]d?A?`d1
 R1
 R2
-w1739186992
-8D:/Processador/Quartus/ModelSim/ID_STAGE.v
-FD:/Processador/Quartus/ModelSim/ID_STAGE.v
+R3
+8C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ID_STAGE.v
+FC:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ID_STAGE.v
 R10
 R4
 r1
 !s85 0
 31
 R9
-!s107 D:/Processador/Quartus/ModelSim/ID_STAGE.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/Processador/Quartus/ModelSim/ID_STAGE.v|
+!s107 C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ID_STAGE.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ID_STAGE.v|
 !i113 1
 R6
 R7
 n@i@d_@s@t@a@g@e
 vIF_ID_Register
-!s110 1739187641
+R8
 !i10b 1
 !s100 m2]h32>K^iaOWJn1`=^EU2
-ILInhEA1ioWPaDjW40SSL[0
+IQYH[:I^CEk<BKZZg_T::_2
 R1
 R2
-w1739187631
-8D:\Processador\Quartus\ModelSim\IF_ID_Register.v
-FD:\Processador\Quartus\ModelSim\IF_ID_Register.v
+R3
+8C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/IF_ID_Register.v
+FC:/Users/ADM/Desktop/Processador/Quartus/ModelSim/IF_ID_Register.v
 L0 1
 R4
 r1
 !s85 0
 31
-!s108 1739187641.000000
-!s107 D:\Processador\Quartus\ModelSim\IF_ID_Register.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:\Processador\Quartus\ModelSim\IF_ID_Register.v|
+R9
+!s107 C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/IF_ID_Register.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/IF_ID_Register.v|
 !i113 1
 R6
 R7
 n@i@f_@i@d_@register
 vIF_STAGE
-Z11 !s110 1739187046
+R8
 !i10b 1
 !s100 PD0f5=AZ@ehKfa[z8kC=n3
-IaBhSlDQ2VR3<N5RXoQVZ41
+I5A`RDHHK15>iKP8o^KB<=3
 R1
 R2
-w1739186956
-8D:/Processador/Quartus/ModelSim/IF_STAGE.v
-FD:/Processador/Quartus/ModelSim/IF_STAGE.v
+R3
+8C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/IF_STAGE.v
+FC:/Users/ADM/Desktop/Processador/Quartus/ModelSim/IF_STAGE.v
 R10
 R4
 r1
 !s85 0
 31
-Z12 !s108 1739187046.000000
-!s107 D:/Processador/Quartus/ModelSim/IF_STAGE.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/Processador/Quartus/ModelSim/IF_STAGE.v|
+R9
+!s107 C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/IF_STAGE.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/IF_STAGE.v|
 !i113 1
 R6
 R7
 n@i@f_@s@t@a@g@e
-vIF_STAGE_tb
-R11
-!i10b 1
-!s100 VU^^cb7cMDFUMX1Njg8h@3
-IUkK3IEbYGQgRDHcnzU9532
-R1
-R2
-R3
-8D:/Processador/Quartus/ModelSim/IF_STAGE_tb.v
-FD:/Processador/Quartus/ModelSim/IF_STAGE_tb.v
-L0 3
-R4
-r1
-!s85 0
-31
-R12
-!s107 D:/Processador/Quartus/ModelSim/IF_STAGE_tb.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/Processador/Quartus/ModelSim/IF_STAGE_tb.v|
-!i113 1
-R6
-R7
-n@i@f_@s@t@a@g@e_tb
 vIF_Stage_tb
 !s110 1739131224
 !i10b 1
@@ -272,414 +250,458 @@ r1
 R6
 R7
 n@i@f_@stage_tb
-vInstructionDecoder
-R11
+vIF_STAGE_tb
+R8
 !i10b 1
-!s100 ;^MOMA`AEJK36KgZEeOX?1
-I5nMlbDb7TG7n?ADf80E1;2
+!s100 VU^^cb7cMDFUMX1Njg8h@3
+IncLP@::WFkHj`Fzo6DO9?2
 R1
 R2
 R3
-8D:/Processador/Quartus/ModelSim/InstructionDecoder.v
-FD:/Processador/Quartus/ModelSim/InstructionDecoder.v
+8C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/IF_STAGE_tb.v
+FC:/Users/ADM/Desktop/Processador/Quartus/ModelSim/IF_STAGE_tb.v
+L0 3
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/IF_STAGE_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/IF_STAGE_tb.v|
+!i113 1
+R6
+R7
+n@i@f_@s@t@a@g@e_tb
+vInstructionDecoder
+R8
+!i10b 1
+!s100 ;^MOMA`AEJK36KgZEeOX?1
+IhCZf6c0hOGQD28hZCIJO^0
+R1
+R2
+R3
+8C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/InstructionDecoder.v
+FC:/Users/ADM/Desktop/Processador/Quartus/ModelSim/InstructionDecoder.v
 L0 1
 R4
 r1
 !s85 0
 31
-R12
-!s107 D:/Processador/Quartus/ModelSim/InstructionDecoder.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/Processador/Quartus/ModelSim/InstructionDecoder.v|
+R9
+!s107 C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/InstructionDecoder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/InstructionDecoder.v|
 !i113 1
 R6
 R7
 n@instruction@decoder
 vMEM_STAGE
-Z13 !s110 1739187047
+R8
 !i10b 1
-!s100 WHQjNHm1bZ8<JiDBl]Q`<1
-IHGoHQdSMAEoFD6i<NB5X_3
+!s100 ZGk43b5B_Vg=ESzXYcDJg2
+Id5e993I<KG3IZ7gf7c31Z0
 R1
 R2
-R3
-8D:/Processador/Quartus/ModelSim/MEM_STAGE.v
-FD:/Processador/Quartus/ModelSim/MEM_STAGE.v
+w1739214769
+8C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/MEM_STAGE.v
+FC:/Users/ADM/Desktop/Processador/Quartus/ModelSim/MEM_STAGE.v
 R10
 R4
 r1
 !s85 0
 31
-Z14 !s108 1739187047.000000
-!s107 D:/Processador/Quartus/ModelSim/MEM_STAGE.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/Processador/Quartus/ModelSim/MEM_STAGE.v|
+R9
+!s107 C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/MEM_STAGE.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/MEM_STAGE.v|
 !i113 1
 R6
 R7
 n@m@e@m_@s@t@a@g@e
 vMEM_WB_Register
-R13
+R8
 !i10b 1
 !s100 JDa;U[:?aUgge53iEJG8L3
-IlFaVZ^SLGhmc<^nf71i@Z3
+I`^2I[iY078o6dol@^=UP82
 R1
 R2
 R3
-8D:/Processador/Quartus/ModelSim/MEM_WB_Register.v
-FD:/Processador/Quartus/ModelSim/MEM_WB_Register.v
+8C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/MEM_WB_Register.v
+FC:/Users/ADM/Desktop/Processador/Quartus/ModelSim/MEM_WB_Register.v
 L0 1
 R4
 r1
 !s85 0
 31
-R14
-!s107 D:/Processador/Quartus/ModelSim/MEM_WB_Register.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/Processador/Quartus/ModelSim/MEM_WB_Register.v|
+R9
+!s107 C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/MEM_WB_Register.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/MEM_WB_Register.v|
 !i113 1
 R6
 R7
 n@m@e@m_@w@b_@register
 vMux2to1
-R13
+R8
 !i10b 1
 !s100 c0lV4niAGHlXEZfG]MS_j0
-I_Tf]c_NT39]PG0RVZ3o:D3
+IkaeTdOQ9US;4kUGQiZ2Xm0
 R1
 R2
 R3
-8D:/Processador/Quartus/ModelSim/Mux2to1.v
-FD:/Processador/Quartus/ModelSim/Mux2to1.v
+8C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/Mux2to1.v
+FC:/Users/ADM/Desktop/Processador/Quartus/ModelSim/Mux2to1.v
 L0 1
 R4
 r1
 !s85 0
 31
-R14
-!s107 D:/Processador/Quartus/ModelSim/Mux2to1.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/Processador/Quartus/ModelSim/Mux2to1.v|
+R9
+!s107 C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/Mux2to1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/Mux2to1.v|
 !i113 1
 R6
 R7
 n@mux2to1
 vMux2to1_32bits
-R13
+R8
 !i10b 1
 !s100 A;j5bG1z`0N1I@ikkAM0e3
-Ijh@HmDcW<kSlP<DmmKW8O2
+Ii:IJg8dYZgkaNmHPdGRRD1
 R1
 R2
 R3
-8D:/Processador/Quartus/ModelSim/Mux2to1_32bits.v
-FD:/Processador/Quartus/ModelSim/Mux2to1_32bits.v
+8C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/Mux2to1_32bits.v
+FC:/Users/ADM/Desktop/Processador/Quartus/ModelSim/Mux2to1_32bits.v
 L0 1
 R4
 r1
 !s85 0
 31
-R14
-!s107 D:/Processador/Quartus/ModelSim/Mux2to1_32bits.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/Processador/Quartus/ModelSim/Mux2to1_32bits.v|
+R9
+!s107 C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/Mux2to1_32bits.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/Mux2to1_32bits.v|
 !i113 1
 R6
 R7
 n@mux2to1_32bits
 vMux2to1_5bits
-R13
+R8
 !i10b 1
 !s100 FSgDNUffY4EoB<fKhM>aI3
-I7YKl`SiQ=oE6@LGWD8FYY0
+I6cFLC1XNGhhbI0T9EZWQF2
 R1
 R2
 R3
-8D:/Processador/Quartus/ModelSim/Mux2to1_5bits.v
-FD:/Processador/Quartus/ModelSim/Mux2to1_5bits.v
+8C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/Mux2to1_5bits.v
+FC:/Users/ADM/Desktop/Processador/Quartus/ModelSim/Mux2to1_5bits.v
 L0 1
 R4
 r1
 !s85 0
 31
-R14
-!s107 D:/Processador/Quartus/ModelSim/Mux2to1_5bits.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/Processador/Quartus/ModelSim/Mux2to1_5bits.v|
+R9
+!s107 C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/Mux2to1_5bits.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/Mux2to1_5bits.v|
 !i113 1
 R6
 R7
 n@mux2to1_5bits
 vPCAdder
-Z15 !s110 1739187048
+R8
 !i10b 1
 !s100 5H[;1@@7nT1Q;JJG=H8z@1
-I2mzBnYiEZ>2ijR<YC?GBz1
+IDOmjCn?ZLz`>MJlU;jj020
 R1
 R2
 R3
-8D:/Processador/Quartus/ModelSim/PCAdder.v
-FD:/Processador/Quartus/ModelSim/PCAdder.v
+8C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/PCAdder.v
+FC:/Users/ADM/Desktop/Processador/Quartus/ModelSim/PCAdder.v
 L0 1
 R4
 r1
 !s85 0
 31
-Z16 !s108 1739187048.000000
-!s107 D:/Processador/Quartus/ModelSim/PCAdder.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/Processador/Quartus/ModelSim/PCAdder.v|
+R9
+!s107 C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/PCAdder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/PCAdder.v|
 !i113 1
 R6
 R7
 n@p@c@adder
 vProcessadorPipeline
-R15
+R8
 !i10b 1
 !s100 9<bai>iI8GaH64XL6WiZ82
-I`WePfd1RSFF86Ihc`H8551
+In2W6M_<RYFA>k:FCnHi<@1
 R1
 R2
-w1739186936
-8D:/Processador/Quartus/ModelSim/ProcessadorPipeline.v
-FD:/Processador/Quartus/ModelSim/ProcessadorPipeline.v
+R3
+8C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ProcessadorPipeline.v
+FC:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ProcessadorPipeline.v
 R10
 R4
 r1
 !s85 0
 31
-R16
-!s107 D:/Processador/Quartus/ModelSim/ProcessadorPipeline.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/Processador/Quartus/ModelSim/ProcessadorPipeline.v|
+R9
+!s107 C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ProcessadorPipeline.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ProcessadorPipeline.v|
 !i113 1
 R6
 R7
 n@processador@pipeline
 vProgramCounter
-R15
+R8
 !i10b 1
 !s100 R5N7H:6QOfAh9KC=nUMll3
-I0Sl]il6P`UG3fY8m?hj5Z0
+I5jMN:O[[624e:W<5D@^N:0
 R1
 R2
 R3
-8D:/Processador/Quartus/ModelSim/ProgramCounter.v
-FD:/Processador/Quartus/ModelSim/ProgramCounter.v
+8C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ProgramCounter.v
+FC:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ProgramCounter.v
 L0 1
 R4
 r1
 !s85 0
 31
-R16
-!s107 D:/Processador/Quartus/ModelSim/ProgramCounter.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/Processador/Quartus/ModelSim/ProgramCounter.v|
+R9
+!s107 C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ProgramCounter.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ProgramCounter.v|
 !i113 1
 R6
 R7
 n@program@counter
 Eram
 R3
-Z17 DPx9 altera_mf 20 altera_mf_components 0 22 gV:l9C^?PSb6]b5V?_jR@3
-Z18 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z19 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z11 DPx9 altera_mf 20 altera_mf_components 0 22 gV:l9C^?PSb6]b5V?_jR@3
+Z12 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z13 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R2
-Z20 8D:/Processador/Quartus/ModelSim/RAM.vhd
-Z21 FD:/Processador/Quartus/ModelSim/RAM.vhd
+Z14 8C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/RAM.vhd
+Z15 FC:/Users/ADM/Desktop/Processador/Quartus/ModelSim/RAM.vhd
 l0
 L42
 VbJBL14_d2kRT<B]lY20>]1
 !s100 JaZo5hEj2IA6n8B5AJkZ<3
-Z22 OV;C;10.5b;63
+Z16 OV;C;10.5b;63
 32
-R15
+R8
 !i10b 1
-R16
-Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Processador/Quartus/ModelSim/RAM.vhd|
-Z24 !s107 D:/Processador/Quartus/ModelSim/RAM.vhd|
+R9
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/RAM.vhd|
+Z18 !s107 C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/RAM.vhd|
 !i113 1
-Z25 o-work work -2002 -explicit
-Z26 tExplicit 1 CvgOpt 0
+Z19 o-work work -2002 -explicit
+Z20 tExplicit 1 CvgOpt 0
 Asyn
-R17
-R18
-R19
+R11
+R12
+R13
 DEx4 work 3 ram 0 22 bJBL14_d2kRT<B]lY20>]1
 l59
 L55
 VKW3:MCf;^2^<7O1ob7gad1
 !s100 ?6]Cj]hS9SoDO=WThY<cT2
-R22
-32
-R15
-!i10b 1
 R16
-R23
-R24
+32
+R8
+!i10b 1
+R9
+R17
+R18
 !i113 1
-R25
-R26
+R19
+R20
 vRegisterFile
-Z27 !s110 1739187049
+Z21 !s110 1739214892
 !i10b 1
 !s100 [6=L7C@8Nmz<YnjSF=cT]0
-I9]ePGgHe;d=3aV>nC5BPi0
+IN2g3ibVUW;7U@CkO:QVDa3
 R1
 R2
 R3
-8D:/Processador/Quartus/ModelSim/RegisterFile.v
-FD:/Processador/Quartus/ModelSim/RegisterFile.v
+8C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/RegisterFile.v
+FC:/Users/ADM/Desktop/Processador/Quartus/ModelSim/RegisterFile.v
 L0 1
 R4
 r1
 !s85 0
 31
-R16
-!s107 D:/Processador/Quartus/ModelSim/RegisterFile.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/Processador/Quartus/ModelSim/RegisterFile.v|
+Z22 !s108 1739214892.000000
+!s107 C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/RegisterFile.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/RegisterFile.v|
 !i113 1
 R6
 R7
 n@register@file
 Erom
 R3
-R17
-R18
-R19
+R11
+R12
+R13
 R2
-Z28 8D:/Processador/Quartus/ModelSim/ROM.vhd
-Z29 FD:/Processador/Quartus/ModelSim/ROM.vhd
+Z23 8C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ROM.vhd
+Z24 FC:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ROM.vhd
 l0
 L42
 VmMM86zHXANUXVNi1cM5Zn0
 !s100 ?WfRK8Yh_6D4Uz8LIUEUk3
-R22
+R16
 32
-R27
+R21
 !i10b 1
-Z30 !s108 1739187049.000000
-Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Processador/Quartus/ModelSim/ROM.vhd|
-Z32 !s107 D:/Processador/Quartus/ModelSim/ROM.vhd|
+R22
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ROM.vhd|
+Z26 !s107 C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ROM.vhd|
 !i113 1
-R25
-R26
-Asyn
-R17
-R18
 R19
+R20
+Asyn
+R11
+R12
+R13
 DEx4 work 3 rom 0 22 mMM86zHXANUXVNi1cM5Zn0
 l56
 L52
 VVEXR1B=dViC_INPB_Cked2
 !s100 XT94;_;;<^iDYL@L_7;l91
-R22
+R16
 32
-R27
+R21
 !i10b 1
-R30
-R31
-R32
-!i113 1
+R22
 R25
 R26
+!i113 1
+R19
+R20
 vShiftLeft2
-R27
+R21
 !i10b 1
 !s100 ^]_zYzFh_ZeRGSNWn`k;o1
-I9gd@iS?3KMVSVTm:E=lmZ0
+Ik]nO3Kd`9afd?Obj=X]Q70
 R1
 R2
 R3
-8D:/Processador/Quartus/ModelSim/ShiftLeft2.v
-FD:/Processador/Quartus/ModelSim/ShiftLeft2.v
+8C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ShiftLeft2.v
+FC:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ShiftLeft2.v
 L0 1
 R4
 r1
 !s85 0
 31
-R30
-!s107 D:/Processador/Quartus/ModelSim/ShiftLeft2.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/Processador/Quartus/ModelSim/ShiftLeft2.v|
+R22
+!s107 C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ShiftLeft2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ShiftLeft2.v|
 !i113 1
 R6
 R7
 n@shift@left2
 vSignExtend
-R27
+R21
 !i10b 1
 !s100 =mgS0zIZL?TThDk92G1ZH1
-I561i;YZL_AZX2Q<5Ve>dY1
+IO>A^WgA@=j4Yii;@]L];]2
 R1
 R2
 R3
-8D:/Processador/Quartus/ModelSim/SignExtend.v
-FD:/Processador/Quartus/ModelSim/SignExtend.v
+8C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/SignExtend.v
+FC:/Users/ADM/Desktop/Processador/Quartus/ModelSim/SignExtend.v
 L0 1
 R4
 r1
 !s85 0
 31
-R30
-!s107 D:/Processador/Quartus/ModelSim/SignExtend.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/Processador/Quartus/ModelSim/SignExtend.v|
+R22
+!s107 C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/SignExtend.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/SignExtend.v|
 !i113 1
 R6
 R7
 n@sign@extend
 vSomador
-R27
+R21
 !i10b 1
 !s100 ?OnXhc[Ubl0ebzk?HT8O>1
-IOE_cTK`50GDA;Boi`WP;93
+IPgA_[zI<KOEN5]ec1l[O:1
 R1
 R2
 R3
-8D:/Processador/Quartus/ModelSim/Somador.v
-FD:/Processador/Quartus/ModelSim/Somador.v
+8C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/Somador.v
+FC:/Users/ADM/Desktop/Processador/Quartus/ModelSim/Somador.v
 L0 1
 R4
 r1
 !s85 0
 31
-R30
-!s107 D:/Processador/Quartus/ModelSim/Somador.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/Processador/Quartus/ModelSim/Somador.v|
+R22
+!s107 C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/Somador.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/Somador.v|
 !i113 1
 R6
 R7
 n@somador
 vTB_LW
-!s110 1739193913
+R21
 !i10b 1
-!s100 b2>S<0dR6`480=m_?DDKX2
-IRF^_VEYn:nNz;?iY[j[gd3
+!s100 PFza7nbaTSWRYW[X5CUAo0
+IzjBj^IN;NaM_BI[FXU]Cm2
 R1
 R2
-w1739193909
-8D:\Processador\Quartus\ModelSim\TB_LW.v
-FD:\Processador\Quartus\ModelSim\TB_LW.v
+w1739214879
+8C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/TB_LW.v
+FC:/Users/ADM/Desktop/Processador/Quartus/ModelSim/TB_LW.v
 L0 1
 R4
 r1
 !s85 0
 31
-!s108 1739193913.000000
-!s107 D:\Processador\Quartus\ModelSim\TB_LW.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:\Processador\Quartus\ModelSim\TB_LW.v|
+R22
+!s107 C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/TB_LW.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/TB_LW.v|
 !i113 1
 R6
 R7
 n@t@b_@l@w
+vTB_LW_P1
+R21
+!i10b 1
+!s100 <PWBAm6MLbOiM>NO1:;9e3
+IBOHIgOiCbIz9BNd85^eMg2
+R1
+R2
+w1739214489
+8C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/TB_LW_P1.v
+FC:/Users/ADM/Desktop/Processador/Quartus/ModelSim/TB_LW_P1.v
+L0 1
+R4
+r1
+!s85 0
+31
+R22
+!s107 C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/TB_LW_P1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/TB_LW_P1.v|
+!i113 1
+R6
+R7
+n@t@b_@l@w_@p1
 vWB_Stage
 R0
 !i10b 1
 !s100 @njG@SOD?Xg[6`<i6c`mc0
-I>Mz==Ii1;5SPEDoW=gYjJ0
+I]o8W=^SlMUU0GYN>me?Km0
 R1
 R2
 R3
-8D:/Processador/Quartus/ModelSim/WB_Stage.v
-FD:/Processador/Quartus/ModelSim/WB_Stage.v
+8C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/WB_Stage.v
+FC:/Users/ADM/Desktop/Processador/Quartus/ModelSim/WB_Stage.v
 L0 1
 R4
 r1
 !s85 0
 31
 R5
-!s107 D:/Processador/Quartus/ModelSim/WB_Stage.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/Processador/Quartus/ModelSim/WB_Stage.v|
+!s107 C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/WB_Stage.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/WB_Stage.v|
 !i113 1
 R6
 R7

@@ -1,4 +1,4 @@
-module TB_LW_P1;
+module TB_LW;
 
     // Declaracao dos sinais de teste
     reg clk1;                      // Clock principal
