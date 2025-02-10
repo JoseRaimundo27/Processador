@@ -33,13 +33,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	IF_STAGE_tb
 
-} {} {}} C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/Mux2to1.v {1 {vlog -work work -stats=none C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/Mux2to1.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module Mux2to1
-
-Top level modules:
-	Mux2to1
-
 } {} {}} C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/InstructionDecoder.v {1 {vlog -work work -stats=none C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/InstructionDecoder.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module InstructionDecoder
@@ -134,13 +127,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 
 Top level modules:
 	ID_EX_Register
-
-} {} {}} C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/EX_MEM_REGISTER.v {1 {vlog -work work -stats=none C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/EX_MEM_REGISTER.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module EX_MEM_REGISTER
-
-Top level modules:
-	EX_MEM_REGISTER
 
 } {} {}} C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/IF_ID_Register.v {1 {vlog -work work -stats=none C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/IF_ID_Register.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016

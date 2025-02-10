@@ -1,11 +1,19 @@
 module Mux2to1 (
-  	input wire [7:0] in0,    // Caminho normal: PC incrementado
-  	input wire [7:0] in1,    // Caminho alternativo: endere√ßo de desvio (branchTarget)
+    input wire [7:0] in0,    // Caminho normal: PC incrementado
+    input wire [7:0] in1,    // Caminho alternativo: endereÁo de desvio (branchTarget)
     input wire sel,           // Sinal de controle PCSrc
-  	output wire [7:0] out    // Pr√≥ximo valor do PC
+    input wire clk,           // Sinal de clock
+    input wire rst,           // Sinal de reset
+    output reg [7:0] out     // PrÛximo valor do PC (registrado)
 );
 
-    // Sele√ß√£o do pr√≥ximo PC com base no sinal de controle
-    assign out = (sel == 1'b0) ? in0 : in1;
+    // Atualiza o valor de 'out' com o clock
+    always @(posedge clk or posedge rst) begin
+        if (rst) begin
+            out <= 8'b0; // Resetando a saÌda
+        end else begin
+            out <= (sel == 1'b0) ? in0 : in1; // SeleÁ„o do prÛximo PC
+        end
+    end
 
 endmodule
