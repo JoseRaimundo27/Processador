@@ -154,7 +154,12 @@ module TB_LW;
 
     // Estímulos de teste
     initial begin
-        rst = 1;                
+        rst = 0;
+        #10
+        rst = 1;
+        # 5
+        rst = 0;
+                
         $display("Resetando: ");
         #10;
         rst = 0;                
