@@ -4,8 +4,8 @@ module TB_LW;
     reg clk1;                      // Clock principal
     reg clk2;                      // Clock da memória de instrução
     reg rst;                       // Reset
-    reg BranchTaken;               // Sinal de branch
-    reg [7:0] BranchTarget;       // Endereço de destino do branch
+    // NAO FAZ SENTIDO -> reg BranchTaken;               // Sinal de branch
+    // NAO FAZ SENTIDO -> reg [7:0] BranchTarget;       // Endereço de destino do branch
     wire [31:0] IF_ID_Instruction; // Instrução de saída
     wire [7:0] IF_ID_PC;          // Contador de programa (PC)
     // NAO FAZ SENTIDO -> wire [31:0] IF_ID_Instruction1; // Instrução de saída
@@ -42,9 +42,9 @@ module TB_LW;
     IF_STAGE dut_IF_STAGE (
         .clk(clk1),
         .rst(rst),
-        .BranchTaken(BranchTaken),
+        .BranchTaken(EX_MEM_Branch),
         .clk_ROM(clk2),
-        .BranchTarget(BranchTarget),
+        .BranchTarget(EX_MEM_BranchTarget),
         .IF_ID_Instruction(IF_ID_Instruction),
         .IF_ID_PC(IF_ID_PC)
     );
@@ -154,15 +154,13 @@ module TB_LW;
 
     // Estímulos de teste
     initial begin
-        rst = 0;
-        #10
         rst = 1;
-        # 5
+        #10
         rst = 0;
+        
                 
         $display("Resetando: ");
-        #10;
-        rst = 0;                
+        #10;             
         #10;
 
         $display("Ler primeira Instrução:");
