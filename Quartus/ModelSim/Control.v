@@ -39,237 +39,237 @@ parameter LW_1  = 5'b00000,  // Load Word - Estado 1
 			 RET   = 5'b10100,  // Return
 			 NOP   = 5'b10101;  // No Operation
 
-always @(posedge clk) begin
+always @(*) begin
     case (opcode)
         LW_1: begin
-            RegDst <= 0;
-            ALUSrc <= 1;
-            MemToReg <= 1;
-            RegWrite <= 1;
-            MemRead <= 1;
-            MemWrite <= 0;
-            Branch <= 0;
-            ALUOp <= LW_1;
+            RegDst = 0;
+            ALUSrc = 1;
+            MemToReg = 1;
+            RegWrite = 1;
+            MemRead = 1;
+            MemWrite = 0;
+            Branch = 0;
+            ALUOp = LW_1;
         end
          LW_2: begin
-            RegDst <= 0;
-            ALUSrc <= 0;
-            MemToReg <= 1;
-            RegWrite <= 1;
-            MemRead <= 1;
-            MemWrite <= 0;
-            Branch <= 0;
-            ALUOp <= LW_2; 
+            RegDst = 0;
+            ALUSrc = 0;
+            MemToReg = 1;
+            RegWrite = 1;
+            MemRead = 1;
+            MemWrite = 0;
+            Branch = 0;
+            ALUOp = LW_2; 
         end
         LW_3: begin
-            RegDst <= 0;
-            ALUSrc <= 1;
-            MemToReg <= 1;
-            RegWrite <= 1;
-            MemRead <= 1;
-            MemWrite <= 0;
-            Branch <= 0;
-            ALUOp <= LW_3; 
+            RegDst = 0;
+            ALUSrc = 1;
+            MemToReg = 1;
+            RegWrite = 1;
+            MemRead = 1;
+            MemWrite = 0;
+            Branch = 0;
+            ALUOp = LW_3; 
         end
         SW_1: begin
-           	RegDst <= 'bx;
-            ALUSrc <= 1;
-            MemToReg <= 'bx;
-            RegWrite <= 0;
-            MemRead <= 0;
-            MemWrite <= 1;
-            Branch <= 0;
-            ALUOp <= SW_1;
+           	RegDst = 'bx;
+            ALUSrc = 1;
+            MemToReg = 'bx;
+            RegWrite = 0;
+            MemRead = 0;
+            MemWrite = 1;
+            Branch = 0;
+            ALUOp = SW_1;
         end
         SW_2: begin
-            RegDst <= 'bx;
-            ALUSrc <= 0;
-            MemToReg <= 'bx;
-            RegWrite <= 0;
-            MemRead <= 0;
-            MemWrite <= 1;
-            Branch <= 0;
-            ALUOp <= SW_2;
+            RegDst = 'bx;
+            ALUSrc = 0;
+            MemToReg = 'bx;
+            RegWrite = 0;
+            MemRead = 0;
+            MemWrite = 1;
+            Branch = 0;
+            ALUOp = SW_2;
         end
         MOV: begin
-            RegDst <= 1;
-            ALUSrc <= 0;
-            MemToReg <= 0;
-            RegWrite <= 1;
-            MemRead <= 0;
-            MemWrite <= 0;
-            Branch <= 0;
-            ALUOp <= MOV;
+            RegDst = 1;
+            ALUSrc = 0;
+            MemToReg = 0;
+            RegWrite = 1;
+            MemRead = 0;
+            MemWrite = 0;
+            Branch = 0;
+            ALUOp = MOV;
         end
         ADD: begin
-            RegDst <= 1;
-            ALUSrc <= 0;
-            MemToReg <= 0;
-            RegWrite <= 1;
-            MemRead <= 0;
-            MemWrite <= 0;
-            Branch <= 0;
-            ALUOp <= ADD;
+            RegDst = 1;
+            ALUSrc = 0;
+            MemToReg = 0;
+            RegWrite = 1;
+            MemRead = 0;
+            MemWrite = 0;
+            Branch = 0;
+            ALUOp = ADD;
         end
         SUB: begin
-            RegDst <= 1;
-            ALUSrc <= 0;
-            MemToReg <= 0;
-            RegWrite <= 1;
-            MemRead <= 0;
-            MemWrite <= 0;
-            Branch <= 0;
-            ALUOp <= SUB;
+            RegDst = 1;
+            ALUSrc = 0;
+            MemToReg = 0;
+            RegWrite = 1;
+            MemRead = 0;
+            MemWrite = 0;
+            Branch = 0;
+            ALUOp = SUB;
         end
         MUL: begin
-            RegDst <= 1;
-            ALUSrc <= 0;
-            MemToReg <= 0;
-            RegWrite <= 1;
-            MemRead <= 0;
-            MemWrite <= 0;
-            Branch <= 0;
-            ALUOp <= MUL;
+            RegDst = 1;
+            ALUSrc = 0;
+            MemToReg = 0;
+            RegWrite = 1;
+            MemRead = 0;
+            MemWrite = 0;
+            Branch = 0;
+            ALUOp = MUL;
         end
         DIV: begin
-            RegDst <= 1;
-            ALUSrc <= 0;
-            MemToReg <= 0;
-            RegWrite <= 1;
-            MemRead <= 0;
-            MemWrite <= 0;
-            Branch <= 0;
-            ALUOp <= DIV;
+            RegDst = 1;
+            ALUSrc = 0;
+            MemToReg = 0;
+            RegWrite = 1;
+            MemRead = 0;
+            MemWrite = 0;
+            Branch = 0;
+            ALUOp = DIV;
         end
         AND: begin
-            RegDst <= 1;
-            ALUSrc <= 0;
-            MemToReg <= 0;
-            RegWrite <= 1;
-            MemRead <= 0;
-            MemWrite <= 0;
-            Branch <= 0;
-            ALUOp <= AND;
+            RegDst = 1;
+            ALUSrc = 0;
+            MemToReg = 0;
+            RegWrite = 1;
+            MemRead = 0;
+            MemWrite = 0;
+            Branch = 0;
+            ALUOp = AND;
         end
         OR: begin
-            RegDst <= 1;
-            ALUSrc <= 0;
-            MemToReg <= 0;
-            RegWrite <= 1;
-            MemRead <= 0;
-            MemWrite <= 0;
-            Branch <= 0;
-            ALUOp <= OR;
+            RegDst = 1;
+            ALUSrc = 0;
+            MemToReg = 0;
+            RegWrite = 1;
+            MemRead = 0;
+            MemWrite = 0;
+            Branch = 0;
+            ALUOp = OR;
         end
         SHL: begin
-            RegDst <= 1;
-            ALUSrc <= 0;
-            MemToReg <= 0;
-            RegWrite <= 1;
-            MemRead <= 0;
-            MemWrite <= 0;
-            Branch <= 0;
-            ALUOp <= SHL;
+            RegDst = 1;
+            ALUSrc = 0;
+            MemToReg = 0;
+            RegWrite = 1;
+            MemRead = 0;
+            MemWrite = 0;
+            Branch = 0;
+            ALUOp = SHL;
         end
         SHR: begin
-            RegDst <= 1;
-            ALUSrc <= 0;
-            MemToReg <= 0;
-            RegWrite <= 1;
-            MemRead <= 0;
-            MemWrite <= 0;
-            Branch <= 0;
-            ALUOp <= SHR;
+            RegDst = 1;
+            ALUSrc = 0;
+            MemToReg = 0;
+            RegWrite = 1;
+            MemRead = 0;
+            MemWrite = 0;
+            Branch = 0;
+            ALUOp = SHR;
         end
         CMP: begin
-            RegDst <= 1;
-            ALUSrc <= 0;
-            MemToReg <= 0;
-            RegWrite <= 0;
-            MemRead <= 0;
-            MemWrite <= 0;
-            Branch <= 0;
-            ALUOp <= CMP;
+            RegDst = 1;
+            ALUSrc = 0;
+            MemToReg = 0;
+            RegWrite = 0;
+            MemRead = 0;
+            MemWrite = 0;
+            Branch = 0;
+            ALUOp = CMP;
         end
         NOT: begin
-            RegDst <= 1;
-            ALUSrc <= 0;
-            MemToReg <= 0;
-            RegWrite <= 1;
-            MemRead <= 0;
-            MemWrite <= 0;
-            Branch <= 0;
-            ALUOp <= NOT;
+            RegDst = 1;
+            ALUSrc = 0;
+            MemToReg = 0;
+            RegWrite = 1;
+            MemRead = 0;
+            MemWrite = 0;
+            Branch = 0;
+            ALUOp = NOT;
         end
         JR: begin
-            RegDst <= 0;
-            ALUSrc <= 0;
-            MemToReg <= 0;
-            RegWrite <= 0;
-            MemRead <= 0;
-            MemWrite <= 0;
-            Branch <= 1;
-            ALUOp <= JR;
+            RegDst = 0;
+            ALUSrc = 0;
+            MemToReg = 0;
+            RegWrite = 0;
+            MemRead = 0;
+            MemWrite = 0;
+            Branch = 1;
+            ALUOp = JR;
         end
         JPC: begin
-            RegDst <= 0;
-            ALUSrc <= 0;
-            MemToReg <= 0;
-            RegWrite <= 0;
-            MemRead <= 0;
-            MemWrite <= 0;
-            Branch <= 1;
-            ALUOp <= JPC;
+            RegDst = 0;
+            ALUSrc = 0;
+            MemToReg = 0;
+            RegWrite = 0;
+            MemRead = 0;
+            MemWrite = 0;
+            Branch = 1;
+            ALUOp = JPC;
         end
         BRFL: begin
-            RegDst <= 0;
-            ALUSrc <= 0;
-            MemToReg <= 0;
-            RegWrite <= 0;
-            MemRead <= 0;
-            MemWrite <= 0;
-            Branch <= 1;
-            ALUOp <= BRFL;
+            RegDst = 0;
+            ALUSrc = 0;
+            MemToReg = 0;
+            RegWrite = 0;
+            MemRead = 0;
+            MemWrite = 0;
+            Branch = 1;
+            ALUOp = BRFL;
         end
         CALL: begin
-            RegDst <= 0;
-            ALUSrc <= 0;
-            MemToReg <= 0;
-            RegWrite <= 1;
-            MemRead <= 0;
-            MemWrite <= 0;
-            Branch <= 1;
-            ALUOp <= CALL;
+            RegDst = 0;
+            ALUSrc = 0;
+            MemToReg = 0;
+            RegWrite = 1;
+            MemRead = 0;
+            MemWrite = 0;
+            Branch = 1;
+            ALUOp = CALL;
         end
         RET: begin
-            RegDst <= 0;
-            ALUSrc <= 0;
-            MemToReg <= 0;
-            RegWrite <= 0;
-            MemRead <= 0;
-            MemWrite <= 0;
-            Branch <= 1;
-            ALUOp <= RET;
+            RegDst = 0;
+            ALUSrc = 0;
+            MemToReg = 0;
+            RegWrite = 0;
+            MemRead = 0;
+            MemWrite = 0;
+            Branch = 1;
+            ALUOp = RET;
         end
         NOP: begin
-            RegDst <= 0;
-            ALUSrc <= 0;
-            MemToReg <= 0;
-            RegWrite <= 0;
-            MemRead <= 0;
-            MemWrite <= 0;
-            Branch <= 0;
-            ALUOp <= NOP;
+            RegDst = 0;
+            ALUSrc = 0;
+            MemToReg = 0;
+            RegWrite = 0;
+            MemRead = 0;
+            MemWrite = 0;
+            Branch = 0;
+            ALUOp = NOP;
         end
         default: begin
-            RegDst <= 0;
-            ALUSrc <= 0;
-            MemToReg <= 0;
-            RegWrite <= 0;
-            MemRead <= 0;
-            MemWrite <= 0;
-            Branch <= 0;
-          	ALUOp <= 5'b11111; //colocar um endereço default
+            RegDst = 0;
+            ALUSrc = 0;
+            MemToReg = 0;
+            RegWrite = 0;
+            MemRead = 0;
+            MemWrite = 0;
+            Branch = 0;
+          	ALUOp = 5'b11111; //colocar um endereço default
         end
     endcase
 end
