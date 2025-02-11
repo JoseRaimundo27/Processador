@@ -55,14 +55,14 @@ refer to the applicable agreement for further details.
 		(pt 248 32)
 		(output)
 		(text "outPC[7..0]" (rect 0 0 56 12)(font "Arial" ))
-		(text "outPC[7..0]" (rect 180 27 227 39)(font "Arial" ))
+		(text "outPC[7..0]" (rect 180 27 236 39)(font "Arial" ))
 		(line (pt 248 32)(pt 232 32)(line_width 3))
 	)
 	(port
 		(pt 248 48)
 		(output)
 		(text "outInstruction[31..0]" (rect 0 0 99 12)(font "Arial" ))
-		(text "outInstruction[31..0]" (rect 144 43 227 55)(font "Arial" ))
+		(text "outInstruction[31..0]" (rect 144 43 243 55)(font "Arial" ))
 		(line (pt 248 48)(pt 232 48)(line_width 3))
 	)
 	(drawing

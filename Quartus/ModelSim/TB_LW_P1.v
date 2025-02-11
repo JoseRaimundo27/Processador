@@ -1,4 +1,4 @@
-module TB_LW;
+module TB_LW_P1;
 
     // Declaracao dos sinais de teste
     reg clk1;                      // Clock principal
@@ -33,8 +33,8 @@ module TB_LW;
     ID_STAGE dut_ID_STAGE (
         .clk(clk1),
         .rst(rst),
-        .IF_ID_PC4(IF_ID_PC),
-        .IF_ID_Instruction1(IF_ID_Instruction),
+        .IF_ID_PC(IF_ID_PC),
+        .IF_ID_Instruction(IF_ID_Instruction),
         .RegWrite(WB_RegWrite),
         .writeReg(WB_writeReg),
         .writeData(WB_writeData),

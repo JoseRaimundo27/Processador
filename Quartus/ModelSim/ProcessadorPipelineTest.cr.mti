@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {C:/Users/Heverton Reis/Documents/PCID/ModelSim/SignExtend.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/SignExtend.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module SignExtend
@@ -48,26 +49,30 @@ Top level modules:
 	TB_LW_Teste01
 
 } {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/Somador.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/Somador.v}
+=======
+C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/Somador.v {1 {vlog -work work -stats=none C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/Somador.v
+>>>>>>> b90a0cacb9cd38b57296eba531e3f75ef27c2aaf
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module Somador
 
 Top level modules:
 	Somador
 
-} {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/ExtractMSB.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/ExtractMSB.v}
+} {} {}} C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/RegisterFile.v {1 {vlog -work work -stats=none C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/RegisterFile.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module ExtractMSB
+-- Compiling module RegisterFile
 
 Top level modules:
-	ExtractMSB
+	RegisterFile
 
-} {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/ID_EX_Register.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/ID_EX_Register.v}
+} {} {}} C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/Mux2to1_32bits.v {1 {vlog -work work -stats=none C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/Mux2to1_32bits.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module ID_EX_Register
+-- Compiling module Mux2to1_32bits
 
 Top level modules:
-	ID_EX_Register
+	Mux2to1_32bits
 
+<<<<<<< HEAD
 } {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/TB_LW_Teste02.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/TB_LW_Teste02.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module TB_LW_Teste02
@@ -76,12 +81,16 @@ Top level modules:
 	TB_LW_Teste02
 
 } {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/Mux2to1_5bits.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/Mux2to1_5bits.v}
+=======
+} {} {}} C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/Mux2to1_5bits.v {1 {vlog -work work -stats=none C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/Mux2to1_5bits.v
+>>>>>>> b90a0cacb9cd38b57296eba531e3f75ef27c2aaf
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module Mux2to1_5bits
 
 Top level modules:
 	Mux2to1_5bits
 
+<<<<<<< HEAD
 } {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/IF_ID_Register.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/IF_ID_Register.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module IF_ID_Register
@@ -97,12 +106,16 @@ Top level modules:
 	TB_LW_Teste03
 
 } {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/IF_STAGE_tb.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/IF_STAGE_tb.v}
+=======
+} {} {}} C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/IF_STAGE_tb.v {1 {vlog -work work -stats=none C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/IF_STAGE_tb.v
+>>>>>>> b90a0cacb9cd38b57296eba531e3f75ef27c2aaf
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module IF_STAGE_tb
 
 Top level modules:
 	IF_STAGE_tb
 
+<<<<<<< HEAD
 } {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/ProcessadorPipeline_SemMEM2.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/ProcessadorPipeline_SemMEM2.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module ProcessadorPipeline_SemMEM2
@@ -118,12 +131,16 @@ Top level modules:
 	ProgramCounter
 
 } {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/Mux2to1.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/Mux2to1.v}
+=======
+} {} {}} C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/Mux2to1.v {1 {vlog -work work -stats=none C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/Mux2to1.v
+>>>>>>> b90a0cacb9cd38b57296eba531e3f75ef27c2aaf
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module Mux2to1
 
 Top level modules:
 	Mux2to1
 
+<<<<<<< HEAD
 } {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/EX_STAGE.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/EX_STAGE.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module EX_STAGE
@@ -137,22 +154,41 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 
 Top level modules:
 	ID_STAGE
+=======
+} {} {}} C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/InstructionDecoder.v {1 {vlog -work work -stats=none C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/InstructionDecoder.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module InstructionDecoder
 
-} {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/Control.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/Control.v}
+Top level modules:
+	InstructionDecoder
+>>>>>>> b90a0cacb9cd38b57296eba531e3f75ef27c2aaf
+
+} {} {}} C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/SignExtend.v {1 {vlog -work work -stats=none C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/SignExtend.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module SignExtend
+
+Top level modules:
+	SignExtend
+
+} {} {}} C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/Control.v {1 {vlog -work work -stats=none C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/Control.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module Control
 
 Top level modules:
 	Control
 
-} {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/ALU32Bits.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/ALU32Bits.v}
+} {} {}} C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ALU32Bits.v {1 {vlog -work work -stats=none C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ALU32Bits.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module ALU32Bits
 
 Top level modules:
 	ALU32Bits
 
+<<<<<<< HEAD
 } {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/ROM.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/ROM.vhd}
+=======
+} {} {}} C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ROM.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ROM.vhd
+>>>>>>> b90a0cacb9cd38b57296eba531e3f75ef27c2aaf
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -161,6 +197,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity ROM
 -- Compiling architecture SYN of rom
 
+<<<<<<< HEAD
 } {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/IF_STAGE.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/IF_STAGE.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module IF_STAGE
@@ -169,19 +206,34 @@ Top level modules:
 	IF_STAGE
 
 } {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/MEM_WB_Register.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/MEM_WB_Register.v}
+=======
+} {} {}} C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ALUControl.v {1 {vlog -work work -stats=none C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ALUControl.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ALUControl
+
+Top level modules:
+	ALUControl
+
+} {} {}} C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/MEM_WB_Register.v {1 {vlog -work work -stats=none C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/MEM_WB_Register.v
+>>>>>>> b90a0cacb9cd38b57296eba531e3f75ef27c2aaf
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module MEM_WB_Register
 
 Top level modules:
 	MEM_WB_Register
 
+<<<<<<< HEAD
 } {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/PCAdder.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/PCAdder.v}
+=======
+} {} {}} C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/PCAdder.v {1 {vlog -work work -stats=none C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/PCAdder.v
+>>>>>>> b90a0cacb9cd38b57296eba531e3f75ef27c2aaf
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module PCAdder
 
 Top level modules:
 	PCAdder
 
+<<<<<<< HEAD
 } {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/ProcessadorPipeline_SemEX.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/ProcessadorPipeline_SemEX.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module ProcessadorPipeline_SemEX
@@ -197,6 +249,23 @@ Top level modules:
 	ProcessadorPipeline_SemID
 
 } {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/RAM.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/RAM.vhd}
+=======
+} {} {}} C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ShiftLeft2.v {1 {vlog -work work -stats=none C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ShiftLeft2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ShiftLeft2
+
+Top level modules:
+	ShiftLeft2
+
+} {} {}} C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/WB_Stage.v {1 {vlog -work work -stats=none C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/WB_Stage.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module WB_Stage
+
+Top level modules:
+	WB_Stage
+
+} {} {}} C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/RAM.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/RAM.vhd
+>>>>>>> b90a0cacb9cd38b57296eba531e3f75ef27c2aaf
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -205,13 +274,14 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity RAM
 -- Compiling architecture SYN of ram
 
-} {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/RegisterFile.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/RegisterFile.v}
+} {} {}} C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ExtractMSB.v {1 {vlog -work work -stats=none C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ExtractMSB.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module RegisterFile
+-- Compiling module ExtractMSB
 
 Top level modules:
-	RegisterFile
+	ExtractMSB
 
+<<<<<<< HEAD
 } {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/ProcessadorPipeline_SemMEM.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/ProcessadorPipeline_SemMEM.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module ProcessadorPipeline_SemMEM
@@ -220,25 +290,81 @@ Top level modules:
 	ProcessadorPipeline_SemMEM
 
 } {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/Mux2to1_32bits.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/Mux2to1_32bits.v}
+=======
+} {} {}} C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ID_EX_Register.v {1 {vlog -work work -stats=none C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ID_EX_Register.v
+>>>>>>> b90a0cacb9cd38b57296eba531e3f75ef27c2aaf
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module Mux2to1_32bits
+-- Compiling module ID_EX_Register
 
 Top level modules:
-	Mux2to1_32bits
+	ID_EX_Register
 
-} {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/EX_MEM_REGISTER.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/EX_MEM_REGISTER.v}
+} {} {}} C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/EX_MEM_REGISTER.v {1 {vlog -work work -stats=none C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/EX_MEM_REGISTER.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module EX_MEM_REGISTER
 
 Top level modules:
 	EX_MEM_REGISTER
 
+<<<<<<< HEAD
 } {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/InstructionDecoder.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/InstructionDecoder.v}
+=======
+} {} {}} C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/IF_ID_Register.v {1 {vlog -work work -stats=none C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/IF_ID_Register.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module InstructionDecoder
+-- Compiling module IF_ID_Register
 
 Top level modules:
-	InstructionDecoder
+	IF_ID_Register
+
+} {} {}} C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/TB_LW_P1.v {1 {vlog -work work -stats=none C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/TB_LW_P1.v
+>>>>>>> b90a0cacb9cd38b57296eba531e3f75ef27c2aaf
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module TB_LW_P1
+
+Top level modules:
+	TB_LW_P1
+
+} {} {}} C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/EX_STAGE.v {1 {vlog -work work -stats=none C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/EX_STAGE.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module EX_STAGE
+
+Top level modules:
+	EX_STAGE
+
+} {} {}} C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ID_STAGE.v {1 {vlog -work work -stats=none C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ID_STAGE.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ID_STAGE
+
+Top level modules:
+	ID_STAGE
+
+} {} {}} C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ProgramCounter.v {1 {vlog -work work -stats=none C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ProgramCounter.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ProgramCounter
+
+Top level modules:
+	ProgramCounter
+
+} {} {}} C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/MEM_STAGE.v {1 {vlog -work work -stats=none C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/MEM_STAGE.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module MEM_STAGE
+
+Top level modules:
+	MEM_STAGE
+
+} {} {}} C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/IF_STAGE.v {1 {vlog -work work -stats=none C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/IF_STAGE.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module IF_STAGE
+
+Top level modules:
+	IF_STAGE
+
+} {} {}} C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ProcessadorPipeline.v {1 {vlog -work work -stats=none C:/Users/ADM/Desktop/Processador/Quartus/ModelSim/ProcessadorPipeline.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ProcessadorPipeline
+
+Top level modules:
+	ProcessadorPipeline
 
 } {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/TB_LW.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/TB_LW.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
