@@ -69,7 +69,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 1288 296 1456 312)
+	(rect 680 408 848 424)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "rst" (rect 5 0 17 12)(font "Arial" ))
 	(pt 168 8)
@@ -135,7 +135,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 208 104 440 120)
 	(text "INPUT" (rect 189 0 217 10)(font "Arial" (font_size 6)))
-	(text "EX_MEM_ALUResult[31..0]" (rect 5 0 139 12)(font "Arial" ))
+	(text "EX_MEM_ALUResult[31..0]" (rect 5 0 138 12)(font "Arial" ))
 	(pt 232 8)
 	(drawing
 		(line (pt 148 12)(pt 173 12))
@@ -151,7 +151,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 784 256 976 272)
 	(text "INPUT" (rect 149 0 177 10)(font "Arial" (font_size 6)))
-	(text "EX_MEM_MemRead" (rect 5 0 103 12)(font "Arial" ))
+	(text "EX_MEM_MemRead" (rect 5 0 102 12)(font "Arial" ))
 	(pt 192 8)
 	(drawing
 		(line (pt 108 12)(pt 133 12))
@@ -360,7 +360,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 976 184 1192 312)
 	(text "RAM" (rect 89 0 123 16)(font "Arial" (font_size 10)))
-	(text "inst3" (rect 8 112 30 129)(font "Intel Clear" ))
+	(text "inst1" (rect 8 112 30 129)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -529,6 +529,18 @@ refer to the applicable agreement for further details.
 	(pt 472 112)
 	(pt 504 112)
 	(bus)
+)
+(connector
+	(pt 1448 304)
+	(pt 1448 416)
+)
+(connector
+	(pt 1456 304)
+	(pt 1448 304)
+)
+(connector
+	(pt 1448 416)
+	(pt 848 416)
 )
 (junction (pt 968 400))
 (junction (pt 472 112))
