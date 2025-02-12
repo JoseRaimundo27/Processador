@@ -12,6 +12,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	IF_ID_Register
 
+} {} {}} D:/Processador/Quartus/ModelSim/TB_LW.v {1 {vlog -work work -stats=none D:/Processador/Quartus/ModelSim/TB_LW.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module TB_LW
+
+Top level modules:
+	TB_LW
+
 } {} {}} D:/Processador/Quartus/ModelSim/TB_LW_P1.v {1 {vlog -work work -stats=none D:/Processador/Quartus/ModelSim/TB_LW_P1.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module TB_LW_P1
@@ -40,6 +47,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	ID_STAGE
 
+} {} {}} D:/Processador/Quartus/ModelSim/TB_LW_HEVERTON.v {1 {vlog -work work -stats=none D:/Processador/Quartus/ModelSim/TB_LW_HEVERTON.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module TB_LW
+
+Top level modules:
+	TB_LW
+
 } {} {}} D:/Processador/Quartus/ModelSim/MEM_STAGE.v {1 {vlog -work work -stats=none D:/Processador/Quartus/ModelSim/MEM_STAGE.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module MEM_STAGE
@@ -61,12 +75,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	ProcessadorPipeline
 
-} {} {}} D:/Processador/Quartus/ModelSim/Somador.v {1 {vlog -work work -stats=none D:/Processador/Quartus/ModelSim/Somador.v
+} {} {}} D:/Processador/Quartus/ModelSim/TB_LW_Teste01.v {1 {vlog -work work -stats=none D:/Processador/Quartus/ModelSim/TB_LW_Teste01.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module Somador
+-- Compiling module TB_LW_Teste01
 
 Top level modules:
-	Somador
+	TB_LW_Teste01
 
 } {} {}} D:/Processador/Quartus/ModelSim/RegisterFile.v {1 {vlog -work work -stats=none D:/Processador/Quartus/ModelSim/RegisterFile.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -75,12 +89,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	RegisterFile
 
-} {} {}} D:/Processador/Quartus/ModelSim/TB_LW_Teste01.v {1 {vlog -work work -stats=none D:/Processador/Quartus/ModelSim/TB_LW_Teste01.v
+} {} {}} D:/Processador/Quartus/ModelSim/Somador.v {1 {vlog -work work -stats=none D:/Processador/Quartus/ModelSim/Somador.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module TB_LW_Teste01
+-- Compiling module Somador
 
 Top level modules:
-	TB_LW_Teste01
+	Somador
 
 } {} {}} D:/Processador/Quartus/ModelSim/TB_LW_Teste02.v {1 {vlog -work work -stats=none D:/Processador/Quartus/ModelSim/TB_LW_Teste02.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -137,13 +151,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 
 Top level modules:
 	ProcessadorPipeline_SemMEM2
-
-} {} {}} D:/Processador/Quartus/ModelSim/Mux2to1.v {1 {vlog -work work -stats=none D:/Processador/Quartus/ModelSim/Mux2to1.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module Mux2to1
-
-Top level modules:
-	Mux2to1
 
 } {} {}} D:/Processador/Quartus/ModelSim/InstructionDecoder.v {1 {vlog -work work -stats=none D:/Processador/Quartus/ModelSim/InstructionDecoder.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
