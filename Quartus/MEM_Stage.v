@@ -14,15 +14,16 @@
 
 // PROGRAM		"Quartus Prime"
 // VERSION		"Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
-// CREATED		"Sun Feb 09 14:42:07 2025"
+// CREATED		"Tue Feb 11 22:45:06 2025"
 
-module MEM_STAGE(
+module Mem_Stage(
 	clk,
 	EX_MEM_MemWrite,
 	rst,
 	EX_MEM_MemToReg,
 	EX_MEM_RegWrite,
 	EX_MEM_MemRead,
+	clk_RAM,
 	EX_MEM_ALUResult,
 	EX_MEM_Data,
 	EX_MEM_WriteReg,
@@ -40,6 +41,7 @@ input wire	rst;
 input wire	EX_MEM_MemToReg;
 input wire	EX_MEM_RegWrite;
 input wire	EX_MEM_MemRead;
+input wire	clk_RAM;
 input wire	[31:0] EX_MEM_ALUResult;
 input wire	[31:0] EX_MEM_Data;
 input wire	[4:0] EX_MEM_WriteReg;
@@ -74,7 +76,7 @@ MEM_WB_Register	b2v_inst(
 RAM	b2v_inst1(
 	.wren(EX_MEM_MemWrite),
 	.rden(EX_MEM_MemRead),
-	.clock(clk),
+	.clock(clk_RAM),
 	.address(SYNTHESIZED_WIRE_1),
 	.data(EX_MEM_Data),
 	.q(SYNTHESIZED_WIRE_0));

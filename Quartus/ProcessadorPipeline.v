@@ -14,18 +14,20 @@
 
 // PROGRAM		"Quartus Prime"
 // VERSION		"Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
-// CREATED		"Mon Feb 10 08:28:01 2025"
+// CREATED		"Tue Feb 11 22:49:16 2025"
 
 module ProcessadorPipeline(
 	clk_ROM,
 	clk,
-	rst
+	rst,
+	clk_RAM
 );
 
 
 input wire	clk_ROM;
 input wire	clk;
 input wire	rst;
+input wire	clk_RAM;
 
 wire	SYNTHESIZED_WIRE_0;
 wire	[7:0] SYNTHESIZED_WIRE_1;
@@ -127,13 +129,14 @@ EX_STAGE	b2v_inst3(
 	.EX_MEM_WriteReg(SYNTHESIZED_WIRE_27));
 
 
-MEM_STAGE	b2v_inst4(
+Mem_Stage	b2v_inst4(
 	.EX_MEM_MemWrite(SYNTHESIZED_WIRE_21),
 	.EX_MEM_MemToReg(SYNTHESIZED_WIRE_22),
 	.EX_MEM_RegWrite(SYNTHESIZED_WIRE_23),
 	.EX_MEM_MemRead(SYNTHESIZED_WIRE_24),
 	.clk(clk),
 	.rst(rst),
+	.clk_RAM(clk_RAM),
 	.EX_MEM_ALUResult(SYNTHESIZED_WIRE_25),
 	.EX_MEM_Data(SYNTHESIZED_WIRE_26),
 	.EX_MEM_WriteReg(SYNTHESIZED_WIRE_27),

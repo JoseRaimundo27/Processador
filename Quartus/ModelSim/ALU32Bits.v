@@ -49,7 +49,7 @@ always @(ALUControl, data1, data2) begin
     case (ALUControl)
         LW_1: begin
             // Load Word com Endereco Base Deslocado (Incremento de 8 bits por instrucao)
-            ALUResult = data1 + 8;
+            ALUResult = data1 + data2;
         end
 
         LW_2: begin

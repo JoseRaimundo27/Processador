@@ -4,6 +4,6 @@ module PCAdder (
 );
 
     // Soma 4 ao valor atual do PC
-    assign outPC = inPC + 8'd1;
+    assign outPC = inPC + 1;
 
 endmodule

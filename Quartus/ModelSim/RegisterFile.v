@@ -7,19 +7,19 @@ module RegisterFile (
     input wire [31:0] writeData,    // Dados a serem escritos
     input wire RegWrite,            // Controle de habilitação de escrita
   
-    output reg [31:0] readData1,   // Dados lidos do primeiro registrador
-    output reg [31:0] readData2    // Dados lidos do segundo registrador
+    output wire [31:0] readData1,   // Dados lidos do primeiro registrador
+    output wire [31:0] readData2    // Dados lidos do segundo registrador
 );
 
     reg [31:0] registers [31:0];
 
-    //assign readData1 = registers[readReg1];
-    //assign readData2 = registers[readReg2];
+    assign readData1 = registers[readReg1];
+    assign readData2 = registers[readReg2];
 	 
-	 always @(*) begin
-			 readData1 = registers[readReg1];
-			 readData2 = registers[readReg2];
-	 end
+	//always @(*) begin
+	//		readData1 = registers[readReg1];
+	//		readData2 = registers[readReg2];
+	//end
 
     always @(posedge clk) begin
         if (rst) begin

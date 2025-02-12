@@ -24,7 +24,7 @@ module TB_LW_Teste03;
     // Instanciação do módulo IF_Stage
     IF_STAGE duv_IF_STAGE (
         .BranchTaken(BranchTaken),
-        .clk_ROM(clk2),
+        .clk_ROM(clk1),
         .clk(clk1),
         .rst(rst),
         .BranchTarget(BranchTarget),
@@ -85,7 +85,7 @@ module TB_LW_Teste03;
     );
 
     ProcessadorPipeline_SemMEM duv (
-        .clk_ROM(clk2),
+        .clk_ROM(clk1),
         .clk(clk1),
         .rst(rst),
         .RegWrite(),

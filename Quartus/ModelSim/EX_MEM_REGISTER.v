@@ -25,9 +25,9 @@ if (reset) begin
     MemReadOut <= 1'b0;
     writedataOut <= 32'b0;
     writeRegOut <= 4'b0;
-	outALUResult <= 32'b0;
-	outBranchTaken <= 1'b0;
-	outBranchTarget <= 8'b0;
+	 outALUResult <= 32'b0;
+	 outBranchTaken <= 1'b0;
+	 outBranchTarget <= 8'b0;
 end
 else begin
     RegWriteOut <= RegWrite;

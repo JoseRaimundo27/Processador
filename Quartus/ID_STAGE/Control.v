@@ -1,5 +1,3 @@
-//`include "Const.v"
-
 module Control (
     input wire clk,                  
     input wire [4:0] opcode,         // Campo opcode da instrução (bits [31:26])

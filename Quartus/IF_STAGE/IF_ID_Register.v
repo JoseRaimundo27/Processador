@@ -11,7 +11,7 @@ module IF_ID_Register (
         if (rst) begin
             // Reset: limpa os valores
             outPC <= 8'b0;
-            outInstruction <= 32'b0;
+            outInstruction <= 32'b11111000000000000000000000000000;
         end else begin
             // Sempre atualiza os valores a cada ciclo de clock
             outPC <= inPC - 1;

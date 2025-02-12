@@ -20,9 +20,9 @@ refer to the applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 392 208)
-	(text "MEM_STAGE" (rect 5 0 81 19)(font "Intel Clear" (font_size 8)))
-	(text "inst" (rect 8 171 24 188)(font "Intel Clear" ))
+	(rect 16 16 392 240)
+	(text "Mem_Stage" (rect 5 0 75 19)(font "Intel Clear" (font_size 8)))
+	(text "inst" (rect 8 203 24 220)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -87,6 +87,13 @@ refer to the applicable agreement for further details.
 		(line (pt 0 160)(pt 16 160))
 	)
 	(port
+		(pt 0 176)
+		(input)
+		(text "clk_RAM" (rect 0 0 50 19)(font "Intel Clear" (font_size 8)))
+		(text "clk_RAM" (rect 21 171 71 190)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 176)(pt 16 176))
+	)
+	(port
 		(pt 376 32)
 		(output)
 		(text "MEM_WB_ALUResult[31..0]" (rect 0 0 162 19)(font "Intel Clear" (font_size 8)))
@@ -122,6 +129,6 @@ refer to the applicable agreement for further details.
 		(line (pt 376 96)(pt 360 96))
 	)
 	(drawing
-		(rectangle (rect 16 16 360 176))
+		(rectangle (rect 16 16 360 208))
 	)
 )

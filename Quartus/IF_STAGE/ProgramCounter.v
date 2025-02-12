@@ -7,7 +7,7 @@ module ProgramCounter (
 
     always @(posedge clk) begin
         if (rst) begin
-            currentPC <= 00000000;  // Reset do PC
+            currentPC <= 8'b0;  // Reset do PC
 		  end
         else begin
             currentPC <= nextPC;  // Caminho normal (incrementado)
