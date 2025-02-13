@@ -35,6 +35,7 @@ module TB_LW;
     ProcessadorPipeline dut (
         .clk_ROM(clk2),
         .clk_RAM(clk2),
+      	.clk_Reg(clk2),
       	.clk(clk1),
         .rst(rst)
     );
@@ -53,19 +54,18 @@ module TB_LW;
     // Instanciando o modulo ID_Stage
     ID_STAGE dut_ID_STAGE (
         .clk(clk1),
+      	.clk_Reg(clk2),
         .rst(rst),
         .IF_ID_PC(IF_ID_PC),
         .IF_ID_Instruction(IF_ID_Instruction),
-        .RegWrite(WB_RegWrite),
-        .writeReg(WB_writeReg),
-        .writeData(WB_writeData),
+        .RegWrite(RegWriteOut),
+        .writeReg(WriteRegOut),
+        .writeData(WriteData),
         .ID_EX_ReadData1(ID_EX_ReadData1),
         .ID_EX_ReadData2(ID_EX_ReadData2),
         .ID_EX_SignExtImm(ID_EX_SignExtImm),
-        .ID_EX_Rb(ID_EX_Rb),
         .ID_EX_Rd(ID_EX_Rd),
         .ID_EX_PC(ID_EX_PC),
-        .ID_EX_RegDst(ID_EX_RegDst),
         .ID_EX_ALUSrc(ID_EX_ALUSrc),
         .ID_EX_MemToReg(ID_EX_MemToReg),
         .ID_EX_RegWrite(ID_EX_RegWrite),
@@ -81,10 +81,8 @@ module TB_LW;
         .ID_EX_ReadData1(ID_EX_ReadData1),
         .ID_EX_ReadData2(ID_EX_ReadData2),
         .ID_EX_SignExtImm(ID_EX_SignExtImm),
-        .ID_EX_Rb(ID_EX_Rb),
         .ID_EX_Rd(ID_EX_Rd),
         .ID_EX_PC(ID_EX_PC),
-        .ID_EX_RegDst(ID_EX_RegDst),
         .ID_EX_ALUSrc(ID_EX_ALUSrc),
         .ID_EX_MemtoReg(ID_EX_MemToReg),
         .ID_EX_RegWrite(ID_EX_RegWrite),
@@ -161,7 +159,7 @@ module TB_LW;
       	#15;
       
         $display("Ler memoria:");
-        #40;
+        #95;
 
         // Finaliza a simulação
         $finish;
@@ -175,8 +173,8 @@ module TB_LW;
                     $time, rst);
             $display("IF_STAGE: BranchTaken=%b | BranchTarget=%d | IF_ID_PC=%d | IF_ID_Instruction=%b",
                     EX_MEM_Branch, EX_MEM_BranchTarget, IF_ID_PC, IF_ID_Instruction);
-            $display("ID_STAGE: ID_EX_ReadData1=%d | ID_EX_ReadData2=%d | ID_EX_SignExtImm=%d | ID_EX_Rd=%b | ID_EX_Rb=%b | ID_EX_PC=%d | ID_EX_Branch=%b | RegDst=%b | MemToReg=%b | RegWrite=%b | MemRead=%b",
-                    ID_EX_ReadData1, ID_EX_ReadData2, ID_EX_SignExtImm, ID_EX_Rd, ID_EX_Rb, ID_EX_PC, ID_EX_Branch, ID_EX_RegDst, ID_EX_MemToReg, ID_EX_RegWrite, ID_EX_MemRead);
+            $display("ID_STAGE: ID_EX_ReadData1=%d | ID_EX_ReadData2=%d | ID_EX_SignExtImm=%d | ID_EX_Rd=%b | ID_EX_Rb=%b | ID_EX_PC=%d | ID_EX_Branch=%b | RegDst=%b | MemToReg=%b | RegWrite=%b | MemRead=%b | ALUOp=%b",
+                    ID_EX_ReadData1, ID_EX_ReadData2, ID_EX_SignExtImm, ID_EX_Rd, ID_EX_Rb, ID_EX_PC, ID_EX_Branch, ID_EX_RegDst, ID_EX_MemToReg, ID_EX_RegWrite, ID_EX_MemRead, ID_EX_ALUOp);
             $display("EX_STAGE: WriteReg=%b | EX_MEM_ALUResult=%d | EX_MEM_WriteData=%d | EX_MEM_Branch=%b | EX_MEM_BranchTarget=%d | MemRead=%b | ALUSrc=%b | MemToReg=%b",
                     EX_MEM_WriteReg, EX_MEM_ALUResult, EX_MEM_WriteData, EX_MEM_Branch, EX_MEM_BranchTarget, EX_MEM_MemReadOut, ID_EX_ALUSrc, EX_MEM_MemtoRegOut);          
             $display("MEM_STAGE: MEM_WB_ALUResult=%d | MEM_WB_ReadData=%d | MEM_WB_WriteReg=%b | MemToReg=%b | RegWrite=%b",

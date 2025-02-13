@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ProcessadorPipeline
-Tue Feb 11 22:50:30 2025
+Wed Feb 12 22:36:05 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -16,27 +16,25 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   8. Analysis & Synthesis RAM Summary
   9. Analysis & Synthesis DSP Block Usage Summary
  10. Analysis & Synthesis IP Cores Summary
- 11. User-Specified and Inferred Latches
- 12. Registers Removed During Synthesis
- 13. General Register Statistics
- 14. Inverted Register Statistics
- 15. Multiplexer Restructuring Statistics (Restructuring Performed)
- 16. Source assignments for IF_STAGE:inst|ROM:inst3|altsyncram:altsyncram_component|altsyncram_l404:auto_generated|altsyncram_pm03:altsyncram1
- 17. Source assignments for Mem_Stage:inst4|RAM:b2v_inst1|altsyncram:altsyncram_component|altsyncram_g4v3:auto_generated|altsyncram_eks2:altsyncram1
- 18. Parameter Settings for User Entity Instance: IF_STAGE:inst|ROM:inst3|altsyncram:altsyncram_component
- 19. Parameter Settings for User Entity Instance: EX_STAGE:inst3|ALU32Bits:b2v_inst
- 20. Parameter Settings for User Entity Instance: ID_STAGE:inst1|Control:inst8
- 21. Parameter Settings for User Entity Instance: Mem_Stage:inst4|RAM:b2v_inst1|altsyncram:altsyncram_component
+ 11. Registers Removed During Synthesis
+ 12. General Register Statistics
+ 13. Inverted Register Statistics
+ 14. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 15. Source assignments for IF_STAGE:inst|ROM:inst3|altsyncram:altsyncram_component|altsyncram_l404:auto_generated|altsyncram_pm03:altsyncram1
+ 16. Source assignments for Mem_Stage:inst4|RAM:b2v_inst1|altsyncram:altsyncram_component|altsyncram_g4v3:auto_generated|altsyncram_eks2:altsyncram1
+ 17. Parameter Settings for User Entity Instance: IF_STAGE:inst|ROM:inst3|altsyncram:altsyncram_component
+ 18. Parameter Settings for User Entity Instance: EX_STAGE:inst3|ALU32Bits:b2v_inst
+ 19. Parameter Settings for User Entity Instance: ID_STAGE:inst1|Control:inst8
+ 20. Parameter Settings for User Entity Instance: Mem_Stage:inst4|RAM:b2v_inst1|altsyncram:altsyncram_component
+ 21. Parameter Settings for Inferred Entity Instance: EX_STAGE:inst3|ALU32Bits:b2v_inst|lpm_mult:Mult0
  22. Parameter Settings for Inferred Entity Instance: EX_STAGE:inst3|ALU32Bits:b2v_inst|lpm_divide:Div0
- 23. Parameter Settings for Inferred Entity Instance: EX_STAGE:inst3|ALU32Bits:b2v_inst|lpm_mult:Mult0
- 24. altsyncram Parameter Settings by Entity Instance
- 25. lpm_mult Parameter Settings by Entity Instance
- 26. In-System Memory Content Editor Settings
- 27. Post-Synthesis Netlist Statistics for Top Partition
- 28. Post-Synthesis Netlist Statistics for Partition sld_hub:auto_hub
- 29. Elapsed Time Per Partition
- 30. Analysis & Synthesis Messages
- 31. Analysis & Synthesis Suppressed Messages
+ 23. altsyncram Parameter Settings by Entity Instance
+ 24. lpm_mult Parameter Settings by Entity Instance
+ 25. In-System Memory Content Editor Settings
+ 26. Post-Synthesis Netlist Statistics for Top Partition
+ 27. Elapsed Time Per Partition
+ 28. Analysis & Synthesis Messages
+ 29. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -62,16 +60,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Feb 11 22:50:30 2025       ;
+; Analysis & Synthesis Status        ; Successful - Wed Feb 12 22:36:05 2025       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; ProcessadorPipeline                         ;
 ; Top-level Entity Name              ; ProcessadorPipeline                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 5,320                                       ;
-;     Total combinational functions  ; 4,256                                       ;
-;     Dedicated logic registers      ; 1,537                                       ;
-; Total registers                    ; 1537                                        ;
-; Total pins                         ; 4                                           ;
+; Total logic elements               ; 5,209                                       ;
+;     Total combinational functions  ; 4,146                                       ;
+;     Dedicated logic registers      ; 1,520                                       ;
+; Total registers                    ; 1520                                        ;
+; Total pins                         ; 5                                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 16,384                                      ;
 ; Embedded Multiplier 9-bit elements ; 8                                           ;
@@ -179,10 +177,10 @@ refer to the applicable agreement for further details.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.1%      ;
-;     Processor 3            ;   0.1%      ;
-;     Processor 4            ;   0.1%      ;
-;     Processor 5            ;   0.1%      ;
-;     Processor 6            ;   0.1%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
+;     Processor 5            ;   0.0%      ;
+;     Processor 6            ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -203,9 +201,7 @@ refer to the applicable agreement for further details.
 ; ProcessadorPipeline.bdf                                            ; yes             ; User Block Diagram/Schematic File            ; C:/Users/Heverton Reis/Downloads/Processador/Quartus/ProcessadorPipeline.bdf                                            ;             ;
 ; IF_STAGE.bdf                                                       ; yes             ; User Block Diagram/Schematic File            ; C:/Users/Heverton Reis/Downloads/Processador/Quartus/IF_STAGE.bdf                                                       ;             ;
 ; ROM.vhd                                                            ; yes             ; User Wizard-Generated File                   ; C:/Users/Heverton Reis/Downloads/Processador/Quartus/ROM.vhd                                                            ;             ;
-; EX_STAGE/Somador.v                                                 ; yes             ; User Verilog HDL File                        ; C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/Somador.v                                                 ;             ;
 ; EX_STAGE/Mux2to1_32bits.v                                          ; yes             ; User Verilog HDL File                        ; C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/Mux2to1_32bits.v                                          ;             ;
-; EX_STAGE/Mux2to1_5bits.v                                           ; yes             ; User Verilog HDL File                        ; C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/Mux2to1_5bits.v                                           ;             ;
 ; EX_STAGE/EX_MEM_REGISTER.v                                         ; yes             ; User Verilog HDL File                        ; C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/EX_MEM_REGISTER.v                                         ;             ;
 ; EX_STAGE/ALU32Bits.v                                               ; yes             ; User Verilog HDL File                        ; C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v                                               ;             ;
 ; MEM_STAGE/MEM_WB_Register.v                                        ; yes             ; User Verilog HDL File                        ; C:/Users/Heverton Reis/Downloads/Processador/Quartus/MEM_STAGE/MEM_WB_Register.v                                        ;             ;
@@ -224,7 +220,7 @@ refer to the applicable agreement for further details.
 ; altdpram.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc                                                     ;             ;
 ; db/altsyncram_l404.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Heverton Reis/Downloads/Processador/Quartus/db/altsyncram_l404.tdf                                             ;             ;
 ; db/altsyncram_pm03.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Heverton Reis/Downloads/Processador/Quartus/db/altsyncram_pm03.tdf                                             ;             ;
-; if_stage/instruction_memory.mif                                    ; yes             ; Auto-Found Memory Initialization File        ; C:/Users/Heverton Reis/Downloads/Processador/Quartus/if_stage/instruction_memory.mif                                    ;             ;
+; ./IF_STAGE/instruction_memory.mif                                  ; yes             ; Auto-Found Memory Initialization File        ; C:/Users/Heverton Reis/Downloads/Processador/Quartus/IF_STAGE/instruction_memory.mif                                    ;             ;
 ; sld_mod_ram_rom.vhd                                                ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd                                              ;             ;
 ; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd                                    ;             ;
 ; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv                                ;             ;
@@ -242,6 +238,12 @@ refer to the applicable agreement for further details.
 ; db/ip/sld8469f618/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File               ; C:/Users/Heverton Reis/Downloads/Processador/Quartus/db/ip/sld8469f618/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
 ; db/ip/sld8469f618/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/Heverton Reis/Downloads/Processador/Quartus/db/ip/sld8469f618/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
 ; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                                                 ;             ;
+; lpm_mult.tdf                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mult.tdf                                                     ;             ;
+; lpm_add_sub.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_add_sub.inc                                                  ;             ;
+; multcore.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/multcore.inc                                                     ;             ;
+; bypassff.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/bypassff.inc                                                     ;             ;
+; altshift.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altshift.inc                                                     ;             ;
+; db/mult_46t.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Heverton Reis/Downloads/Processador/Quartus/db/mult_46t.tdf                                                    ;             ;
 ; lpm_divide.tdf                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_divide.tdf                                                   ;             ;
 ; abs_divider.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/abs_divider.inc                                                  ;             ;
 ; sign_div_unsign.inc                                                ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sign_div_unsign.inc                                              ;             ;
@@ -251,46 +253,40 @@ refer to the applicable agreement for further details.
 ; db/add_sub_7pc.tdf                                                 ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Heverton Reis/Downloads/Processador/Quartus/db/add_sub_7pc.tdf                                                 ;             ;
 ; db/add_sub_8pc.tdf                                                 ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Heverton Reis/Downloads/Processador/Quartus/db/add_sub_8pc.tdf                                                 ;             ;
 ; db/lpm_abs_i0a.tdf                                                 ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Heverton Reis/Downloads/Processador/Quartus/db/lpm_abs_i0a.tdf                                                 ;             ;
-; lpm_mult.tdf                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mult.tdf                                                     ;             ;
-; lpm_add_sub.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_add_sub.inc                                                  ;             ;
-; multcore.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/multcore.inc                                                     ;             ;
-; bypassff.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/bypassff.inc                                                     ;             ;
-; altshift.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altshift.inc                                                     ;             ;
-; db/mult_46t.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Users/Heverton Reis/Downloads/Processador/Quartus/db/mult_46t.tdf                                                    ;             ;
 +--------------------------------------------------------------------+-----------------+----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+-------------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 5,320     ;
-;                                             ;           ;
-; Total combinational functions               ; 4256      ;
-; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 2615      ;
-;     -- 3 input functions                    ; 1240      ;
-;     -- <=2 input functions                  ; 401       ;
-;                                             ;           ;
-; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 3466      ;
-;     -- arithmetic mode                      ; 790       ;
-;                                             ;           ;
-; Total registers                             ; 1537      ;
-;     -- Dedicated logic registers            ; 1537      ;
-;     -- I/O registers                        ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 4         ;
-; Total memory bits                           ; 16384     ;
-;                                             ;           ;
-; Embedded Multiplier 9-bit elements          ; 8         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 1295      ;
-; Total fan-out                               ; 20974     ;
-; Average fan-out                             ; 3.57      ;
-+---------------------------------------------+-----------+
++-------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                 ;
++---------------------------------------------+---------------+
+; Resource                                    ; Usage         ;
++---------------------------------------------+---------------+
+; Estimated Total logic elements              ; 5,209         ;
+;                                             ;               ;
+; Total combinational functions               ; 4146          ;
+; Logic element usage by number of LUT inputs ;               ;
+;     -- 4 input functions                    ; 2611          ;
+;     -- 3 input functions                    ; 1175          ;
+;     -- <=2 input functions                  ; 360           ;
+;                                             ;               ;
+; Logic elements by mode                      ;               ;
+;     -- normal mode                          ; 3325          ;
+;     -- arithmetic mode                      ; 821           ;
+;                                             ;               ;
+; Total registers                             ; 1520          ;
+;     -- Dedicated logic registers            ; 1520          ;
+;     -- I/O registers                        ; 0             ;
+;                                             ;               ;
+; I/O pins                                    ; 5             ;
+; Total memory bits                           ; 16384         ;
+;                                             ;               ;
+; Embedded Multiplier 9-bit elements          ; 8             ;
+;                                             ;               ;
+; Maximum fan-out node                        ; clk_Reg~input ;
+; Maximum fan-out                             ; 992           ;
+; Total fan-out                               ; 20690         ;
+; Average fan-out                             ; 3.59          ;
++---------------------------------------------+---------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -298,9 +294,9 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                             ; Entity Name                       ; Library Name ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
-; |ProcessadorPipeline                                                                                                                    ; 4256 (1)            ; 1537 (0)                  ; 16384       ; 8            ; 0       ; 4         ; 4    ; 0            ; |ProcessadorPipeline                                                                                                                                                                                                                                                                                                                                            ; ProcessadorPipeline               ; work         ;
-;    |EX_STAGE:inst3|                                                                                                                     ; 2384 (32)           ; 65 (0)                    ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |ProcessadorPipeline|EX_STAGE:inst3                                                                                                                                                                                                                                                                                                                             ; EX_STAGE                          ; work         ;
-;       |ALU32Bits:b2v_inst|                                                                                                              ; 2255 (935)          ; 0 (0)                     ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |ProcessadorPipeline|EX_STAGE:inst3|ALU32Bits:b2v_inst                                                                                                                                                                                                                                                                                                          ; ALU32Bits                         ; work         ;
+; |ProcessadorPipeline                                                                                                                    ; 4146 (1)            ; 1520 (0)                  ; 16384       ; 8            ; 0       ; 4         ; 5    ; 0            ; |ProcessadorPipeline                                                                                                                                                                                                                                                                                                                                            ; ProcessadorPipeline               ; work         ;
+;    |EX_STAGE:inst3|                                                                                                                     ; 2285 (24)           ; 65 (0)                    ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |ProcessadorPipeline|EX_STAGE:inst3                                                                                                                                                                                                                                                                                                                             ; EX_STAGE                          ; work         ;
+;       |ALU32Bits:b2v_inst|                                                                                                              ; 1882 (562)          ; 0 (0)                     ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |ProcessadorPipeline|EX_STAGE:inst3|ALU32Bits:b2v_inst                                                                                                                                                                                                                                                                                                          ; ALU32Bits                         ; work         ;
 ;          |lpm_divide:Div0|                                                                                                              ; 1228 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProcessadorPipeline|EX_STAGE:inst3|ALU32Bits:b2v_inst|lpm_divide:Div0                                                                                                                                                                                                                                                                                          ; lpm_divide                        ; work         ;
 ;             |lpm_divide_92p:auto_generated|                                                                                             ; 1228 (0)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProcessadorPipeline|EX_STAGE:inst3|ALU32Bits:b2v_inst|lpm_divide:Div0|lpm_divide_92p:auto_generated                                                                                                                                                                                                                                                            ; lpm_divide_92p                    ; work         ;
 ;                |abs_divider_4dg:divider|                                                                                                ; 1228 (32)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProcessadorPipeline|EX_STAGE:inst3|ALU32Bits:b2v_inst|lpm_divide:Div0|lpm_divide_92p:auto_generated|abs_divider_4dg:divider                                                                                                                                                                                                                                    ; abs_divider_4dg                   ; work         ;
@@ -311,12 +307,12 @@ refer to the applicable agreement for further details.
 ;                   |lpm_abs_i0a:my_abs_num|                                                                                              ; 45 (45)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProcessadorPipeline|EX_STAGE:inst3|ALU32Bits:b2v_inst|lpm_divide:Div0|lpm_divide_92p:auto_generated|abs_divider_4dg:divider|lpm_abs_i0a:my_abs_num                                                                                                                                                                                                             ; lpm_abs_i0a                       ; work         ;
 ;          |lpm_mult:Mult0|                                                                                                               ; 92 (0)              ; 0 (0)                     ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |ProcessadorPipeline|EX_STAGE:inst3|ALU32Bits:b2v_inst|lpm_mult:Mult0                                                                                                                                                                                                                                                                                           ; lpm_mult                          ; work         ;
 ;             |mult_46t:auto_generated|                                                                                                   ; 92 (92)             ; 0 (0)                     ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |ProcessadorPipeline|EX_STAGE:inst3|ALU32Bits:b2v_inst|lpm_mult:Mult0|mult_46t:auto_generated                                                                                                                                                                                                                                                                   ; mult_46t                          ; work         ;
-;       |EX_MEM_REGISTER:b2v_inst12|                                                                                                      ; 64 (64)             ; 65 (65)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProcessadorPipeline|EX_STAGE:inst3|EX_MEM_REGISTER:b2v_inst12                                                                                                                                                                                                                                                                                                  ; EX_MEM_REGISTER                   ; work         ;
+;       |EX_MEM_REGISTER:b2v_inst12|                                                                                                      ; 346 (346)           ; 65 (65)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProcessadorPipeline|EX_STAGE:inst3|EX_MEM_REGISTER:b2v_inst12                                                                                                                                                                                                                                                                                                  ; EX_MEM_REGISTER                   ; work         ;
 ;       |Mux2to1_32bits:b2v_inst8|                                                                                                        ; 33 (33)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProcessadorPipeline|EX_STAGE:inst3|Mux2to1_32bits:b2v_inst8                                                                                                                                                                                                                                                                                                    ; Mux2to1_32bits                    ; work         ;
-;    |ID_STAGE:inst1|                                                                                                                     ; 1458 (0)            ; 1112 (0)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProcessadorPipeline|ID_STAGE:inst1                                                                                                                                                                                                                                                                                                                             ; ID_STAGE                          ; work         ;
-;       |Control:inst8|                                                                                                                   ; 16 (16)             ; 11 (11)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProcessadorPipeline|ID_STAGE:inst1|Control:inst8                                                                                                                                                                                                                                                                                                               ; Control                           ; work         ;
-;       |ID_EX_Register:inst5|                                                                                                            ; 1368 (1368)         ; 109 (109)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProcessadorPipeline|ID_STAGE:inst1|ID_EX_Register:inst5                                                                                                                                                                                                                                                                                                        ; ID_EX_Register                    ; work         ;
-;       |RegisterFile:inst7|                                                                                                              ; 74 (74)             ; 992 (992)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7                                                                                                                                                                                                                                                                                                          ; RegisterFile                      ; work         ;
+;    |ID_STAGE:inst1|                                                                                                                     ; 1447 (0)            ; 1095 (0)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProcessadorPipeline|ID_STAGE:inst1                                                                                                                                                                                                                                                                                                                             ; ID_STAGE                          ; work         ;
+;       |Control:inst8|                                                                                                                   ; 15 (15)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProcessadorPipeline|ID_STAGE:inst1|Control:inst8                                                                                                                                                                                                                                                                                                               ; Control                           ; work         ;
+;       |ID_EX_Register:inst5|                                                                                                            ; 1357 (1357)         ; 103 (103)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProcessadorPipeline|ID_STAGE:inst1|ID_EX_Register:inst5                                                                                                                                                                                                                                                                                                        ; ID_EX_Register                    ; work         ;
+;       |RegisterFile:inst7|                                                                                                              ; 75 (75)             ; 992 (992)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7                                                                                                                                                                                                                                                                                                          ; RegisterFile                      ; work         ;
 ;    |IF_STAGE:inst|                                                                                                                      ; 146 (0)             ; 111 (0)                   ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProcessadorPipeline|IF_STAGE:inst                                                                                                                                                                                                                                                                                                                              ; IF_STAGE                          ; work         ;
 ;       |IF_ID_Register:inst|                                                                                                             ; 39 (39)             ; 39 (39)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProcessadorPipeline|IF_STAGE:inst|IF_ID_Register:inst                                                                                                                                                                                                                                                                                                          ; IF_ID_Register                    ; work         ;
 ;       |PCAdder:inst2|                                                                                                                   ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProcessadorPipeline|IF_STAGE:inst|PCAdder:inst2                                                                                                                                                                                                                                                                                                                ; PCAdder                           ; work         ;
@@ -390,54 +386,11 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +--------+--------------+---------+--------------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                                       ;
-+-----------------------------------------------------+--------------------------------------------+------------------------+
-; Latch Name                                          ; Latch Enable Signal                        ; Free of Timing Hazards ;
-+-----------------------------------------------------+--------------------------------------------+------------------------+
-; EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[0]      ; EX_STAGE:inst3|ALU32Bits:b2v_inst|Decoder0 ; yes                    ;
-; EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[1]      ; EX_STAGE:inst3|ALU32Bits:b2v_inst|Decoder0 ; yes                    ;
-; EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[2]      ; EX_STAGE:inst3|ALU32Bits:b2v_inst|Decoder0 ; yes                    ;
-; EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[3]      ; EX_STAGE:inst3|ALU32Bits:b2v_inst|Decoder0 ; yes                    ;
-; EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[4]      ; EX_STAGE:inst3|ALU32Bits:b2v_inst|Decoder0 ; yes                    ;
-; EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[5]      ; EX_STAGE:inst3|ALU32Bits:b2v_inst|Decoder0 ; yes                    ;
-; EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[6]      ; EX_STAGE:inst3|ALU32Bits:b2v_inst|Decoder0 ; yes                    ;
-; EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[7]      ; EX_STAGE:inst3|ALU32Bits:b2v_inst|Decoder0 ; yes                    ;
-; EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[8]      ; EX_STAGE:inst3|ALU32Bits:b2v_inst|Decoder0 ; yes                    ;
-; EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[9]      ; EX_STAGE:inst3|ALU32Bits:b2v_inst|Decoder0 ; yes                    ;
-; EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[10]     ; EX_STAGE:inst3|ALU32Bits:b2v_inst|Decoder0 ; yes                    ;
-; EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[11]     ; EX_STAGE:inst3|ALU32Bits:b2v_inst|Decoder0 ; yes                    ;
-; EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[12]     ; EX_STAGE:inst3|ALU32Bits:b2v_inst|Decoder0 ; yes                    ;
-; EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[13]     ; EX_STAGE:inst3|ALU32Bits:b2v_inst|Decoder0 ; yes                    ;
-; EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[14]     ; EX_STAGE:inst3|ALU32Bits:b2v_inst|Decoder0 ; yes                    ;
-; EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[15]     ; EX_STAGE:inst3|ALU32Bits:b2v_inst|Decoder0 ; yes                    ;
-; EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[16]     ; EX_STAGE:inst3|ALU32Bits:b2v_inst|Decoder0 ; yes                    ;
-; EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[17]     ; EX_STAGE:inst3|ALU32Bits:b2v_inst|Decoder0 ; yes                    ;
-; EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[18]     ; EX_STAGE:inst3|ALU32Bits:b2v_inst|Decoder0 ; yes                    ;
-; EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[19]     ; EX_STAGE:inst3|ALU32Bits:b2v_inst|Decoder0 ; yes                    ;
-; EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[20]     ; EX_STAGE:inst3|ALU32Bits:b2v_inst|Decoder0 ; yes                    ;
-; EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[21]     ; EX_STAGE:inst3|ALU32Bits:b2v_inst|Decoder0 ; yes                    ;
-; EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[22]     ; EX_STAGE:inst3|ALU32Bits:b2v_inst|Decoder0 ; yes                    ;
-; EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[23]     ; EX_STAGE:inst3|ALU32Bits:b2v_inst|Decoder0 ; yes                    ;
-; EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[24]     ; EX_STAGE:inst3|ALU32Bits:b2v_inst|Decoder0 ; yes                    ;
-; EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[25]     ; EX_STAGE:inst3|ALU32Bits:b2v_inst|Decoder0 ; yes                    ;
-; EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[26]     ; EX_STAGE:inst3|ALU32Bits:b2v_inst|Decoder0 ; yes                    ;
-; EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[27]     ; EX_STAGE:inst3|ALU32Bits:b2v_inst|Decoder0 ; yes                    ;
-; EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[28]     ; EX_STAGE:inst3|ALU32Bits:b2v_inst|Decoder0 ; yes                    ;
-; EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[29]     ; EX_STAGE:inst3|ALU32Bits:b2v_inst|Decoder0 ; yes                    ;
-; EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[30]     ; EX_STAGE:inst3|ALU32Bits:b2v_inst|Decoder0 ; yes                    ;
-; EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[31]     ; EX_STAGE:inst3|ALU32Bits:b2v_inst|Decoder0 ; yes                    ;
-; Number of user-specified and inferred latches = 32  ;                                            ;                        ;
-+-----------------------------------------------------+--------------------------------------------+------------------------+
-Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
-
-
 +-----------------------------------------------------------------------------------------------------------------------------------------+
 ; Registers Removed During Synthesis                                                                                                      ;
 +----------------------------------------------------------------+------------------------------------------------------------------------+
 ; Register name                                                  ; Reason for Removal                                                     ;
 +----------------------------------------------------------------+------------------------------------------------------------------------+
-; ID_STAGE:inst1|Control:inst8|MemToReg                          ; Merged with ID_STAGE:inst1|Control:inst8|MemRead                       ;
 ; EX_STAGE:inst3|EX_MEM_REGISTER:b2v_inst12|MemtoRegOut          ; Merged with EX_STAGE:inst3|EX_MEM_REGISTER:b2v_inst12|MemReadOut       ;
 ; ID_STAGE:inst1|ID_EX_Register:inst5|outMemToReg                ; Merged with ID_STAGE:inst1|ID_EX_Register:inst5|outMemRead             ;
 ; ID_STAGE:inst1|ID_EX_Register:inst5|outSignExtImm[16..31]      ; Merged with ID_STAGE:inst1|ID_EX_Register:inst5|outSignExtImm[15]      ;
@@ -474,7 +427,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; ID_STAGE:inst1|RegisterFile:inst7|registers[0][2]              ; Stuck at GND due to stuck port data_in                                 ;
 ; ID_STAGE:inst1|RegisterFile:inst7|registers[0][1]              ; Stuck at GND due to stuck port data_in                                 ;
 ; ID_STAGE:inst1|RegisterFile:inst7|registers[0][0]              ; Stuck at GND due to stuck port data_in                                 ;
-; Total Number of Removed Registers = 67                         ;                                                                        ;
+; Total Number of Removed Registers = 66                         ;                                                                        ;
 +----------------------------------------------------------------+------------------------------------------------------------------------+
 
 
@@ -483,9 +436,9 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1537  ;
-; Number of registers using Synchronous Clear  ; 76    ;
-; Number of registers using Synchronous Load   ; 32    ;
+; Total registers                              ; 1520  ;
+; Number of registers using Synchronous Clear  ; 90    ;
+; Number of registers using Synchronous Load   ; 48    ;
 ; Number of registers using Asynchronous Clear ; 178   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 1190  ;
@@ -504,75 +457,65 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                                                                                                                                                                                                                                                                              ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                                                                                                                                                                                                                    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |ProcessadorPipeline|IF_STAGE:inst|ROM:inst3|altsyncram:altsyncram_component|altsyncram_l404:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[5]                                                                                                                                                                                                          ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|IF_STAGE:inst|ROM:inst3|altsyncram:altsyncram_component|altsyncram_l404:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[6]                                                                                                                                                                                                                     ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |ProcessadorPipeline|Mem_Stage:inst4|RAM:b2v_inst1|altsyncram:altsyncram_component|altsyncram_g4v3:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[5]                                                                                                                                                                                                    ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|Mem_Stage:inst4|RAM:b2v_inst1|altsyncram:altsyncram_component|altsyncram_g4v3:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[0]                                                                                                                                                                                                               ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |ProcessadorPipeline|IF_STAGE:inst|ROM:inst3|altsyncram:altsyncram_component|altsyncram_l404:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[1]                                                                                                                                                                                                                     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |ProcessadorPipeline|Mem_Stage:inst4|RAM:b2v_inst1|altsyncram:altsyncram_component|altsyncram_g4v3:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[2]                                                                                                                                                                                                               ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |ProcessadorPipeline|EX_STAGE:inst3|EX_MEM_REGISTER:b2v_inst12|writeRegOut[4]                                                                                                                                                                                                                                                                                                 ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[16][9]                                                                                                                                                                                                                                                                                                       ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[8][6]                                                                                                                                                                                                                                                                                                        ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[24][28]                                                                                                                                                                                                                                                                                                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[4][13]                                                                                                                                                                                                                                                                                                       ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[20][7]                                                                                                                                                                                                                                                                                                       ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[12][2]                                                                                                                                                                                                                                                                                                       ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[28][0]                                                                                                                                                                                                                                                                                                       ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[2][18]                                                                                                                                                                                                                                                                                                       ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[18][14]                                                                                                                                                                                                                                                                                                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[10][20]                                                                                                                                                                                                                                                                                                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[26][12]                                                                                                                                                                                                                                                                                                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[6][14]                                                                                                                                                                                                                                                                                                       ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[22][7]                                                                                                                                                                                                                                                                                                       ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[14][9]                                                                                                                                                                                                                                                                                                       ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[30][28]                                                                                                                                                                                                                                                                                                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[1][8]                                                                                                                                                                                                                                                                                                        ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[17][29]                                                                                                                                                                                                                                                                                                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[9][15]                                                                                                                                                                                                                                                                                                       ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[25][8]                                                                                                                                                                                                                                                                                                       ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[5][20]                                                                                                                                                                                                                                                                                                       ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[21][27]                                                                                                                                                                                                                                                                                                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[13][22]                                                                                                                                                                                                                                                                                                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[29][20]                                                                                                                                                                                                                                                                                                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[3][19]                                                                                                                                                                                                                                                                                                       ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[19][24]                                                                                                                                                                                                                                                                                                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[11][26]                                                                                                                                                                                                                                                                                                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[27][26]                                                                                                                                                                                                                                                                                                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[7][17]                                                                                                                                                                                                                                                                                                       ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[23][24]                                                                                                                                                                                                                                                                                                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[15][21]                                                                                                                                                                                                                                                                                                      ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[31][16]                                                                                                                                                                                                                                                                                                      ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |ProcessadorPipeline|IF_STAGE:inst|ProgramCounter:inst1|currentPC[3]                                                                                                                                                                                                                                                                                                          ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |ProcessadorPipeline|IF_STAGE:inst|ROM:inst3|altsyncram:altsyncram_component|altsyncram_l404:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[1]                                                                                                                                                                      ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |ProcessadorPipeline|Mem_Stage:inst4|RAM:b2v_inst1|altsyncram:altsyncram_component|altsyncram_g4v3:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[1]                                                                                                                                                                ;
-; 33:1               ; 32 bits   ; 704 LEs       ; 672 LEs              ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|ID_EX_Register:inst5|outReadData2[9]                                                                                                                                                                                                                                                                                                      ;
-; 26:1               ; 4 bits    ; 68 LEs        ; 48 LEs               ; 20 LEs                 ; Yes        ; |ProcessadorPipeline|IF_STAGE:inst|ROM:inst3|altsyncram:altsyncram_component|altsyncram_l404:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[0]                                                                                                                                                                           ;
-; 26:1               ; 4 bits    ; 68 LEs        ; 48 LEs               ; 20 LEs                 ; Yes        ; |ProcessadorPipeline|Mem_Stage:inst4|RAM:b2v_inst1|altsyncram:altsyncram_component|altsyncram_g4v3:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[0]                                                                                                                                                                     ;
-; 33:1               ; 32 bits   ; 704 LEs       ; 672 LEs              ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|ID_EX_Register:inst5|outReadData1[3]                                                                                                                                                                                                                                                                                                      ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |ProcessadorPipeline|EX_STAGE:inst3|ALU32Bits:b2v_inst|RFlags[2]                                                                                                                                                                                                                                                                                                              ;
-; 37:1               ; 6 bits    ; 144 LEs       ; 60 LEs               ; 84 LEs                 ; No         ; |ProcessadorPipeline|EX_STAGE:inst3|ALU32Bits:b2v_inst|Mux23                                                                                                                                                                                                                                                                                                                  ;
-; 37:1               ; 8 bits    ; 192 LEs       ; 80 LEs               ; 112 LEs                ; No         ; |ProcessadorPipeline|EX_STAGE:inst3|ALU32Bits:b2v_inst|Mux12                                                                                                                                                                                                                                                                                                                  ;
-; 38:1               ; 4 bits    ; 100 LEs       ; 44 LEs               ; 56 LEs                 ; No         ; |ProcessadorPipeline|EX_STAGE:inst3|ALU32Bits:b2v_inst|Mux9                                                                                                                                                                                                                                                                                                                   ;
-; 39:1               ; 2 bits    ; 52 LEs        ; 24 LEs               ; 28 LEs                 ; No         ; |ProcessadorPipeline|EX_STAGE:inst3|ALU32Bits:b2v_inst|Mux5                                                                                                                                                                                                                                                                                                                   ;
-; 40:1               ; 2 bits    ; 52 LEs        ; 24 LEs               ; 28 LEs                 ; No         ; |ProcessadorPipeline|EX_STAGE:inst3|ALU32Bits:b2v_inst|Mux3                                                                                                                                                                                                                                                                                                                   ;
-; 29:1               ; 2 bits    ; 38 LEs        ; 18 LEs               ; 20 LEs                 ; No         ; |ProcessadorPipeline|EX_STAGE:inst3|ALU32Bits:b2v_inst|Mux25                                                                                                                                                                                                                                                                                                                  ;
-; 30:1               ; 4 bits    ; 80 LEs        ; 44 LEs               ; 36 LEs                 ; No         ; |ProcessadorPipeline|EX_STAGE:inst3|ALU32Bits:b2v_inst|Mux28                                                                                                                                                                                                                                                                                                                  ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |ProcessadorPipeline|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|shadow_irf_reg[1][6]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |ProcessadorPipeline|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|shadow_irf_reg[2][2]                    ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |ProcessadorPipeline|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|hub_minor_ver_reg[3]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |ProcessadorPipeline|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|irf_reg[1][6]                           ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |ProcessadorPipeline|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|irf_reg[2][0]                           ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |ProcessadorPipeline|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[3]              ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |ProcessadorPipeline|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg|word_counter[0] ;
-; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |ProcessadorPipeline|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|irsr_reg[5]                             ;
-; 34:1               ; 4 bits    ; 88 LEs        ; 64 LEs               ; 24 LEs                 ; Yes        ; |ProcessadorPipeline|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[0]                      ;
-; 28:1               ; 4 bits    ; 72 LEs        ; 48 LEs               ; 24 LEs                 ; Yes        ; |ProcessadorPipeline|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg|WORD_SR[0]      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                                                                                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |ProcessadorPipeline|IF_STAGE:inst|ROM:inst3|altsyncram:altsyncram_component|altsyncram_l404:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[5]                                           ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|IF_STAGE:inst|ROM:inst3|altsyncram:altsyncram_component|altsyncram_l404:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[0]                                                      ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |ProcessadorPipeline|Mem_Stage:inst4|RAM:b2v_inst1|altsyncram:altsyncram_component|altsyncram_g4v3:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[5]                                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|Mem_Stage:inst4|RAM:b2v_inst1|altsyncram:altsyncram_component|altsyncram_g4v3:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[0]                                                ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |ProcessadorPipeline|IF_STAGE:inst|ROM:inst3|altsyncram:altsyncram_component|altsyncram_l404:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[5]                                                      ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |ProcessadorPipeline|Mem_Stage:inst4|RAM:b2v_inst1|altsyncram:altsyncram_component|altsyncram_g4v3:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[2]                                                ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[16][5]                                                                                                                                        ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[8][25]                                                                                                                                        ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[24][8]                                                                                                                                        ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[4][9]                                                                                                                                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[20][2]                                                                                                                                        ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[12][21]                                                                                                                                       ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[28][30]                                                                                                                                       ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[2][19]                                                                                                                                        ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[18][8]                                                                                                                                        ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[10][4]                                                                                                                                        ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[26][28]                                                                                                                                       ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[6][24]                                                                                                                                        ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[22][26]                                                                                                                                       ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[14][8]                                                                                                                                        ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[30][29]                                                                                                                                       ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[1][30]                                                                                                                                        ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[17][11]                                                                                                                                       ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[9][19]                                                                                                                                        ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[25][2]                                                                                                                                        ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[5][20]                                                                                                                                        ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[21][8]                                                                                                                                        ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[13][7]                                                                                                                                        ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[29][16]                                                                                                                                       ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[3][12]                                                                                                                                        ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[19][13]                                                                                                                                       ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[11][26]                                                                                                                                       ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[27][20]                                                                                                                                       ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[7][30]                                                                                                                                        ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[23][2]                                                                                                                                        ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[15][28]                                                                                                                                       ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|RegisterFile:inst7|registers[31][14]                                                                                                                                       ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |ProcessadorPipeline|IF_STAGE:inst|ProgramCounter:inst1|currentPC[7]                                                                                                                                           ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |ProcessadorPipeline|IF_STAGE:inst|ROM:inst3|altsyncram:altsyncram_component|altsyncram_l404:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]       ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |ProcessadorPipeline|Mem_Stage:inst4|RAM:b2v_inst1|altsyncram:altsyncram_component|altsyncram_g4v3:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3] ;
+; 18:1               ; 8 bits    ; 96 LEs        ; 16 LEs               ; 80 LEs                 ; Yes        ; |ProcessadorPipeline|EX_STAGE:inst3|EX_MEM_REGISTER:b2v_inst12|outBranchTarget[5]                                                                                                                              ;
+; 33:1               ; 32 bits   ; 704 LEs       ; 672 LEs              ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|ID_EX_Register:inst5|outReadData2[21]                                                                                                                                      ;
+; 26:1               ; 4 bits    ; 68 LEs        ; 48 LEs               ; 20 LEs                 ; Yes        ; |ProcessadorPipeline|IF_STAGE:inst|ROM:inst3|altsyncram:altsyncram_component|altsyncram_l404:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[2]            ;
+; 26:1               ; 4 bits    ; 68 LEs        ; 48 LEs               ; 20 LEs                 ; Yes        ; |ProcessadorPipeline|Mem_Stage:inst4|RAM:b2v_inst1|altsyncram:altsyncram_component|altsyncram_g4v3:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[2]      ;
+; 39:1               ; 6 bits    ; 156 LEs       ; 54 LEs               ; 102 LEs                ; Yes        ; |ProcessadorPipeline|EX_STAGE:inst3|EX_MEM_REGISTER:b2v_inst12|outALUResult[12]                                                                                                                                ;
+; 39:1               ; 8 bits    ; 208 LEs       ; 72 LEs               ; 136 LEs                ; Yes        ; |ProcessadorPipeline|EX_STAGE:inst3|EX_MEM_REGISTER:b2v_inst12|outALUResult[17]                                                                                                                                ;
+; 40:1               ; 4 bits    ; 104 LEs       ; 40 LEs               ; 64 LEs                 ; Yes        ; |ProcessadorPipeline|EX_STAGE:inst3|EX_MEM_REGISTER:b2v_inst12|outALUResult[27]                                                                                                                                ;
+; 41:1               ; 2 bits    ; 54 LEs        ; 24 LEs               ; 30 LEs                 ; Yes        ; |ProcessadorPipeline|EX_STAGE:inst3|EX_MEM_REGISTER:b2v_inst12|outALUResult[29]                                                                                                                                ;
+; 42:1               ; 2 bits    ; 56 LEs        ; 24 LEs               ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|EX_STAGE:inst3|EX_MEM_REGISTER:b2v_inst12|outALUResult[31]                                                                                                                                ;
+; 32:1               ; 2 bits    ; 42 LEs        ; 22 LEs               ; 20 LEs                 ; Yes        ; |ProcessadorPipeline|EX_STAGE:inst3|EX_MEM_REGISTER:b2v_inst12|outALUResult[9]                                                                                                                                 ;
+; 33:1               ; 4 bits    ; 88 LEs        ; 40 LEs               ; 48 LEs                 ; Yes        ; |ProcessadorPipeline|EX_STAGE:inst3|EX_MEM_REGISTER:b2v_inst12|outALUResult[4]                                                                                                                                 ;
+; 33:1               ; 32 bits   ; 704 LEs       ; 672 LEs              ; 32 LEs                 ; Yes        ; |ProcessadorPipeline|ID_STAGE:inst1|ID_EX_Register:inst5|outReadData1[0]                                                                                                                                       ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |ProcessadorPipeline|EX_STAGE:inst3|ALU32Bits:b2v_inst|RFlags[2]                                                                                                                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------+
@@ -777,29 +720,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: EX_STAGE:inst3|ALU32Bits:b2v_inst|lpm_divide:Div0 ;
-+------------------------+----------------+----------------------------------------------------------+
-; Parameter Name         ; Value          ; Type                                                     ;
-+------------------------+----------------+----------------------------------------------------------+
-; LPM_WIDTHN             ; 32             ; Untyped                                                  ;
-; LPM_WIDTHD             ; 32             ; Untyped                                                  ;
-; LPM_NREPRESENTATION    ; SIGNED         ; Untyped                                                  ;
-; LPM_DREPRESENTATION    ; SIGNED         ; Untyped                                                  ;
-; LPM_PIPELINE           ; 0              ; Untyped                                                  ;
-; LPM_REMAINDERPOSITIVE  ; FALSE          ; Untyped                                                  ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                                  ;
-; CBXI_PARAMETER         ; lpm_divide_92p ; Untyped                                                  ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                                  ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                  ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                               ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                             ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                             ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                           ;
-+------------------------+----------------+----------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +---------------------------------------------------------------------------------------------------+
 ; Parameter Settings for Inferred Entity Instance: EX_STAGE:inst3|ALU32Bits:b2v_inst|lpm_mult:Mult0 ;
 +------------------------------------------------+--------------+-----------------------------------+
@@ -832,6 +752,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped                           ;
 ; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped                           ;
 +------------------------------------------------+--------------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: EX_STAGE:inst3|ALU32Bits:b2v_inst|lpm_divide:Div0 ;
++------------------------+----------------+----------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                     ;
++------------------------+----------------+----------------------------------------------------------+
+; LPM_WIDTHN             ; 32             ; Untyped                                                  ;
+; LPM_WIDTHD             ; 32             ; Untyped                                                  ;
+; LPM_NREPRESENTATION    ; SIGNED         ; Untyped                                                  ;
+; LPM_DREPRESENTATION    ; SIGNED         ; Untyped                                                  ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                  ;
+; LPM_REMAINDERPOSITIVE  ; FALSE          ; Untyped                                                  ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                  ;
+; CBXI_PARAMETER         ; lpm_divide_92p ; Untyped                                                  ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                  ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                  ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                               ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                             ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                             ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                           ;
++------------------------+----------------+----------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -901,72 +844,43 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 58                          ;
-; cycloneiii_ff         ; 1423                        ;
+; boundary_port         ; 59                          ;
+; cycloneiii_ff         ; 1406                        ;
 ;     CLR               ; 87                          ;
 ;     ENA               ; 1064                        ;
 ;     ENA CLR           ; 14                          ;
 ;     ENA CLR SLD       ; 16                          ;
 ;     ENA SCLR          ; 10                          ;
-;     SCLR              ; 54                          ;
-;     plain             ; 178                         ;
-; cycloneiii_lcell_comb ; 4080                        ;
-;     arith             ; 782                         ;
+;     SCLR              ; 56                          ;
+;     SCLR SLD          ; 12                          ;
+;     SLD               ; 4                           ;
+;     plain             ; 143                         ;
+; cycloneiii_lcell_comb ; 3970                        ;
+;     arith             ; 813                         ;
 ;         2 data inputs ; 94                          ;
-;         3 data inputs ; 688                         ;
-;     normal            ; 3298                        ;
+;         3 data inputs ; 719                         ;
+;     normal            ; 3157                        ;
 ;         0 data inputs ; 31                          ;
 ;         1 data inputs ; 8                           ;
-;         2 data inputs ; 227                         ;
-;         3 data inputs ; 487                         ;
-;         4 data inputs ; 2545                        ;
+;         2 data inputs ; 186                         ;
+;         3 data inputs ; 391                         ;
+;         4 data inputs ; 2541                        ;
 ; cycloneiii_mac_mult   ; 4                           ;
 ; cycloneiii_mac_out    ; 4                           ;
 ; cycloneiii_ram_block  ; 64                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 142.90                      ;
-; Average LUT depth     ; 47.03                       ;
+; Max LUT depth         ; 143.50                      ;
+; Average LUT depth     ; 48.09                       ;
 +-----------------------+-----------------------------+
 
 
-+------------------------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Partition sld_hub:auto_hub ;
-+-----------------------+------------------------------------------+
-; Type                  ; Count                                    ;
-+-----------------------+------------------------------------------+
-; boundary_port         ; 165                                      ;
-; cycloneiii_ff         ; 114                                      ;
-;     CLR               ; 5                                        ;
-;     ENA               ; 16                                       ;
-;     ENA CLR           ; 49                                       ;
-;     ENA CLR SLD       ; 7                                        ;
-;     ENA SCLR          ; 5                                        ;
-;     ENA SLD           ; 9                                        ;
-;     SCLR              ; 7                                        ;
-;     plain             ; 16                                       ;
-; cycloneiii_lcell_comb ; 175                                      ;
-;     arith             ; 8                                        ;
-;         2 data inputs ; 8                                        ;
-;     normal            ; 167                                      ;
-;         0 data inputs ; 1                                        ;
-;         1 data inputs ; 6                                        ;
-;         2 data inputs ; 25                                       ;
-;         3 data inputs ; 65                                       ;
-;         4 data inputs ; 70                                       ;
-;                       ;                                          ;
-; Max LUT depth         ; 4.00                                     ;
-; Average LUT depth     ; 1.90                                     ;
-+-----------------------+------------------------------------------+
-
-
-+---------------------------------+
-; Elapsed Time Per Partition      ;
-+------------------+--------------+
-; Partition Name   ; Elapsed Time ;
-+------------------+--------------+
-; Top              ; 00:00:13     ;
-; sld_hub:auto_hub ; 00:00:01     ;
-+------------------+--------------+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:16     ;
++----------------+--------------+
 
 
 +-------------------------------+
@@ -975,7 +889,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Feb 11 22:49:20 2025
+    Info: Processing started: Wed Feb 12 22:34:59 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ProcessadorPipeline -c ProcessadorPipeline
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -1116,55 +1030,22 @@ Warning (12125): Using design file ex_stage.v, which is not specified as a desig
 Warning (12300): Found the following files while searching for definition of entity "EX_STAGE", but did not use these files because already using a different file containing the entity definition
     Warning (12126): File: EX_STAGE.bdf
 Info (12128): Elaborating entity "EX_STAGE" for hierarchy "EX_STAGE:inst3"
-Info (12128): Elaborating entity "ALU32Bits" for hierarchy "EX_STAGE:inst3|ALU32Bits:b2v_inst" File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ex_stage.v Line: 90
+Info (12128): Elaborating entity "ALU32Bits" for hierarchy "EX_STAGE:inst3|ALU32Bits:b2v_inst" File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ex_stage.v Line: 87
+Warning (10235): Verilog HDL Always Construct warning at ALU32Bits.v(45): variable "ALUControl" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 45
+Warning (10764): Verilog HDL warning at ALU32Bits.v(145): converting signed shift amount to unsigned File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 145
 Warning (10764): Verilog HDL warning at ALU32Bits.v(149): converting signed shift amount to unsigned File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 149
-Warning (10764): Verilog HDL warning at ALU32Bits.v(153): converting signed shift amount to unsigned File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 153
-Warning (10235): Verilog HDL Always Construct warning at ALU32Bits.v(184): variable "RFlagsStored" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 184
-Warning (10240): Verilog HDL Always Construct warning at ALU32Bits.v(44): inferring latch(es) for variable "ALUResult", which holds its previous value in one or more paths through the always construct File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-Warning (10240): Verilog HDL Always Construct warning at ALU32Bits.v(44): inferring latch(es) for variable "MUL_Result", which holds its previous value in one or more paths through the always construct File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-Info (10041): Inferred latch for "ALUResult[0]" at ALU32Bits.v(44) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-Info (10041): Inferred latch for "ALUResult[1]" at ALU32Bits.v(44) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-Info (10041): Inferred latch for "ALUResult[2]" at ALU32Bits.v(44) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-Info (10041): Inferred latch for "ALUResult[3]" at ALU32Bits.v(44) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-Info (10041): Inferred latch for "ALUResult[4]" at ALU32Bits.v(44) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-Info (10041): Inferred latch for "ALUResult[5]" at ALU32Bits.v(44) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-Info (10041): Inferred latch for "ALUResult[6]" at ALU32Bits.v(44) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-Info (10041): Inferred latch for "ALUResult[7]" at ALU32Bits.v(44) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-Info (10041): Inferred latch for "ALUResult[8]" at ALU32Bits.v(44) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-Info (10041): Inferred latch for "ALUResult[9]" at ALU32Bits.v(44) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-Info (10041): Inferred latch for "ALUResult[10]" at ALU32Bits.v(44) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-Info (10041): Inferred latch for "ALUResult[11]" at ALU32Bits.v(44) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-Info (10041): Inferred latch for "ALUResult[12]" at ALU32Bits.v(44) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-Info (10041): Inferred latch for "ALUResult[13]" at ALU32Bits.v(44) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-Info (10041): Inferred latch for "ALUResult[14]" at ALU32Bits.v(44) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-Info (10041): Inferred latch for "ALUResult[15]" at ALU32Bits.v(44) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-Info (10041): Inferred latch for "ALUResult[16]" at ALU32Bits.v(44) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-Info (10041): Inferred latch for "ALUResult[17]" at ALU32Bits.v(44) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-Info (10041): Inferred latch for "ALUResult[18]" at ALU32Bits.v(44) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-Info (10041): Inferred latch for "ALUResult[19]" at ALU32Bits.v(44) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-Info (10041): Inferred latch for "ALUResult[20]" at ALU32Bits.v(44) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-Info (10041): Inferred latch for "ALUResult[21]" at ALU32Bits.v(44) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-Info (10041): Inferred latch for "ALUResult[22]" at ALU32Bits.v(44) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-Info (10041): Inferred latch for "ALUResult[23]" at ALU32Bits.v(44) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-Info (10041): Inferred latch for "ALUResult[24]" at ALU32Bits.v(44) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-Info (10041): Inferred latch for "ALUResult[25]" at ALU32Bits.v(44) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-Info (10041): Inferred latch for "ALUResult[26]" at ALU32Bits.v(44) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-Info (10041): Inferred latch for "ALUResult[27]" at ALU32Bits.v(44) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-Info (10041): Inferred latch for "ALUResult[28]" at ALU32Bits.v(44) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-Info (10041): Inferred latch for "ALUResult[29]" at ALU32Bits.v(44) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-Info (10041): Inferred latch for "ALUResult[30]" at ALU32Bits.v(44) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-Info (10041): Inferred latch for "ALUResult[31]" at ALU32Bits.v(44) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-Info (12128): Elaborating entity "Somador" for hierarchy "EX_STAGE:inst3|Somador:b2v_inst11" File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ex_stage.v Line: 118
-Info (12128): Elaborating entity "EX_MEM_REGISTER" for hierarchy "EX_STAGE:inst3|EX_MEM_REGISTER:b2v_inst12" File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ex_stage.v Line: 141
-Info (12128): Elaborating entity "Mux2to1_5bits" for hierarchy "EX_STAGE:inst3|Mux2to1_5bits:b2v_inst13" File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ex_stage.v Line: 148
-Info (12128): Elaborating entity "Mux2to1_32bits" for hierarchy "EX_STAGE:inst3|Mux2to1_32bits:b2v_inst8" File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ex_stage.v Line: 157
+Warning (10235): Verilog HDL Always Construct warning at ALU32Bits.v(174): variable "PC" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 174
+Warning (10235): Verilog HDL Always Construct warning at ALU32Bits.v(180): variable "RFlagsStored" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 180
+Warning (10240): Verilog HDL Always Construct warning at ALU32Bits.v(38): inferring latch(es) for variable "MUL_Result", which holds its previous value in one or more paths through the always construct File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 38
+Info (12128): Elaborating entity "EX_MEM_REGISTER" for hierarchy "EX_STAGE:inst3|EX_MEM_REGISTER:b2v_inst12" File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ex_stage.v Line: 132
+Info (12128): Elaborating entity "Mux2to1_32bits" for hierarchy "EX_STAGE:inst3|Mux2to1_32bits:b2v_inst8" File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ex_stage.v Line: 141
 Info (12128): Elaborating entity "ID_STAGE" for hierarchy "ID_STAGE:inst1"
 Info (12128): Elaborating entity "ID_EX_Register" for hierarchy "ID_STAGE:inst1|ID_EX_Register:inst5"
 Info (12128): Elaborating entity "Control" for hierarchy "ID_STAGE:inst1|Control:inst8"
-Warning (10230): Verilog HDL assignment warning at Control.v(73): truncated value with size 32 to match size of target (1) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/Control.v Line: 73
-Warning (10230): Verilog HDL assignment warning at Control.v(75): truncated value with size 32 to match size of target (1) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/Control.v Line: 75
-Warning (10230): Verilog HDL assignment warning at Control.v(83): truncated value with size 32 to match size of target (1) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/Control.v Line: 83
-Warning (10230): Verilog HDL assignment warning at Control.v(85): truncated value with size 32 to match size of target (1) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/Control.v Line: 85
+Warning (10230): Verilog HDL assignment warning at Control.v(72): truncated value with size 32 to match size of target (1) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/Control.v Line: 72
+Warning (10230): Verilog HDL assignment warning at Control.v(74): truncated value with size 32 to match size of target (1) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/Control.v Line: 74
+Warning (10230): Verilog HDL assignment warning at Control.v(82): truncated value with size 32 to match size of target (1) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/Control.v Line: 82
+Warning (10230): Verilog HDL assignment warning at Control.v(84): truncated value with size 32 to match size of target (1) File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/Control.v Line: 84
 Info (12128): Elaborating entity "InstructionDecoder" for hierarchy "ID_STAGE:inst1|InstructionDecoder:inst9"
 Info (12128): Elaborating entity "RegisterFile" for hierarchy "ID_STAGE:inst1|RegisterFile:inst7"
 Info (12128): Elaborating entity "SignExtend" for hierarchy "ID_STAGE:inst1|SignExtend:inst6"
@@ -1248,7 +1129,7 @@ Info (12133): Instantiated megafunction "Mem_Stage:inst4|RAM:b2v_inst1|altsyncra
     Info (12134): Parameter "WIDTHAD" = "8"
 Info (12128): Elaborating entity "ExtractMSB" for hierarchy "Mem_Stage:inst4|ExtractMSB:b2v_inst2" File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/mem_stage.v Line: 87
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2025.02.11.23:49:48 Progress: Loading sld8469f618/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2025.02.12.23:35:24 Progress: Loading sld8469f618/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -1272,10 +1153,23 @@ Info (12021): Found 2 design units, including 1 entities, in source file db/ip/s
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld8469f618/submodules/alt_sld_fab_alt_sld_fab_splitter.sv
     Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/db/ip/sld8469f618/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
 Info (278001): Inferred 2 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "EX_STAGE:inst3|ALU32Bits:b2v_inst|Div0" File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 127
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "EX_STAGE:inst3|ALU32Bits:b2v_inst|Mult0" File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 108
-Info (12130): Elaborated megafunction instantiation "EX_STAGE:inst3|ALU32Bits:b2v_inst|lpm_divide:Div0" File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 127
-Info (12133): Instantiated megafunction "EX_STAGE:inst3|ALU32Bits:b2v_inst|lpm_divide:Div0" with the following parameter: File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 127
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "EX_STAGE:inst3|ALU32Bits:b2v_inst|Mult0" File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 104
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "EX_STAGE:inst3|ALU32Bits:b2v_inst|Div0" File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 123
+Info (12130): Elaborated megafunction instantiation "EX_STAGE:inst3|ALU32Bits:b2v_inst|lpm_mult:Mult0" File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 104
+Info (12133): Instantiated megafunction "EX_STAGE:inst3|ALU32Bits:b2v_inst|lpm_mult:Mult0" with the following parameter: File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 104
+    Info (12134): Parameter "LPM_WIDTHA" = "32"
+    Info (12134): Parameter "LPM_WIDTHB" = "32"
+    Info (12134): Parameter "LPM_WIDTHP" = "64"
+    Info (12134): Parameter "LPM_WIDTHR" = "64"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_46t.tdf
+    Info (12023): Found entity 1: mult_46t File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/db/mult_46t.tdf Line: 30
+Info (12130): Elaborated megafunction instantiation "EX_STAGE:inst3|ALU32Bits:b2v_inst|lpm_divide:Div0" File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 123
+Info (12133): Instantiated megafunction "EX_STAGE:inst3|ALU32Bits:b2v_inst|lpm_divide:Div0" with the following parameter: File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 123
     Info (12134): Parameter "LPM_WIDTHN" = "32"
     Info (12134): Parameter "LPM_WIDTHD" = "32"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "SIGNED"
@@ -1293,104 +1187,24 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/add_
     Info (12023): Found entity 1: add_sub_8pc File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/db/add_sub_8pc.tdf Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_abs_i0a.tdf
     Info (12023): Found entity 1: lpm_abs_i0a File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/db/lpm_abs_i0a.tdf Line: 24
-Info (12130): Elaborated megafunction instantiation "EX_STAGE:inst3|ALU32Bits:b2v_inst|lpm_mult:Mult0" File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 108
-Info (12133): Instantiated megafunction "EX_STAGE:inst3|ALU32Bits:b2v_inst|lpm_mult:Mult0" with the following parameter: File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 108
-    Info (12134): Parameter "LPM_WIDTHA" = "32"
-    Info (12134): Parameter "LPM_WIDTHB" = "32"
-    Info (12134): Parameter "LPM_WIDTHP" = "64"
-    Info (12134): Parameter "LPM_WIDTHR" = "64"
-    Info (12134): Parameter "LPM_WIDTHS" = "1"
-    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
-    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
-    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
-    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
-Info (12021): Found 1 design units, including 1 entities, in source file db/mult_46t.tdf
-    Info (12023): Found entity 1: mult_46t File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/db/mult_46t.tdf Line: 30
 Info (13014): Ignored 310 buffer(s)
     Info (13016): Ignored 62 CARRY_SUM buffer(s)
     Info (13019): Ignored 248 SOFT buffer(s)
-Warning (13012): Latch EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[0] has unsafe behavior File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_STAGE:inst1|ID_EX_Register:inst5|outALUOp[3] File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/ID_EX_Register.v Line: 37
-Warning (13012): Latch EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[1] has unsafe behavior File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_STAGE:inst1|ID_EX_Register:inst5|outALUOp[3] File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/ID_EX_Register.v Line: 37
-Warning (13012): Latch EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[2] has unsafe behavior File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_STAGE:inst1|ID_EX_Register:inst5|outALUOp[3] File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/ID_EX_Register.v Line: 37
-Warning (13012): Latch EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[3] has unsafe behavior File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_STAGE:inst1|ID_EX_Register:inst5|outALUOp[3] File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/ID_EX_Register.v Line: 37
-Warning (13012): Latch EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[4] has unsafe behavior File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_STAGE:inst1|ID_EX_Register:inst5|outALUOp[1] File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/ID_EX_Register.v Line: 37
-Warning (13012): Latch EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[5] has unsafe behavior File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_STAGE:inst1|ID_EX_Register:inst5|outALUOp[1] File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/ID_EX_Register.v Line: 37
-Warning (13012): Latch EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[6] has unsafe behavior File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_STAGE:inst1|ID_EX_Register:inst5|outALUOp[1] File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/ID_EX_Register.v Line: 37
-Warning (13012): Latch EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[7] has unsafe behavior File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_STAGE:inst1|ID_EX_Register:inst5|outALUOp[1] File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/ID_EX_Register.v Line: 37
-Warning (13012): Latch EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[8] has unsafe behavior File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_STAGE:inst1|ID_EX_Register:inst5|outALUOp[1] File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/ID_EX_Register.v Line: 37
-Warning (13012): Latch EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[9] has unsafe behavior File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_STAGE:inst1|ID_EX_Register:inst5|outALUOp[1] File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/ID_EX_Register.v Line: 37
-Warning (13012): Latch EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[10] has unsafe behavior File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_STAGE:inst1|ID_EX_Register:inst5|outALUOp[2] File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/ID_EX_Register.v Line: 37
-Warning (13012): Latch EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[11] has unsafe behavior File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_STAGE:inst1|ID_EX_Register:inst5|outALUOp[2] File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/ID_EX_Register.v Line: 37
-Warning (13012): Latch EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[12] has unsafe behavior File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_STAGE:inst1|ID_EX_Register:inst5|outALUOp[2] File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/ID_EX_Register.v Line: 37
-Warning (13012): Latch EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[13] has unsafe behavior File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_STAGE:inst1|ID_EX_Register:inst5|outALUOp[2] File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/ID_EX_Register.v Line: 37
-Warning (13012): Latch EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[14] has unsafe behavior File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_STAGE:inst1|ID_EX_Register:inst5|outALUOp[2] File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/ID_EX_Register.v Line: 37
-Warning (13012): Latch EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[15] has unsafe behavior File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_STAGE:inst1|ID_EX_Register:inst5|outALUOp[2] File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/ID_EX_Register.v Line: 37
-Warning (13012): Latch EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[16] has unsafe behavior File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_STAGE:inst1|ID_EX_Register:inst5|outALUOp[2] File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/ID_EX_Register.v Line: 37
-Warning (13012): Latch EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[17] has unsafe behavior File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_STAGE:inst1|ID_EX_Register:inst5|outALUOp[2] File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/ID_EX_Register.v Line: 37
-Warning (13012): Latch EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[18] has unsafe behavior File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_STAGE:inst1|ID_EX_Register:inst5|outALUOp[2] File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/ID_EX_Register.v Line: 37
-Warning (13012): Latch EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[19] has unsafe behavior File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_STAGE:inst1|ID_EX_Register:inst5|outALUOp[2] File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/ID_EX_Register.v Line: 37
-Warning (13012): Latch EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[20] has unsafe behavior File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_STAGE:inst1|ID_EX_Register:inst5|outALUOp[2] File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/ID_EX_Register.v Line: 37
-Warning (13012): Latch EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[21] has unsafe behavior File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_STAGE:inst1|ID_EX_Register:inst5|outALUOp[2] File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/ID_EX_Register.v Line: 37
-Warning (13012): Latch EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[22] has unsafe behavior File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_STAGE:inst1|ID_EX_Register:inst5|outALUOp[2] File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/ID_EX_Register.v Line: 37
-Warning (13012): Latch EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[23] has unsafe behavior File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_STAGE:inst1|ID_EX_Register:inst5|outALUOp[2] File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/ID_EX_Register.v Line: 37
-Warning (13012): Latch EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[24] has unsafe behavior File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_STAGE:inst1|ID_EX_Register:inst5|outALUOp[3] File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/ID_EX_Register.v Line: 37
-Warning (13012): Latch EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[25] has unsafe behavior File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_STAGE:inst1|ID_EX_Register:inst5|outALUOp[3] File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/ID_EX_Register.v Line: 37
-Warning (13012): Latch EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[26] has unsafe behavior File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_STAGE:inst1|ID_EX_Register:inst5|outALUOp[3] File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/ID_EX_Register.v Line: 37
-Warning (13012): Latch EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[27] has unsafe behavior File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_STAGE:inst1|ID_EX_Register:inst5|outALUOp[3] File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/ID_EX_Register.v Line: 37
-Warning (13012): Latch EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[28] has unsafe behavior File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_STAGE:inst1|ID_EX_Register:inst5|outALUOp[3] File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/ID_EX_Register.v Line: 37
-Warning (13012): Latch EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[29] has unsafe behavior File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_STAGE:inst1|ID_EX_Register:inst5|outALUOp[4] File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/ID_EX_Register.v Line: 37
-Warning (13012): Latch EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[30] has unsafe behavior File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_STAGE:inst1|ID_EX_Register:inst5|outALUOp[3] File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/ID_EX_Register.v Line: 37
-Warning (13012): Latch EX_STAGE:inst3|ALU32Bits:b2v_inst|ALUResult[31] has unsafe behavior File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/EX_STAGE/ALU32Bits.v Line: 44
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal ID_STAGE:inst1|ID_EX_Register:inst5|outALUOp[3] File: C:/Users/Heverton Reis/Downloads/Processador/Quartus/ID_STAGE/ID_EX_Register.v Line: 37
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
-Info (13000): Registers with preset signals will power-up high File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd Line: 386
-Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
-Info (286031): Timing-Driven Synthesis is running on partition "sld_hub:auto_hub"
 Info (144001): Generated suppressed messages file C:/Users/Heverton Reis/Downloads/Processador/Quartus/output_files/ProcessadorPipeline.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 5437 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 7 input pins
+Info (21057): Implemented 5327 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
     Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 5356 logic cells
+    Info (21061): Implemented 5245 logic cells
     Info (21064): Implemented 64 RAM segments
     Info (21062): Implemented 8 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 82 warnings
-    Info: Peak virtual memory: 4884 megabytes
-    Info: Processing ended: Tue Feb 11 22:50:30 2025
-    Info: Elapsed time: 00:01:10
-    Info: Total CPU time (on all processors): 00:01:34
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 19 warnings
+    Info: Peak virtual memory: 4885 megabytes
+    Info: Processing ended: Wed Feb 12 22:36:05 2025
+    Info: Elapsed time: 00:01:06
+    Info: Total CPU time (on all processors): 00:01:33
 
 
 +------------------------------------------+

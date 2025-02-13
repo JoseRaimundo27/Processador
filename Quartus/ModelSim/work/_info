@@ -9,13 +9,13 @@ z2
 cModel Technology
 dC:/Users/Heverton Reis/Downloads/PCID/IF_STAGE/ModelSim
 vALU32Bits
-Z0 !s110 1739323020
+Z0 !s110 1739407999
 !i10b 1
-!s100 lJbS1o@XYoncU:HA;M=XP3
-IdJA2_nS3Ia7Z5QD;f2QOh1
+!s100 PCU96FVehHnYSjh^O<ZFj3
+I><?V8`?5Zb30PYOF:T;Lh2
 Z1 VDg1SIo80bB@j0V0VzS_@n1
 Z2 dC:/Users/Heverton Reis/Documents/PCID/ModelSim
-w1739315333
+w1739406825
 8C:/Users/Heverton Reis/Documents/PCID/ModelSim/ALU32Bits.v
 FC:/Users/Heverton Reis/Documents/PCID/ModelSim/ALU32Bits.v
 L0 1
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1739323020.000000
+Z4 !s108 1739407999.000000
 !s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/ALU32Bits.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/ALU32Bits.v|
 !i113 1
@@ -53,21 +53,21 @@ R5
 R6
 n@a@l@u@control
 vControl
-Z8 !s110 1739323021
+R0
 !i10b 1
-!s100 k55[DWHigl5VPffl:QcVN3
-Ik0KniQKi?PZZQ3C1Wf@h;2
+!s100 DNnMz0>[0OSamhc_8b=VZ2
+Ibk_R_GKI^XcTfIC99U]XR0
 R1
 R2
-w1739234991
+w1739407865
 8C:/Users/Heverton Reis/Documents/PCID/ModelSim/Control.v
 FC:/Users/Heverton Reis/Documents/PCID/ModelSim/Control.v
-L0 3
+L0 1
 R3
 r1
 !s85 0
 31
-Z9 !s108 1739323021.000000
+R4
 !s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/Control.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/Control.v|
 !i113 1
@@ -75,7 +75,7 @@ R5
 R6
 n@control
 vEX_MEM_REGISTER
-R8
+R0
 !i10b 1
 !s100 FQXIjgFD=BdVIlV=e79DT1
 IO=9LbTmT;AWEn9C6JPO2R2
@@ -89,7 +89,7 @@ R3
 r1
 !s85 0
 31
-R9
+R4
 !s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/EX_MEM_REGISTER.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/EX_MEM_REGISTER.v|
 !i113 1
@@ -97,21 +97,21 @@ R5
 R6
 n@e@x_@m@e@m_@r@e@g@i@s@t@e@r
 vEX_STAGE
-R8
+Z8 !s110 1739408000
 !i10b 1
-!s100 >WzRjciofJElZlXRR0TB20
-IfjP`z7cY4A]?N9UTiH<>H3
+!s100 6a[<N3o709A?5mJZX4<c53
+INGTmKd^JhcFfZb?7:M`e10
 R1
 R2
-w1739125542
+w1739406085
 8C:/Users/Heverton Reis/Documents/PCID/ModelSim/EX_STAGE.v
 FC:/Users/Heverton Reis/Documents/PCID/ModelSim/EX_STAGE.v
-Z10 L0 19
+Z9 L0 19
 R3
 r1
 !s85 0
 31
-R9
+R4
 !s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/EX_STAGE.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/EX_STAGE.v|
 !i113 1
@@ -133,7 +133,7 @@ R3
 r1
 !s85 0
 31
-R9
+Z10 !s108 1739408000.000000
 !s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/ExtractMSB.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/ExtractMSB.v|
 !i113 1
@@ -143,11 +143,11 @@ n@extract@m@s@b
 vID_EX_Register
 R8
 !i10b 1
-!s100 iMG>4PWadmJ^OAbF:?JXH3
-I9Vb6aLnBRVCjL5[`M@UYC0
+!s100 jfX02XVR`5bEli<TcTih20
+IKfl[;2gWRD2hUZN[iY7kN3
 R1
 R2
-R7
+w1739406514
 8C:/Users/Heverton Reis/Documents/PCID/ModelSim/ID_EX_Register.v
 FC:/Users/Heverton Reis/Documents/PCID/ModelSim/ID_EX_Register.v
 L0 1
@@ -155,7 +155,7 @@ R3
 r1
 !s85 0
 31
-R9
+R10
 !s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/ID_EX_Register.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/ID_EX_Register.v|
 !i113 1
@@ -165,19 +165,19 @@ n@i@d_@e@x_@register
 vID_STAGE
 R8
 !i10b 1
-!s100 ACVhEZgO2o6=Sh@H@]G3k2
-IK=2VQ2lN]zfUiSe7H=Rif3
+!s100 R940zcHLzD3_V5=K_L5aj3
+ITDIz;9L@jE::^IHHg4F3O1
 R1
 R2
-w1739322164
+w1739407929
 8C:/Users/Heverton Reis/Documents/PCID/ModelSim/ID_STAGE.v
 FC:/Users/Heverton Reis/Documents/PCID/ModelSim/ID_STAGE.v
-R10
+R9
 R3
 r1
 !s85 0
 31
-R9
+R10
 !s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/ID_STAGE.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/ID_STAGE.v|
 !i113 1
@@ -185,7 +185,7 @@ R5
 R6
 n@i@d_@s@t@a@g@e
 vIF_ID_Register
-Z11 !s110 1739323022
+R8
 !i10b 1
 !s100 34>UQCMOUC>?m]Sm21M=20
 IUUj0R9?mfZ6g7<acYEKV32
@@ -199,7 +199,7 @@ R3
 r1
 !s85 0
 31
-R9
+R10
 !s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/IF_ID_Register.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/IF_ID_Register.v|
 !i113 1
@@ -207,7 +207,7 @@ R5
 R6
 n@i@f_@i@d_@register
 vIF_STAGE
-R11
+R8
 !i10b 1
 !s100 PD0f5=AZ@ehKfa[z8kC=n3
 IbD^>2FTcm44[ioSFDj20d0
@@ -216,12 +216,12 @@ R2
 w1739111456
 8C:/Users/Heverton Reis/Documents/PCID/ModelSim/IF_STAGE.v
 FC:/Users/Heverton Reis/Documents/PCID/ModelSim/IF_STAGE.v
-R10
+R9
 R3
 r1
 !s85 0
 31
-Z12 !s108 1739323022.000000
+R10
 !s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/IF_STAGE.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/IF_STAGE.v|
 !i113 1
@@ -236,44 +236,44 @@ IPfYYfoL7S>nK07]^<1kCV0
 R1
 R2
 w1739131158
-Z13 8C:/Users/Heverton Reis/Documents/PCID/ModelSim/IF_STAGE_tb.v
-Z14 FC:/Users/Heverton Reis/Documents/PCID/ModelSim/IF_STAGE_tb.v
+Z11 8C:/Users/Heverton Reis/Documents/PCID/ModelSim/IF_STAGE_tb.v
+Z12 FC:/Users/Heverton Reis/Documents/PCID/ModelSim/IF_STAGE_tb.v
 L0 3
 R3
 r1
 !s85 0
 31
 !s108 1739131224.000000
-Z15 !s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/IF_STAGE_tb.v|
-Z16 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/IF_STAGE_tb.v|
+Z13 !s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/IF_STAGE_tb.v|
+Z14 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/IF_STAGE_tb.v|
 !i113 1
 R5
 R6
 n@i@f_@stage_tb
 vIF_STAGE_tb
-Z17 !s110 1739323024
+Z15 !s110 1739408003
 !i10b 1
 !s100 VU^^cb7cMDFUMX1Njg8h@3
 Ic>6FZ64fZMnKPjKeRmS<l0
 R1
 R2
 w1739131254
-R13
-R14
+R11
+R12
 L0 3
 R3
 r1
 !s85 0
 31
-Z18 !s108 1739323024.000000
-R15
-R16
+Z16 !s108 1739408002.000000
+R13
+R14
 !i113 1
 R5
 R6
 n@i@f_@s@t@a@g@e_tb
 vInstructionDecoder
-R11
+R8
 !i10b 1
 !s100 ;^MOMA`AEJK36KgZEeOX?1
 IW]Rj0g@<6a7[;^8R>C3[P1
@@ -287,7 +287,7 @@ R3
 r1
 !s85 0
 31
-R12
+R10
 !s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/InstructionDecoder.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/InstructionDecoder.v|
 !i113 1
@@ -295,29 +295,51 @@ R5
 R6
 n@instruction@decoder
 vMEM_STAGE
-R11
+!s110 1739326063
 !i10b 1
 !s100 D_<iJ61c;GSYOUTMzz]Fh3
 Io>535eEK1O98beEGO^MNO2
 R1
 R2
 w1739321268
-8C:/Users/Heverton Reis/Documents/PCID/ModelSim/MEM_STAGE.v
-FC:/Users/Heverton Reis/Documents/PCID/ModelSim/MEM_STAGE.v
-R10
+Z17 8C:/Users/Heverton Reis/Documents/PCID/ModelSim/MEM_STAGE.v
+Z18 FC:/Users/Heverton Reis/Documents/PCID/ModelSim/MEM_STAGE.v
+R9
 R3
 r1
 !s85 0
 31
-R12
-!s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/MEM_STAGE.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/MEM_STAGE.v|
+!s108 1739326063.000000
+Z19 !s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/MEM_STAGE.v|
+Z20 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/MEM_STAGE.v|
 !i113 1
 R5
 R6
 n@m@e@m_@s@t@a@g@e
+vMem_Stage
+R8
+!i10b 1
+!s100 l77@F_8h[L<H`@0fZ;bNI1
+IejNbnE`kT7D18eB2KJil23
+R1
+R2
+w1739326124
+R17
+R18
+R9
+R3
+r1
+!s85 0
+31
+R10
+R19
+R20
+!i113 1
+R5
+R6
+n@mem_@stage
 vMEM_WB_Register
-R11
+Z21 !s110 1739408001
 !i10b 1
 !s100 JDa;U[:?aUgge53iEJG8L3
 Im86VkPz]P<5inLzdKe@Ad3
@@ -331,7 +353,7 @@ R3
 r1
 !s85 0
 31
-R12
+Z22 !s108 1739408001.000000
 !s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/MEM_WB_Register.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/MEM_WB_Register.v|
 !i113 1
@@ -339,7 +361,7 @@ R5
 R6
 n@m@e@m_@w@b_@register
 vMux2to1
-R11
+R21
 !i10b 1
 !s100 c0lV4niAGHlXEZfG]MS_j0
 IieLA>X1Ojk;1GROc2?VfI1
@@ -353,7 +375,7 @@ R3
 r1
 !s85 0
 31
-R12
+R22
 !s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/Mux2to1.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/Mux2to1.v|
 !i113 1
@@ -361,7 +383,7 @@ R5
 R6
 n@mux2to1
 vMux2to1_32bits
-Z19 !s110 1739323023
+R21
 !i10b 1
 !s100 A;j5bG1z`0N1I@ikkAM0e3
 IG^0;ko:4amd^d^Bi8<ZeC2
@@ -375,7 +397,7 @@ R3
 r1
 !s85 0
 31
-R12
+R22
 !s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/Mux2to1_32bits.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/Mux2to1_32bits.v|
 !i113 1
@@ -383,7 +405,7 @@ R5
 R6
 n@mux2to1_32bits
 vMux2to1_5bits
-R11
+R21
 !i10b 1
 !s100 FSgDNUffY4EoB<fKhM>aI3
 I9eW?EoDl^>`aVo[0]6cH:1
@@ -397,7 +419,7 @@ R3
 r1
 !s85 0
 31
-R12
+R22
 !s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/Mux2to1_5bits.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/Mux2to1_5bits.v|
 !i113 1
@@ -405,7 +427,7 @@ R5
 R6
 n@mux2to1_5bits
 vPCAdder
-R19
+R21
 !i10b 1
 !s100 5H[;1@@7nT1Q;JJG=H8z@1
 I=o`iS5B?4kbSQ7j6MijLb0
@@ -419,7 +441,7 @@ R3
 r1
 !s85 0
 31
-Z20 !s108 1739323023.000000
+R22
 !s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/PCAdder.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/PCAdder.v|
 !i113 1
@@ -427,21 +449,21 @@ R5
 R6
 n@p@c@adder
 vProcessadorPipeline
-R19
+R21
 !i10b 1
-!s100 iFk@okLA9=f[WzM=`gfWR2
-IAl:N0`_YO:UO<5bF1WTQ82
+!s100 TM9zE5cQ7Ta;;3`7dX1dJ1
+IWaZ9YFWPaP61aWg5QQFzl0
 R1
 R2
-w1739321343
+w1739406966
 8C:/Users/Heverton Reis/Documents/PCID/ModelSim/ProcessadorPipeline.v
 FC:/Users/Heverton Reis/Documents/PCID/ModelSim/ProcessadorPipeline.v
-R10
+R9
 R3
 r1
 !s85 0
 31
-R20
+R22
 !s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/ProcessadorPipeline.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/ProcessadorPipeline.v|
 !i113 1
@@ -449,7 +471,7 @@ R5
 R6
 n@processador@pipeline
 vProcessadorPipeline_MEM
-Z21 !s110 1739323026
+Z23 !s110 1739408004
 !i10b 1
 !s100 UIh;3UeiHO]65g7DG<OUH1
 IPL835WF]Me1`XK5KR<[aI1
@@ -458,12 +480,12 @@ R2
 w1739317815
 8C:/Users/Heverton Reis/Documents/PCID/ModelSim/ProcessadorPipeline_MEM.v
 FC:/Users/Heverton Reis/Documents/PCID/ModelSim/ProcessadorPipeline_MEM.v
-R10
+R9
 R3
 r1
 !s85 0
 31
-Z22 !s108 1739323026.000000
+Z24 !s108 1739408004.000000
 !s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/ProcessadorPipeline_MEM.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/ProcessadorPipeline_MEM.v|
 !i113 1
@@ -471,7 +493,7 @@ R5
 R6
 n@processador@pipeline_@m@e@m
 vProcessadorPipeline_SemEX
-Z23 !s110 1739323025
+R15
 !i10b 1
 !s100 ehM>cE8bmXKV>]]PC?4Ha0
 IlAi3mf<8XenDckMCj3>jI2
@@ -480,12 +502,12 @@ R2
 w1739232100
 8C:/Users/Heverton Reis/Documents/PCID/ModelSim/ProcessadorPipeline_SemEX.v
 FC:/Users/Heverton Reis/Documents/PCID/ModelSim/ProcessadorPipeline_SemEX.v
-R10
+R9
 R3
 r1
 !s85 0
 31
-Z24 !s108 1739323025.000000
+Z25 !s108 1739408003.000000
 !s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/ProcessadorPipeline_SemEX.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/ProcessadorPipeline_SemEX.v|
 !i113 1
@@ -493,7 +515,7 @@ R5
 R6
 n@processador@pipeline_@sem@e@x
 vProcessadorPipeline_SemID
-R17
+R15
 !i10b 1
 !s100 ;j^3MmhIYk7X`]aAI>TcR3
 Io8Z@h4_7Z2QPWdhK=Tia41
@@ -502,12 +524,12 @@ R2
 w1739229049
 8C:/Users/Heverton Reis/Documents/PCID/ModelSim/ProcessadorPipeline_SemID.v
 FC:/Users/Heverton Reis/Documents/PCID/ModelSim/ProcessadorPipeline_SemID.v
-R10
+R9
 R3
 r1
 !s85 0
 31
-R18
+R25
 !s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/ProcessadorPipeline_SemID.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/ProcessadorPipeline_SemID.v|
 !i113 1
@@ -515,7 +537,7 @@ R5
 R6
 n@processador@pipeline_@sem@i@d
 vProcessadorPipeline_SemMEM
-R23
+R15
 !i10b 1
 !s100 ^z[Yl6VbZimCo7_3EZLQj2
 IMVflf8f6R4=cXoB?EE5Q51
@@ -524,12 +546,12 @@ R2
 w1739233256
 8C:/Users/Heverton Reis/Documents/PCID/ModelSim/ProcessadorPipeline_SemMEM.v
 FC:/Users/Heverton Reis/Documents/PCID/ModelSim/ProcessadorPipeline_SemMEM.v
-R10
+R9
 R3
 r1
 !s85 0
 31
-R24
+R25
 !s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/ProcessadorPipeline_SemMEM.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/ProcessadorPipeline_SemMEM.v|
 !i113 1
@@ -537,7 +559,7 @@ R5
 R6
 n@processador@pipeline_@sem@m@e@m
 vProcessadorPipeline_SemMEM2
-R21
+R23
 !i10b 1
 !s100 RAVV71daHAOEF`PN=HPji3
 I@7ZX6PNX:5_OQVii@<7Qz2
@@ -546,7 +568,7 @@ R2
 w1739236751
 8C:/Users/Heverton Reis/Documents/PCID/ModelSim/ProcessadorPipeline_SemMEM2.v
 FC:/Users/Heverton Reis/Documents/PCID/ModelSim/ProcessadorPipeline_SemMEM2.v
-R10
+R9
 R3
 r1
 !s85 0
@@ -559,7 +581,7 @@ R5
 R6
 n@processador@pipeline_@sem@m@e@m2
 vProgramCounter
-R19
+R21
 !i10b 1
 !s100 R5N7H:6QOfAh9KC=nUMll3
 IYIc;`zch01TS?1EKFfbUW1
@@ -573,7 +595,7 @@ R3
 r1
 !s85 0
 31
-R20
+R22
 !s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/ProgramCounter.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/ProgramCounter.v|
 !i113 1
@@ -581,48 +603,48 @@ R5
 R6
 n@program@counter
 Eram
-Z25 w1739122332
-Z26 DPx9 altera_mf 20 altera_mf_components 0 22 gV:l9C^?PSb6]b5V?_jR@3
-Z27 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z28 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z26 w1739122332
+Z27 DPx9 altera_mf 20 altera_mf_components 0 22 gV:l9C^?PSb6]b5V?_jR@3
+Z28 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z29 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R2
-Z29 8C:/Users/Heverton Reis/Documents/PCID/ModelSim/RAM.vhd
-Z30 FC:/Users/Heverton Reis/Documents/PCID/ModelSim/RAM.vhd
+Z30 8C:/Users/Heverton Reis/Documents/PCID/ModelSim/RAM.vhd
+Z31 FC:/Users/Heverton Reis/Documents/PCID/ModelSim/RAM.vhd
 l0
 L42
 VbJBL14_d2kRT<B]lY20>]1
 !s100 JaZo5hEj2IA6n8B5AJkZ<3
-Z31 OV;C;10.5b;63
+Z32 OV;C;10.5b;63
 32
-R19
+Z33 !s110 1739408002
 !i10b 1
-R20
-Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/RAM.vhd|
-Z33 !s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/RAM.vhd|
+R22
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/RAM.vhd|
+Z35 !s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/RAM.vhd|
 !i113 1
-Z34 o-work work -2002 -explicit
-Z35 tExplicit 1 CvgOpt 0
+Z36 o-work work -2002 -explicit
+Z37 tExplicit 1 CvgOpt 0
 Asyn
-R26
 R27
 R28
+R29
 DEx4 work 3 ram 0 22 bJBL14_d2kRT<B]lY20>]1
 l59
 L55
 VKW3:MCf;^2^<7O1ob7gad1
 !s100 ?6]Cj]hS9SoDO=WThY<cT2
-R31
-32
-R19
-!i10b 1
-R20
 R32
+32
 R33
-!i113 1
+!i10b 1
+R22
 R34
 R35
+!i113 1
+R36
+R37
 vRegisterFile
-!s110 1739323404
+R33
 !i10b 1
 !s100 JJ_z3nWi4k_m0izCQPCTg2
 I4lfB=TKgo>1;Zz]HlSPm90
@@ -636,7 +658,7 @@ R3
 r1
 !s85 0
 31
-!s108 1739323404.000000
+R16
 !s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/RegisterFile.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/RegisterFile.v|
 !i113 1
@@ -644,48 +666,48 @@ R5
 R6
 n@register@file
 Erom
-Z36 w1739103599
-R26
+Z38 w1739103599
 R27
 R28
+R29
 R2
-Z37 8C:/Users/Heverton Reis/Documents/PCID/ModelSim/ROM.vhd
-Z38 FC:/Users/Heverton Reis/Documents/PCID/ModelSim/ROM.vhd
+Z39 8C:/Users/Heverton Reis/Documents/PCID/ModelSim/ROM.vhd
+Z40 FC:/Users/Heverton Reis/Documents/PCID/ModelSim/ROM.vhd
 l0
 L42
 VmMM86zHXANUXVNi1cM5Zn0
 !s100 ?WfRK8Yh_6D4Uz8LIUEUk3
-R31
+R32
 32
-R17
+R33
 !i10b 1
-R20
-Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/ROM.vhd|
-Z40 !s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/ROM.vhd|
+R16
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/ROM.vhd|
+Z42 !s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/ROM.vhd|
 !i113 1
-R34
-R35
+R36
+R37
 Asyn
-R26
 R27
 R28
+R29
 DEx4 work 3 rom 0 22 mMM86zHXANUXVNi1cM5Zn0
 l56
 L52
 VVEXR1B=dViC_INPB_Cked2
 !s100 XT94;_;;<^iDYL@L_7;l91
-R31
+R32
 32
-R17
+R33
 !i10b 1
-R20
-R39
-R40
+R16
+R41
+R42
 !i113 1
-R34
-R35
+R36
+R37
 vShiftLeft2
-R17
+R33
 !i10b 1
 !s100 ^]_zYzFh_ZeRGSNWn`k;o1
 IfR]QY1[Eh>BGUUZMPC4]:2
@@ -699,7 +721,7 @@ R3
 r1
 !s85 0
 31
-R18
+R16
 !s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/ShiftLeft2.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/ShiftLeft2.v|
 !i113 1
@@ -707,7 +729,7 @@ R5
 R6
 n@shift@left2
 vSignExtend
-R17
+R33
 !i10b 1
 !s100 =mgS0zIZL?TThDk92G1ZH1
 I9Vf6VmVn0Vz4Ia:jD[CJ80
@@ -721,7 +743,7 @@ R3
 r1
 !s85 0
 31
-R18
+R16
 !s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/SignExtend.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/SignExtend.v|
 !i113 1
@@ -729,7 +751,7 @@ R5
 R6
 n@sign@extend
 vSomador
-R17
+R33
 !i10b 1
 !s100 ?OnXhc[Ubl0ebzk?HT8O>1
 IXahSdS?fHJHiU1C9V9L^?3
@@ -743,7 +765,7 @@ R3
 r1
 !s85 0
 31
-R18
+R16
 !s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/Somador.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/Somador.v|
 !i113 1
@@ -751,13 +773,13 @@ R5
 R6
 n@somador
 vTB_LW
-R17
+!s110 1739408456
 !i10b 1
-!s100 dM2=YOUaij?Ne5Q:amW7m3
-I]0oLzASMQ@R0^^B>;^cWH3
+!s100 jZK[c[0A]Ab?UI=83QRbH2
+ISidKU0eWL]S_R?67;?C<Z1
 R1
 R2
-w1739323006
+w1739408440
 8C:/Users/Heverton Reis/Documents/PCID/ModelSim/TB_LW.v
 FC:/Users/Heverton Reis/Documents/PCID/ModelSim/TB_LW.v
 L0 1
@@ -765,7 +787,7 @@ R3
 r1
 !s85 0
 31
-R18
+!s108 1739408456.000000
 !s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/TB_LW.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/TB_LW.v|
 !i113 1
@@ -773,7 +795,7 @@ R5
 R6
 n@t@b_@l@w
 vTB_LW_Teste01
-R23
+R15
 !i10b 1
 !s100 G0=c5dmfQ^=Ba`kFWV=?>2
 IUU7WQi_6aAD`UTUm9KImi2
@@ -787,7 +809,7 @@ R3
 r1
 !s85 0
 31
-R24
+R25
 !s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/TB_LW_Teste01.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/TB_LW_Teste01.v|
 !i113 1
@@ -795,7 +817,7 @@ R5
 R6
 n@t@b_@l@w_@teste01
 vTB_LW_Teste02
-R23
+R15
 !i10b 1
 !s100 9IdK^KKbj[f?lLS7g1bbo1
 IS[X;lXgP7ohA]am0d1iab0
@@ -809,7 +831,7 @@ R3
 r1
 !s85 0
 31
-R24
+R25
 !s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/TB_LW_Teste02.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/TB_LW_Teste02.v|
 !i113 1
@@ -817,7 +839,7 @@ R5
 R6
 n@t@b_@l@w_@teste02
 vTB_LW_Teste03
-R23
+R15
 !i10b 1
 !s100 V;SETOlC5a^k;AjOf19bY0
 IUDBB`oU;Of7kcLN86FMci0
@@ -831,7 +853,7 @@ R3
 r1
 !s85 0
 31
-R24
+R25
 !s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/TB_LW_Teste03.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/TB_LW_Teste03.v|
 !i113 1
@@ -839,7 +861,7 @@ R5
 R6
 n@t@b_@l@w_@teste03
 vTB_LW_Teste04
-R23
+R15
 !i10b 1
 !s100 a@V?jZlId07;M2B7S8WfP1
 IhckJI^QV:ak7QQZg3;G[`0
@@ -853,7 +875,7 @@ R3
 r1
 !s85 0
 31
-R24
+R25
 !s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/TB_LW_Teste04.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/TB_LW_Teste04.v|
 !i113 1
@@ -861,7 +883,7 @@ R5
 R6
 n@t@b_@l@w_@teste04
 vTB_LW_Teste05
-R21
+R23
 !i10b 1
 !s100 N^eI:Mc9RhmV?0Y_[`Ygh1
 I:I;cUUP471?M^z5ZF?QgK3
@@ -875,7 +897,7 @@ R3
 r1
 !s85 0
 31
-R22
+R24
 !s107 C:/Users/Heverton Reis/Documents/PCID/ModelSim/TB_LW_Teste05.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Heverton Reis/Documents/PCID/ModelSim/TB_LW_Teste05.v|
 !i113 1

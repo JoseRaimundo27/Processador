@@ -1,7 +1,4 @@
-//`include "Const.v"
-
-module Control (
-    input wire clk,                  
+module Control (                
     input wire [4:0] opcode,         // Campo opcode da instrução (bits [31:26])
   
     output reg RegDst,               // Escolha do registrador destino
@@ -213,7 +210,7 @@ always @(*) begin
         end
         JPC: begin
             RegDst = 0;
-            ALUSrc = 0;
+            ALUSrc = 1;
             MemToReg = 0;
             RegWrite = 0;
             MemRead = 0;

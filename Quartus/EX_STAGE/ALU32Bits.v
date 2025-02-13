@@ -1,9 +1,10 @@
 module ALU32Bits(
-    //input wire reset,
     input wire signed [31:0] data1, data2,
     input wire [4:0] ALUControl,
+	 input wire [7:0] PC,
     output reg zero,
-    output reg signed [31:0] ALUResult
+    output reg signed [31:0] ALUResult,
+	 output reg [31:0] BranchTarget
 );
 reg signed [63:0] MUL_Result;
 reg [4:0] RFlagsStored;
@@ -33,16 +34,11 @@ parameter LW_1  = 5'b00000,  // Load Word - Estado 1
           RET   = 5'b10100,  // Return
           NOP   = 5'b10101;  // No Operation
 
-// Reset sincrono
-//always @(posedge reset) begin
-//    zero = 1'b0;
-//    RFlags = 5'b00000;
-//    ALUResult = 32'b0;
-//end
-
 // Operações da ALU
-always @(ALUControl, data1, data2) begin
+always @(data1, data2) begin
     // Limpar flags inicialmente
+	 ALUResult = 32'b0;
+	 BranchTarget = 32'b0;
     zero = 1'b0;
     RFlags = 5'b00000;
 
@@ -169,14 +165,14 @@ always @(ALUControl, data1, data2) begin
 
         JR: begin
             // Desvio incondicional para endereco em data1
-            ALUResult = data1;
-            zero = 1'b0;
+            BranchTarget = data1;
+            zero = 1;
         end
 
         JPC: begin
             // Desvio incondicional relativo ao PC
-            ALUResult = data1 + data2;
-            zero = 1'b0;
+            BranchTarget = PC + data2;
+            zero = 1;
         end
 
         BRFL: begin
@@ -198,6 +194,7 @@ always @(ALUControl, data1, data2) begin
 
         default: begin
             // Operacao Inválida
+				BranchTarget = 0;
             ALUResult = 0;
             zero = 1'b1;
         end

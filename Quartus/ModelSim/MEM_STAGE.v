@@ -16,7 +16,7 @@
 // VERSION		"Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 // CREATED		"Tue Feb 11 21:47:48 2025"
 
-module MEM_STAGE(
+module Mem_Stage(
 	clk,
 	EX_MEM_MemWrite,
 	rst,

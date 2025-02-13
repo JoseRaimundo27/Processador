@@ -14,17 +14,17 @@
 
 // PROGRAM		"Quartus Prime"
 // VERSION		"Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
-// CREATED		"Mon Feb 10 08:29:42 2025"
+// CREATED		"Wed Feb 12 21:52:09 2025"
 
 module ID_STAGE(
 	RegWrite,
 	clk,
 	rst,
+	clk_Reg,
 	IF_ID_Instruction,
 	IF_ID_PC,
 	writeData,
 	writeReg,
-	ID_EX_RegDst,
 	ID_EX_ALUSrc,
 	ID_EX_MemToReg,
 	ID_EX_RegWrite,
@@ -33,7 +33,6 @@ module ID_STAGE(
 	ID_EX_Branch,
 	ID_EX_ALUOp,
 	ID_EX_PC,
-	ID_EX_Rb,
 	ID_EX_Rd,
 	ID_EX_ReadData1,
 	ID_EX_ReadData2,
@@ -44,11 +43,11 @@ module ID_STAGE(
 input wire	RegWrite;
 input wire	clk;
 input wire	rst;
+input wire	clk_Reg;
 input wire	[31:0] IF_ID_Instruction;
 input wire	[7:0] IF_ID_PC;
 input wire	[31:0] writeData;
 input wire	[4:0] writeReg;
-output wire	ID_EX_RegDst;
 output wire	ID_EX_ALUSrc;
 output wire	ID_EX_MemToReg;
 output wire	ID_EX_RegWrite;
@@ -57,7 +56,6 @@ output wire	ID_EX_MemWrite;
 output wire	ID_EX_Branch;
 output wire	[4:0] ID_EX_ALUOp;
 output wire	[7:0] ID_EX_PC;
-output wire	[4:0] ID_EX_Rb;
 output wire	[4:0] ID_EX_Rd;
 output wire	[31:0] ID_EX_ReadData1;
 output wire	[31:0] ID_EX_ReadData2;
@@ -100,7 +98,6 @@ ID_EX_Register	b2v_inst5(
 	.inReadData1(SYNTHESIZED_WIRE_10),
 	.inReadData2(SYNTHESIZED_WIRE_11),
 	.inSignExtImm(SYNTHESIZED_WIRE_12),
-	.outRegDst(ID_EX_RegDst),
 	.outALUSrc(ID_EX_ALUSrc),
 	.outMemToReg(ID_EX_MemToReg),
 	.outRegWrite(ID_EX_RegWrite),
@@ -109,7 +106,6 @@ ID_EX_Register	b2v_inst5(
 	.outBranch(ID_EX_Branch),
 	.outALUOp(ID_EX_ALUOp),
 	.outPc(ID_EX_PC),
-	.outRb(ID_EX_Rb),
 	.outRd(ID_EX_Rd),
 	.outReadData1(ID_EX_ReadData1),
 	.outReadData2(ID_EX_ReadData2),
@@ -122,7 +118,7 @@ SignExtend	b2v_inst6(
 
 
 RegisterFile	b2v_inst7(
-	.clk(clk),
+	.clk(clk_Reg),
 	.rst(rst),
 	.RegWrite(RegWrite),
 	.readReg1(SYNTHESIZED_WIRE_17),
@@ -134,7 +130,6 @@ RegisterFile	b2v_inst7(
 
 
 Control	b2v_inst8(
-	.clk(clk),
 	.opcode(SYNTHESIZED_WIRE_16),
 	.RegDst(SYNTHESIZED_WIRE_0),
 	.ALUSrc(SYNTHESIZED_WIRE_1),

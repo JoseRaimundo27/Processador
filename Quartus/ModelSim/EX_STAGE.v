@@ -14,7 +14,7 @@
 
 // PROGRAM		"Quartus Prime"
 // VERSION		"Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
-// CREATED		"Sun Feb 09 15:25:42 2025"
+// CREATED		"Wed Feb 12 21:21:25 2025"
 
 module EX_STAGE(
 	ID_EX_ALUSrc,
@@ -25,10 +25,8 @@ module EX_STAGE(
 	ID_EX_MemWrite,
 	ID_EX_MemRead,
 	ID_EX_Branch,
-	ID_EX_RegDst,
 	ID_EX_ALUOp,
 	ID_EX_PC,
-	ID_EX_Rb,
 	ID_EX_Rd,
 	ID_EX_ReadData1,
 	ID_EX_ReadData2,
@@ -53,10 +51,8 @@ input wire	ID_EX_MemtoReg;
 input wire	ID_EX_MemWrite;
 input wire	ID_EX_MemRead;
 input wire	ID_EX_Branch;
-input wire	ID_EX_RegDst;
 input wire	[4:0] ID_EX_ALUOp;
 input wire	[7:0] ID_EX_PC;
-input wire	[4:0] ID_EX_Rb;
 input wire	[4:0] ID_EX_Rd;
 input wire	[31:0] ID_EX_ReadData1;
 input wire	[31:0] ID_EX_ReadData2;
@@ -75,8 +71,7 @@ wire	[31:0] SYNTHESIZED_WIRE_0;
 wire	SYNTHESIZED_WIRE_1;
 wire	[31:0] SYNTHESIZED_WIRE_2;
 wire	[31:0] SYNTHESIZED_WIRE_3;
-wire	[4:0] SYNTHESIZED_WIRE_4;
-wire	SYNTHESIZED_WIRE_5;
+wire	SYNTHESIZED_WIRE_4;
 
 
 
@@ -86,8 +81,10 @@ ALU32Bits	b2v_inst(
 	.ALUControl(ID_EX_ALUOp),
 	.data1(ID_EX_ReadData1),
 	.data2(SYNTHESIZED_WIRE_0),
-	.zero(SYNTHESIZED_WIRE_5),
-	.ALUResult(SYNTHESIZED_WIRE_2));
+	.PC(ID_EX_PC),
+	.zero(SYNTHESIZED_WIRE_4),
+	.ALUResult(SYNTHESIZED_WIRE_2),
+	.BranchTarget(SYNTHESIZED_WIRE_3));
 	defparam	b2v_inst.ADD = 5'b00110;
 	defparam	b2v_inst.AND = 5'b01010;
 	defparam	b2v_inst.BRFL = 5'b10010;
@@ -112,12 +109,6 @@ ALU32Bits	b2v_inst(
 	defparam	b2v_inst.SW_2 = 5'b00100;
 
 
-Somador	b2v_inst11(
-	.entrada1(ID_EX_PC),
-	.entrada2(ID_EX_SignExtImm),
-	.saida(SYNTHESIZED_WIRE_3));
-
-
 EX_MEM_REGISTER	b2v_inst12(
 	.clk(clk),
 	.reset(rst),
@@ -129,7 +120,7 @@ EX_MEM_REGISTER	b2v_inst12(
 	.ALUresult(SYNTHESIZED_WIRE_2),
 	.inBranchTarget(SYNTHESIZED_WIRE_3),
 	.writedata(ID_EX_SignExtImm),
-	.writeReg(SYNTHESIZED_WIRE_4),
+	.writeReg(ID_EX_Rd),
 	.MemWriteOut(EX_MEM_MemWriteOut),
 	.MemtoRegOut(EX_MEM_MemtoRegOut),
 	.RegWriteOut(EX_MEM_RegWrite),
@@ -140,14 +131,7 @@ EX_MEM_REGISTER	b2v_inst12(
 	.writedataOut(EX_MEM_WriteData),
 	.writeRegOut(EX_MEM_WriteReg));
 
-
-Mux2to1_5bits	b2v_inst13(
-	.select(ID_EX_RegDst),
-	.in0(ID_EX_Rb),
-	.in1(ID_EX_Rd),
-	.out(SYNTHESIZED_WIRE_4));
-
-assign	SYNTHESIZED_WIRE_1 = ID_EX_Branch & SYNTHESIZED_WIRE_5;
+assign	SYNTHESIZED_WIRE_1 = ID_EX_Branch & SYNTHESIZED_WIRE_4;
 
 
 Mux2to1_32bits	b2v_inst8(

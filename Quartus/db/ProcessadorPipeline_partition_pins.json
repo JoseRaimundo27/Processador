@@ -20,6 +20,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "clk_Reg",
+					"strict" : false
+				},
+				{
 					"name" : "altera_reserved_tms",
 					"strict" : false
 				},
