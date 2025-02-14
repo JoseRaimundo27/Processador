@@ -14,7 +14,7 @@
 
 // PROGRAM		"Quartus Prime"
 // VERSION		"Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
-// CREATED		"Sun Feb 09 11:30:56 2025"
+// CREATED		"Thu Feb 13 19:42:46 2025"
 
 module IF_STAGE(
 	clk,
@@ -36,9 +36,8 @@ output wire	[31:0] IF_ID_Instruction;
 output wire	[7:0] IF_ID_PC;
 
 wire	[31:0] SYNTHESIZED_WIRE_0;
-wire	[7:0] SYNTHESIZED_WIRE_6;
-wire	[7:0] SYNTHESIZED_WIRE_2;
-wire	[7:0] SYNTHESIZED_WIRE_7;
+wire	[7:0] SYNTHESIZED_WIRE_4;
+wire	[7:0] SYNTHESIZED_WIRE_3;
 
 
 
@@ -48,34 +47,23 @@ IF_ID_Register	b2v_inst(
 	.clk(clk),
 	.rst(rst),
 	.inInstruction(SYNTHESIZED_WIRE_0),
-	.inPC(SYNTHESIZED_WIRE_6),
+	.inPC(SYNTHESIZED_WIRE_4),
+	.newPC(SYNTHESIZED_WIRE_3),
 	.outInstruction(IF_ID_Instruction),
 	.outPC(IF_ID_PC));
 
 
-ProgramCounter	b2v_inst1(
-	.clk(clk),
-	.rst(rst),
-	.nextPC(SYNTHESIZED_WIRE_2),
-	.currentPC(SYNTHESIZED_WIRE_7));
-
-
-PCAdder	b2v_inst2(
-	.inPC(SYNTHESIZED_WIRE_7),
-	.outPC(SYNTHESIZED_WIRE_6));
-
-
 ROM	b2v_inst3(
 	.clock(clk_ROM),
-	.address(SYNTHESIZED_WIRE_7),
+	.address(SYNTHESIZED_WIRE_4),
 	.q(SYNTHESIZED_WIRE_0));
 
 
 Mux2to1	b2v_inst4(
 	.sel(BranchTaken),
-	.in0(SYNTHESIZED_WIRE_6),
+	.in0(SYNTHESIZED_WIRE_3),
 	.in1(BranchTarget),
-	.out(SYNTHESIZED_WIRE_2));
+	.out(SYNTHESIZED_WIRE_4));
 
 
 endmodule

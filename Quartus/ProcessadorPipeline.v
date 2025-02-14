@@ -14,22 +14,18 @@
 
 // PROGRAM		"Quartus Prime"
 // VERSION		"Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
-// CREATED		"Wed Feb 12 21:36:06 2025"
+// CREATED		"Thu Feb 13 21:39:56 2025"
 
 module ProcessadorPipeline(
-	clk_ROM,
-	clk,
-	rst,
-	clk_RAM,
-	clk_Reg
+	CLOCK_50,
+	CLOCK2_50,
+	KEY
 );
 
 
-input wire	clk_ROM;
-input wire	clk;
-input wire	rst;
-input wire	clk_RAM;
-input wire	clk_Reg;
+input wire	CLOCK_50;
+input wire	CLOCK2_50;
+input wire	[0:0] KEY;
 
 wire	SYNTHESIZED_WIRE_0;
 wire	[7:0] SYNTHESIZED_WIRE_1;
@@ -69,9 +65,9 @@ wire	[4:0] SYNTHESIZED_WIRE_30;
 
 IF_STAGE	b2v_inst(
 	.BranchTaken(SYNTHESIZED_WIRE_0),
-	.clk_ROM(clk_ROM),
-	.clk(clk),
-	.rst(rst),
+	.clk_ROM(CLOCK2_50),
+	.clk(CLOCK_50),
+	.rst(KEY),
 	.BranchTarget(SYNTHESIZED_WIRE_1),
 	.IF_ID_Instruction(SYNTHESIZED_WIRE_3),
 	.IF_ID_PC(SYNTHESIZED_WIRE_4));
@@ -79,9 +75,9 @@ IF_STAGE	b2v_inst(
 
 ID_STAGE	b2v_inst1(
 	.RegWrite(SYNTHESIZED_WIRE_2),
-	.clk(clk),
-	.rst(rst),
-	.clk_Reg(clk_Reg),
+	.clk(CLOCK_50),
+	.rst(KEY),
+	.clk_Reg(CLOCK2_50),
 	.IF_ID_Instruction(SYNTHESIZED_WIRE_3),
 	.IF_ID_PC(SYNTHESIZED_WIRE_4),
 	.writeData(SYNTHESIZED_WIRE_5),
@@ -107,8 +103,8 @@ EX_STAGE	b2v_inst3(
 	.ID_EX_MemRead(SYNTHESIZED_WIRE_10),
 	.ID_EX_MemWrite(SYNTHESIZED_WIRE_11),
 	.ID_EX_Branch(SYNTHESIZED_WIRE_12),
-	.clk(clk),
-	.rst(rst),
+	.clk(CLOCK_50),
+	.rst(KEY),
 	.ID_EX_ALUOp(SYNTHESIZED_WIRE_13),
 	.ID_EX_PC(SYNTHESIZED_WIRE_14),
 	.ID_EX_Rd(SYNTHESIZED_WIRE_15),
@@ -131,9 +127,9 @@ Mem_Stage	b2v_inst4(
 	.EX_MEM_MemToReg(SYNTHESIZED_WIRE_20),
 	.EX_MEM_RegWrite(SYNTHESIZED_WIRE_21),
 	.EX_MEM_MemRead(SYNTHESIZED_WIRE_22),
-	.clk(clk),
-	.rst(rst),
-	.clk_RAM(clk_RAM),
+	.clk(CLOCK_50),
+	.rst(KEY),
+	.clk_RAM(CLOCK2_50),
 	.EX_MEM_ALUResult(SYNTHESIZED_WIRE_23),
 	.EX_MEM_Data(SYNTHESIZED_WIRE_24),
 	.EX_MEM_WriteReg(SYNTHESIZED_WIRE_25),

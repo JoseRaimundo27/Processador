@@ -21,9 +21,9 @@ refer to the applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 40 160 208 176)
+	(rect 0 176 168 192)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "clk_ROM" (rect 5 0 49 12)(font "Arial" ))
+	(text "CLOCK_50" (rect 5 0 61 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -37,9 +37,9 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 40 176 208 192)
+	(rect 0 192 168 208)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "clk" (rect 5 0 19 12)(font "Arial" ))
+	(text "KEY[0]" (rect 5 0 41 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -53,41 +53,9 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 40 192 208 208)
+	(rect 0 240 168 256)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "rst" (rect 5 0 17 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
-	(rect 48 512 216 528)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "clk_RAM" (rect 5 0 48 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
-	(rect 40 240 208 256)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "clk_Reg" (rect 5 0 45 12)(font "Arial" ))
+	(text "CLOCK2_50" (rect 5 0 67 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -748,32 +716,12 @@ refer to the applicable agreement for further details.
 	(pt 1704 456)
 )
 (connector
-	(pt 304 168)
-	(pt 208 168)
-)
-(connector
 	(pt 288 184)
 	(pt 288 408)
 )
 (connector
-	(pt 304 184)
-	(pt 288 184)
-)
-(connector
-	(pt 288 184)
-	(pt 208 184)
-)
-(connector
 	(pt 296 456)
 	(pt 296 200)
-)
-(connector
-	(pt 304 200)
-	(pt 296 200)
-)
-(connector
-	(pt 296 200)
-	(pt 208 200)
 )
 (connector
 	(pt 2472 168)
@@ -929,10 +877,6 @@ refer to the applicable agreement for further details.
 	(pt 1760 520)
 )
 (connector
-	(pt 216 520)
-	(pt 1760 520)
-)
-(connector
 	(pt 1224 328)
 	(pt 1240 328)
 )
@@ -1000,8 +944,48 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 208 248)
+	(pt 288 184)
+	(pt 304 184)
+)
+(connector
+	(pt 296 200)
+	(pt 304 200)
+)
+(connector
+	(pt 168 200)
+	(pt 296 200)
+)
+(connector
+	(pt 168 184)
+	(pt 288 184)
+)
+(connector
+	(pt 272 168)
+	(pt 272 248)
+)
+(connector
+	(pt 272 168)
+	(pt 304 168)
+)
+(connector
+	(pt 168 248)
+	(pt 272 248)
+)
+(connector
+	(pt 280 248)
+	(pt 280 520)
+)
+(connector
+	(pt 272 248)
+	(pt 280 248)
+)
+(connector
+	(pt 280 248)
 	(pt 704 248)
+)
+(connector
+	(pt 280 520)
+	(pt 1760 520)
 )
 (junction (pt 1224 408))
 (junction (pt 680 408))
@@ -1009,3 +993,5 @@ refer to the applicable agreement for further details.
 (junction (pt 688 456))
 (junction (pt 288 184))
 (junction (pt 296 200))
+(junction (pt 272 248))
+(junction (pt 280 248))

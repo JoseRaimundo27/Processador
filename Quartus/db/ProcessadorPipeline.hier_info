@@ -1,15 +1,15 @@
 |ProcessadorPipeline
-clk => Mem_Stage:inst4.clk
-clk => ID_STAGE:inst1.clk
-clk => EX_STAGE:inst3.clk
-clk => IF_STAGE:inst.clk
-rst => Mem_Stage:inst4.rst
-rst => ID_STAGE:inst1.rst
-rst => EX_STAGE:inst3.rst
-rst => IF_STAGE:inst.rst
-clk_RAM => Mem_Stage:inst4.clk_RAM
-clk_Reg => ID_STAGE:inst1.clk_Reg
-clk_ROM => IF_STAGE:inst.clk_ROM
+CLOCK_50 => Mem_Stage:inst4.clk
+CLOCK_50 => ID_STAGE:inst1.clk
+CLOCK_50 => EX_STAGE:inst3.clk
+CLOCK_50 => IF_STAGE:inst.clk
+KEY[0] => Mem_Stage:inst4.rst
+KEY[0] => ID_STAGE:inst1.rst
+KEY[0] => EX_STAGE:inst3.rst
+KEY[0] => IF_STAGE:inst.rst
+CLOCK2_50 => Mem_Stage:inst4.clk_RAM
+CLOCK2_50 => ID_STAGE:inst1.clk_Reg
+CLOCK2_50 => IF_STAGE:inst.clk_ROM
 
 
 |ProcessadorPipeline|IF_STAGE:inst
@@ -46,9 +46,7 @@ IF_ID_Instruction[29] <= IF_ID_Register:inst.outInstruction[29]
 IF_ID_Instruction[30] <= IF_ID_Register:inst.outInstruction[30]
 IF_ID_Instruction[31] <= IF_ID_Register:inst.outInstruction[31]
 clk => IF_ID_Register:inst.clk
-clk => ProgramCounter:inst1.clk
 rst => IF_ID_Register:inst.rst
-rst => ProgramCounter:inst1.rst
 clk_ROM => ROM:inst3.clock
 BranchTaken => Mux2to1:inst4.sel
 BranchTarget[0] => Mux2to1:inst4.in1[0]
@@ -110,6 +108,22 @@ clk => outPC[4]~reg0.CLK
 clk => outPC[5]~reg0.CLK
 clk => outPC[6]~reg0.CLK
 clk => outPC[7]~reg0.CLK
+clk => newPC[0]~reg0.CLK
+clk => newPC[1]~reg0.CLK
+clk => newPC[2]~reg0.CLK
+clk => newPC[3]~reg0.CLK
+clk => newPC[4]~reg0.CLK
+clk => newPC[5]~reg0.CLK
+clk => newPC[6]~reg0.CLK
+clk => newPC[7]~reg0.CLK
+rst => newPC.OUTPUTSELECT
+rst => newPC.OUTPUTSELECT
+rst => newPC.OUTPUTSELECT
+rst => newPC.OUTPUTSELECT
+rst => newPC.OUTPUTSELECT
+rst => newPC.OUTPUTSELECT
+rst => newPC.OUTPUTSELECT
+rst => newPC.OUTPUTSELECT
 rst => outPC.OUTPUTSELECT
 rst => outPC.OUTPUTSELECT
 rst => outPC.OUTPUTSELECT
@@ -151,13 +165,21 @@ rst => outInstruction.OUTPUTSELECT
 rst => outInstruction.OUTPUTSELECT
 rst => outInstruction.OUTPUTSELECT
 inPC[0] => Add0.IN16
+inPC[0] => outPC.DATAA
 inPC[1] => Add0.IN15
+inPC[1] => outPC.DATAA
 inPC[2] => Add0.IN14
+inPC[2] => outPC.DATAA
 inPC[3] => Add0.IN13
+inPC[3] => outPC.DATAA
 inPC[4] => Add0.IN12
+inPC[4] => outPC.DATAA
 inPC[5] => Add0.IN11
+inPC[5] => outPC.DATAA
 inPC[6] => Add0.IN10
+inPC[6] => outPC.DATAA
 inPC[7] => Add0.IN9
+inPC[7] => outPC.DATAA
 inInstruction[0] => outInstruction.DATAA
 inInstruction[1] => outInstruction.DATAA
 inInstruction[2] => outInstruction.DATAA
@@ -190,6 +212,14 @@ inInstruction[28] => outInstruction.DATAA
 inInstruction[29] => outInstruction.DATAA
 inInstruction[30] => outInstruction.DATAA
 inInstruction[31] => outInstruction.DATAA
+newPC[0] <= newPC[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+newPC[1] <= newPC[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+newPC[2] <= newPC[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+newPC[3] <= newPC[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+newPC[4] <= newPC[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+newPC[5] <= newPC[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+newPC[6] <= newPC[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+newPC[7] <= newPC[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 outPC[0] <= outPC[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 outPC[1] <= outPC[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 outPC[2] <= outPC[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -1528,41 +1558,6 @@ TDI => WORD_SR.DATAA
 TDO <= WORD_SR[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ProcessadorPipeline|IF_STAGE:inst|ProgramCounter:inst1
-clk => currentPC[0]~reg0.CLK
-clk => currentPC[1]~reg0.CLK
-clk => currentPC[2]~reg0.CLK
-clk => currentPC[3]~reg0.CLK
-clk => currentPC[4]~reg0.CLK
-clk => currentPC[5]~reg0.CLK
-clk => currentPC[6]~reg0.CLK
-clk => currentPC[7]~reg0.CLK
-rst => currentPC.OUTPUTSELECT
-rst => currentPC.OUTPUTSELECT
-rst => currentPC.OUTPUTSELECT
-rst => currentPC.OUTPUTSELECT
-rst => currentPC.OUTPUTSELECT
-rst => currentPC.OUTPUTSELECT
-rst => currentPC.OUTPUTSELECT
-rst => currentPC.OUTPUTSELECT
-nextPC[0] => currentPC.DATAA
-nextPC[1] => currentPC.DATAA
-nextPC[2] => currentPC.DATAA
-nextPC[3] => currentPC.DATAA
-nextPC[4] => currentPC.DATAA
-nextPC[5] => currentPC.DATAA
-nextPC[6] => currentPC.DATAA
-nextPC[7] => currentPC.DATAA
-currentPC[0] <= currentPC[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-currentPC[1] <= currentPC[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-currentPC[2] <= currentPC[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-currentPC[3] <= currentPC[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-currentPC[4] <= currentPC[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-currentPC[5] <= currentPC[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-currentPC[6] <= currentPC[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-currentPC[7] <= currentPC[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
 |ProcessadorPipeline|IF_STAGE:inst|Mux2to1:inst4
 in0[0] => out.DATAB
 in0[1] => out.DATAB
@@ -1596,25 +1591,6 @@ out[4] <= out.DB_MAX_OUTPUT_PORT_TYPE
 out[5] <= out.DB_MAX_OUTPUT_PORT_TYPE
 out[6] <= out.DB_MAX_OUTPUT_PORT_TYPE
 out[7] <= out.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ProcessadorPipeline|IF_STAGE:inst|PCAdder:inst2
-inPC[0] => Add0.IN16
-inPC[1] => Add0.IN15
-inPC[2] => Add0.IN14
-inPC[3] => Add0.IN13
-inPC[4] => Add0.IN12
-inPC[5] => Add0.IN11
-inPC[6] => Add0.IN10
-inPC[7] => Add0.IN9
-outPC[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-outPC[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-outPC[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-outPC[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-outPC[4] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-outPC[5] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-outPC[6] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-outPC[7] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ProcessadorPipeline|EX_STAGE:inst3

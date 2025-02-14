@@ -132,13 +132,13 @@ module TB_LW;
 
     // Geracao do clk1 (periodo = 10 unidades de tempo)
     initial begin
-        clk1 = 0;
+        clk1 = 1;
         forever #5 clk1 = ~clk1; // Toggle a cada 5 unidades de tempo
     end
 
     // Geracao do clk2 (período = 5 unidades de tempo)
     initial begin
-        clk2 = 0;
+        clk2 = 1;
         forever #2.5 clk2 = ~clk2; // Toggle a cada 2.5 unidades de tempo
     end
 
@@ -168,18 +168,18 @@ module TB_LW;
     // Monitoramento dos sinais a cada 5 unidades de tempo, alinhado ao tempo de simulação
 	initial begin
     	//#5; // Aguarda o primeiro ciclo de 5 unidades de tempo para alinhar
-    	forever begin
-            $display("\nTime=%0t | rst=%b",
+      forever begin
+    	    $display("\nTime=%0t | rst=%b",
                     $time, rst);
-            $display("IF_STAGE: BranchTaken=%b | BranchTarget=%d | IF_ID_PC=%d | IF_ID_Instruction=%b",
+          $display("IF_STAGE: BranchTaken=%b | BranchTarget=%d | IF_ID_PC=%d | IF_ID_Instruction=%b",
                     EX_MEM_Branch, EX_MEM_BranchTarget, IF_ID_PC, IF_ID_Instruction);
-            $display("ID_STAGE: ID_EX_ReadData1=%d | ID_EX_ReadData2=%d | ID_EX_SignExtImm=%d | ID_EX_Rd=%b | ID_EX_Rb=%b | ID_EX_PC=%d | ID_EX_Branch=%b | RegDst=%b | MemToReg=%b | RegWrite=%b | MemRead=%b | ALUOp=%b",
-                    ID_EX_ReadData1, ID_EX_ReadData2, ID_EX_SignExtImm, ID_EX_Rd, ID_EX_Rb, ID_EX_PC, ID_EX_Branch, ID_EX_RegDst, ID_EX_MemToReg, ID_EX_RegWrite, ID_EX_MemRead, ID_EX_ALUOp);
-            $display("EX_STAGE: WriteReg=%b | EX_MEM_ALUResult=%d | EX_MEM_WriteData=%d | EX_MEM_Branch=%b | EX_MEM_BranchTarget=%d | MemRead=%b | ALUSrc=%b | MemToReg=%b",
+          $display("ID_STAGE: ID_EX_ReadData1=%d | ID_EX_ReadData2=%d | ID_EX_SignExtImm=%d | ID_EX_Rd=%d | ID_EX_PC=%d | ID_EX_Branch=%b | MemToReg=%b | RegWrite=%b | MemRead=%b | ALUOp=%b",
+                    ID_EX_ReadData1, ID_EX_ReadData2, ID_EX_SignExtImm, ID_EX_Rd, ID_EX_PC, ID_EX_Branch, ID_EX_MemToReg, ID_EX_RegWrite, ID_EX_MemRead, ID_EX_ALUOp);
+          $display("EX_STAGE: WriteReg=%d | EX_MEM_ALUResult=%d | EX_MEM_WriteData=%d | EX_MEM_Branch=%b | EX_MEM_BranchTarget=%d | MemRead=%b | ALUSrc=%b | MemToReg=%b",
                     EX_MEM_WriteReg, EX_MEM_ALUResult, EX_MEM_WriteData, EX_MEM_Branch, EX_MEM_BranchTarget, EX_MEM_MemReadOut, ID_EX_ALUSrc, EX_MEM_MemtoRegOut);          
-            $display("MEM_STAGE: MEM_WB_ALUResult=%d | MEM_WB_ReadData=%d | MEM_WB_WriteReg=%b | MemToReg=%b | RegWrite=%b",
+          $display("MEM_STAGE: MEM_WB_ALUResult=%d | MEM_WB_ReadData=%d | MEM_WB_WriteReg=%d | MemToReg=%b | RegWrite=%b",
           		    MEM_WB_ALUResult, MEM_WB_ReadData, MEM_WB_WriteReg, MEM_WB_MemToReg, MEM_WB_RegWrite);
-            $display("WB_STAGE: WriteData=%d | WriteReg=%b | RegWrite=%b",
+          $display("WB_STAGE: WriteData=%d | WriteReg=%d | RegWrite=%b",
           		    WriteData, WriteRegOut, RegWriteOut);
 
        	#5; // Espera 5 unidades de tempo antes de imprimir novamente
