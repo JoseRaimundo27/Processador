@@ -1,4 +1,4 @@
-module TB_LW;
+module ProcessadorPipeline_tb;
 
     // Declaracao dos sinais de teste
     reg clk1;                      // Clock principal
@@ -34,6 +34,8 @@ module TB_LW;
 
     ProcessadorPipeline dut (
         .clk_ROM(clk2),
+        .clk_RAM(clk2),
+      	.clk_Reg(clk2),
       	.clk(clk1),
         .rst(rst)
     );
@@ -42,7 +44,6 @@ module TB_LW;
     IF_STAGE dut_IF_STAGE (
         .clk(clk1),
         .rst(rst),
-
         .BranchTaken(EX_MEM_Branch),
         .clk_ROM(clk2),
         .BranchTarget(EX_MEM_BranchTarget),
@@ -53,21 +54,18 @@ module TB_LW;
     // Instanciando o modulo ID_Stage
     ID_STAGE dut_ID_STAGE (
         .clk(clk1),
+      	.clk_Reg(clk2),
         .rst(rst),
-
         .IF_ID_PC(IF_ID_PC),
         .IF_ID_Instruction(IF_ID_Instruction),
-        .RegWrite(WB_RegWrite),
-        .writeReg(WB_writeReg),
-        .writeData(WB_writeData),
+        .RegWrite(RegWriteOut),
+        .writeReg(WriteRegOut),
+        .writeData(WriteData),
         .ID_EX_ReadData1(ID_EX_ReadData1),
         .ID_EX_ReadData2(ID_EX_ReadData2),
         .ID_EX_SignExtImm(ID_EX_SignExtImm),
-        .ID_EX_Rb(ID_EX_Rb),
         .ID_EX_Rd(ID_EX_Rd),
         .ID_EX_PC(ID_EX_PC),
-
-        .ID_EX_RegDst(ID_EX_RegDst),
         .ID_EX_ALUSrc(ID_EX_ALUSrc),
         .ID_EX_MemToReg(ID_EX_MemToReg),
         .ID_EX_RegWrite(ID_EX_RegWrite),
@@ -80,14 +78,11 @@ module TB_LW;
     EX_STAGE dut_EX_STAGE(
         .clk(clk1),
         .rst(rst),
-      
         .ID_EX_ReadData1(ID_EX_ReadData1),
         .ID_EX_ReadData2(ID_EX_ReadData2),
         .ID_EX_SignExtImm(ID_EX_SignExtImm),
-        .ID_EX_Rb(ID_EX_Rb),
         .ID_EX_Rd(ID_EX_Rd),
         .ID_EX_PC(ID_EX_PC),
-        .ID_EX_RegDst(ID_EX_RegDst),
         .ID_EX_ALUSrc(ID_EX_ALUSrc),
         .ID_EX_MemtoReg(ID_EX_MemToReg),
         .ID_EX_RegWrite(ID_EX_RegWrite),
@@ -95,7 +90,6 @@ module TB_LW;
         .ID_EX_MemWrite(ID_EX_MemWrite),
         .ID_EX_Branch(ID_EX_Branch),
         .ID_EX_ALUOp(ID_EX_ALUOp),
-      
         .EX_MEM_ALUResult(EX_MEM_ALUResult),
         .EX_MEM_WriteData(EX_MEM_WriteData),
         .EX_MEM_MemWriteOut(EX_MEM_MemWriteOut),
@@ -109,8 +103,8 @@ module TB_LW;
 
     MEM_STAGE dut_MEM_STAGE(
       	.clk(clk1),
+        .clk_RAM(clk2),
         .rst(rst),
-        
         .EX_MEM_ALUResult(EX_MEM_ALUResult),
         .EX_MEM_Data(EX_MEM_WriteData),
         .EX_MEM_MemWrite(EX_MEM_MemWriteOut),
@@ -118,7 +112,6 @@ module TB_LW;
         .EX_MEM_MemToReg(EX_MEM_MemtoRegOut),
         .EX_MEM_RegWrite(EX_MEM_RegWrite),
         .EX_MEM_MemRead(EX_MEM_MemReadOut),
-        
         .MEM_WB_ALUResult(MEM_WB_ALUResult),
         .MEM_WB_ReadData(MEM_WB_ReadData),
         .MEM_WB_WriteReg(MEM_WB_WriteReg),
@@ -132,7 +125,6 @@ module TB_LW;
         .WriteReg(MEM_WB_WriteReg),
         .MemToReg(MEM_WB_MemToReg),
         .RegWrite(MEM_WB_RegWrite),
-
         .WriteData(WriteData),
         .WriteRegOut(WriteRegOut),
         .RegWriteOut(RegWriteOut)
@@ -140,34 +132,34 @@ module TB_LW;
 
     // Geracao do clk1 (periodo = 10 unidades de tempo)
     initial begin
-        clk1 = 0;
+        clk1 = 1;
         forever #5 clk1 = ~clk1; // Toggle a cada 5 unidades de tempo
     end
 
     // Geracao do clk2 (período = 5 unidades de tempo)
     initial begin
-        clk2 = 0;
+        clk2 = 1;
         forever #2.5 clk2 = ~clk2; // Toggle a cada 2.5 unidades de tempo
     end
 
     // Estímulos de teste
     initial begin
         rst = 1;
-      	$display("Resetando: ");
+      	$display("Resetando:");
         #10
       
         rst = 0;       
         #10;
 
-        $display("Ler primeira Instrução:");
+        $display("Ler primeira Instrucao:");
         #15;
       
-      	$display("Executar primeira Instrução:");
+      	$display("Executar primeira Instrucao:");
       
       	#15;
       
-      $display("Ler memória:");
-        #10;
+        $display("Ler memoria:");
+        #95;
 
         // Finaliza a simulação
         $finish;
@@ -176,21 +168,22 @@ module TB_LW;
     // Monitoramento dos sinais a cada 5 unidades de tempo, alinhado ao tempo de simulação
 	initial begin
     	//#5; // Aguarda o primeiro ciclo de 5 unidades de tempo para alinhar
-    	forever begin
-            $display("\nTime=%0t | rst=%b",
+      forever begin
+    	    $display("\nTime=%0t | rst=%b",
                     $time, rst);
-            $display("IF_STAGE: BranchTaken=%b | BranchTarget=%d | IF_ID_PC=%d | IF_ID_Instruction=%b",
+          $display("IF_STAGE: BranchTaken=%b | BranchTarget=%d | IF_ID_PC=%d | IF_ID_Instruction=%b",
                     EX_MEM_Branch, EX_MEM_BranchTarget, IF_ID_PC, IF_ID_Instruction);
-            $display("ID_STAGE: ID_EX_ReadData1=%d | ID_EX_SignExtImm=%d | ID_EX_Rd=%b | ID_EX_Rb=%b | ID_EX_PC=%d | ID_EX_Branch=%b",
-                    ID_EX_ReadData1, ID_EX_SignExtImm, ID_EX_Rd, ID_EX_Rb, ID_EX_PC, ID_EX_Branch);
-            $display("EX_STAGE: EX_MEM_ALUResult=%d | EX_MEM_WriteData=%d | EX_MEM_Branch=%b | EX_MEM_BranchTarget=%d",
-                    EX_MEM_ALUResult, EX_MEM_WriteData, EX_MEM_Branch, EX_MEM_BranchTarget);          
-            $display("MEM_STAGE: MEM_WB_ALUResult=%b | MEM_WB_ReadData=%b | MEM_WB_WriteReg=%b \nWB_STAGE: WriteData=%b | WriteRegOut=%b",
-          		    MEM_WB_ALUResult, MEM_WB_ReadData, MEM_WB_WriteReg,WriteData, WriteRegOut);
+          $display("ID_STAGE: ID_EX_ReadData1=%d | ID_EX_ReadData2=%d | ID_EX_SignExtImm=%d | ID_EX_Rd=%d | ID_EX_PC=%d | ID_EX_Branch=%b | MemToReg=%b | RegWrite=%b | MemRead=%b | ALUOp=%b",
+                    ID_EX_ReadData1, ID_EX_ReadData2, ID_EX_SignExtImm, ID_EX_Rd, ID_EX_PC, ID_EX_Branch, ID_EX_MemToReg, ID_EX_RegWrite, ID_EX_MemRead, ID_EX_ALUOp);
+          $display("EX_STAGE: WriteReg=%d | EX_MEM_ALUResult=%d | EX_MEM_WriteData=%d | EX_MEM_Branch=%b | EX_MEM_BranchTarget=%d | MemRead=%b | ALUSrc=%b | MemToReg=%b",
+                    EX_MEM_WriteReg, EX_MEM_ALUResult, EX_MEM_WriteData, EX_MEM_Branch, EX_MEM_BranchTarget, EX_MEM_MemReadOut, ID_EX_ALUSrc, EX_MEM_MemtoRegOut);          
+          $display("MEM_STAGE: MEM_WB_ALUResult=%d | MEM_WB_ReadData=%d | MEM_WB_WriteReg=%d | MemToReg=%b | RegWrite=%b",
+          		    MEM_WB_ALUResult, MEM_WB_ReadData, MEM_WB_WriteReg, MEM_WB_MemToReg, MEM_WB_RegWrite);
+          $display("WB_STAGE: WriteData=%d | WriteReg=%d | RegWrite=%b",
+          		    WriteData, WriteRegOut, RegWriteOut);
 
        	#5; // Espera 5 unidades de tempo antes de imprimir novamente
     end
 end
-
 
 endmodule

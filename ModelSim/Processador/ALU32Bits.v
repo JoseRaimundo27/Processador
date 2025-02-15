@@ -1,10 +1,10 @@
 module ALU32Bits(
     input wire signed [31:0] data1, data2,
     input wire [4:0] ALUControl,
-	 input wire [7:0] PC,
+	input wire [7:0] PC,
     output reg zero,
     output reg signed [31:0] ALUResult,
-	 output reg [31:0] BranchTarget
+	output reg [31:0] BranchTarget
 );
 reg signed [63:0] MUL_Result;
 reg [4:0] RFlagsStored;
@@ -35,9 +35,9 @@ parameter LW_1  = 5'b00000,  // Load Word - Estado 1
           NOP   = 5'b10101;  // No Operation
 
 // Operações da ALU
-always @(ALUControl, data1, data2) begin
+always @(data1, data2) begin
     // Limpar flags inicialmente
-    ALUResult = 32'b0;
+	ALUResult = 32'b0;
 	BranchTarget = 32'b0;
     zero = 1'b0;
     RFlags = 5'b00000;
@@ -46,31 +46,55 @@ always @(ALUControl, data1, data2) begin
         LW_1: begin
             // Load Word com Endereco Base Deslocado (Incremento de 8 bits por instrucao)
             ALUResult = data1 + data2;
+            if (ALUResult > 255 || ALUResult < 0) begin
+                ALUResult = 0; 
+                RFlags[4] = 1'b1; // Error
+            end
         end
 
         LW_2: begin
             // Load Word com Endereco Direto
             ALUResult = data1;
+            if (ALUResult > 255 || ALUResult < 0) begin
+                ALUResult = 0; 
+                RFlags[4] = 1'b1; // Error
+            end
         end
 
         LW_3: begin
             // Load Word com Endereco Imediato
-            ALUResult = data1;
+            ALUResult = data2;
+            if (ALUResult > 255 || ALUResult < 0) begin
+                ALUResult = 0; 
+                RFlags[4] = 1'b1; // Error
+            end
         end
 
         SW_1: begin
-            // Set Word com Endereço Base Deslocado (Incremento de 8 bits por instrucao)
-            ALUResult = data1 + 8;
+            // Set Word com Endereço Base Deslocado
+            ALUResult = data1 + data2;
+            if (ALUResult > 255 || ALUResult < 0) begin
+                ALUResult = 0; 
+                RFlags[4] = 1'b1; // Error
+            end
         end
 
         SW_2: begin
             // Set Word com Endereco Direto
             ALUResult = data1;
+            if (ALUResult > 255 || ALUResult < 0) begin
+                ALUResult = 0; 
+                RFlags[4] = 1'b1; // Error
+            end
         end
 
         MOV: begin
             // Transfere valores contatenados de endereco de memória
-            ALUResult = {data1[4:0],data2[4:0]};
+            ALUResult = data1;
+            if (ALUResult > 255 || ALUResult < 0) begin
+                ALUResult = 0; 
+                RFlags[4] = 1'b1; // Error
+            end
         end
 
         ADD: begin
@@ -146,7 +170,7 @@ always @(ALUControl, data1, data2) begin
         end
 
         SHR: begin
-            ALUResult = data2 >> data2;
+            ALUResult = data1 >> data2;
         end
 
         CMP: begin
@@ -178,25 +202,34 @@ always @(ALUControl, data1, data2) begin
         BRFL: begin
             // Verifica se RFlags é igual à máscara fornecida em data2
             if (RFlagsStored == data2[4:0]) begin
+                ALUResult = 32'b0;
+                BranchTarget = data2; // O endereço de salto será gerenciado em outro estágio
                 zero = 1'b1; // Ativa o sinal de salto
-                ALUResult = data1; // O endereço de salto será gerenciado em outro estágio
             end else begin
                 ALUResult = 32'b0; // Nenhum salto
-                zero = 1'b1;
+                zero = 1'b0;
             end
         end
 
         CALL: begin
             // Chamada de Subrotina
-            ALUResult = data1;
+            ALUResult = PC + 1;
+            BranchTarget = data2;
+            zero = 1'b1;
+        end
+
+        RET: begin
+            // Retorno de Subrotina
+            ALUResult = 0;
+            BranchTarget = data2;
             zero = 1'b1;
         end
 
         default: begin
             // Operacao Inválida
-				BranchTarget = 0;
+			BranchTarget = 0;
             ALUResult = 0;
-            zero = 1'b1;
+            RFlags[4] = 1'b1;
         end
     endcase
 

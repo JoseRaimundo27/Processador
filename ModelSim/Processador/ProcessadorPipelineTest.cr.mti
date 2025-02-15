@@ -1,11 +1,4 @@
-{C:/Users/Heverton Reis/Documents/PCID/ModelSim/ProcessadorPipeline_MEM.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/ProcessadorPipeline_MEM.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module ProcessadorPipeline_MEM
-
-Top level modules:
-	ProcessadorPipeline_MEM
-
-} {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/SignExtend.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/SignExtend.v}
+{C:/Users/Heverton Reis/Documents/PCID/ModelSim/SignExtend.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/SignExtend.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module SignExtend
 
@@ -54,13 +47,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	ID_EX_Register
 
-} {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/TB_LW_Teste01.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/TB_LW_Teste01.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module TB_LW_Teste01
-
-Top level modules:
-	TB_LW_Teste01
-
 } {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/Somador.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/Somador.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module Somador
@@ -75,13 +61,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	ExtractMSB
 
-} {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/TB_LW_Teste02.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/TB_LW_Teste02.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module TB_LW_Teste02
-
-Top level modules:
-	TB_LW_Teste02
-
 } {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/Mux2to1_5bits.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/Mux2to1_5bits.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module Mux2to1_5bits
@@ -89,12 +68,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	Mux2to1_5bits
 
-} {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/TB_LW_Teste03.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/TB_LW_Teste03.v}
+} {} {}} {C:/Users/Heverton Reis/Downloads/Processador/ModelSim/Processador/EX_STAGE_TB.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Downloads/Processador/ModelSim/Processador/EX_STAGE_TB.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module TB_LW_Teste03
+-- Compiling module EX_STAGE_TB
 
 Top level modules:
-	TB_LW_Teste03
+	EX_STAGE_TB
 
 } {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/IF_STAGE_tb.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/IF_STAGE_tb.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -109,20 +88,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 
 Top level modules:
 	IF_ID_Register
-
-} {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/TB_LW_Teste04.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/TB_LW_Teste04.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module TB_LW_Teste04
-
-Top level modules:
-	TB_LW_Teste04
-
-} {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/ProcessadorPipeline_SemMEM2.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/ProcessadorPipeline_SemMEM2.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module ProcessadorPipeline_SemMEM2
-
-Top level modules:
-	ProcessadorPipeline_SemMEM2
 
 } {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/ProgramCounter.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/ProgramCounter.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -152,13 +117,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	ID_STAGE
 
-} {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/TB_LW_Teste05.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/TB_LW_Teste05.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module TB_LW_Teste05
-
-Top level modules:
-	TB_LW_Teste05
-
 } {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/Control.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/Control.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module Control
@@ -172,6 +130,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 
 Top level modules:
 	ALU32Bits
+
+} {} {}} {C:/Users/Heverton Reis/Downloads/Processador/ModelSim/Processador/ProcessadorPipeline_tb.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Downloads/Processador/ModelSim/Processador/ProcessadorPipeline_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ProcessadorPipeline_tb
+
+Top level modules:
+	ProcessadorPipeline_tb
 
 } {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/IF_STAGE.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/IF_STAGE.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -203,20 +168,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	PCAdder
 
-} {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/ProcessadorPipeline_SemEX.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/ProcessadorPipeline_SemEX.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module ProcessadorPipeline_SemEX
-
-Top level modules:
-	ProcessadorPipeline_SemEX
-
-} {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/ProcessadorPipeline_SemID.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/ProcessadorPipeline_SemID.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module ProcessadorPipeline_SemID
-
-Top level modules:
-	ProcessadorPipeline_SemID
-
 } {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/RAM.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/RAM.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
@@ -232,13 +183,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 
 Top level modules:
 	RegisterFile
-
-} {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/ProcessadorPipeline_SemMEM.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/ProcessadorPipeline_SemMEM.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module ProcessadorPipeline_SemMEM
-
-Top level modules:
-	ProcessadorPipeline_SemMEM
 
 } {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/Mux2to1_32bits.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/Mux2to1_32bits.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -260,12 +204,5 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 
 Top level modules:
 	InstructionDecoder
-
-} {} {}} {C:/Users/Heverton Reis/Documents/PCID/ModelSim/TB_LW.v} {1 {vlog -work work -stats=none {C:/Users/Heverton Reis/Documents/PCID/ModelSim/TB_LW.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module TB_LW
-
-Top level modules:
-	TB_LW
 
 } {} {}}
